@@ -19,23 +19,16 @@ import {
   Heading
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
+import NavLink from "./navlink";
 
-const Links = ["Dashboard", "Projects", "Team"];
-
-const NavLink = ({ children }: { children: ReactNode }) => (
-  <Link
-    px={2}
-    py={1}
-    rounded={"md"}
-    _hover={{
-      textDecoration: "none",
-      bg: useColorModeValue("gray.200", "gray.700")
-    }}
-    href={"#"}
-  >
-    {children}
-  </Link>
-);
+const Links = [
+  { name: "Home", path: "/" },
+  {
+    name: "Projects",
+    path: "https://github.com/OscarGuerreroLopez?tab=repositories"
+  },
+  { name: "Posts", path: "/posts" }
+];
 
 export default function Simple() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -58,6 +51,7 @@ export default function Simple() {
             aria-label={"Open Menu"}
             display={{ md: "none" }}
             onClick={isOpen ? onClose : onOpen}
+            bg={useColorModeValue("white.200", "black.200")}
           />
           <HStack spacing={8} alignItems={"center"}>
             <Box>
@@ -71,8 +65,10 @@ export default function Simple() {
               spacing={4}
               display={{ base: "none", md: "flex" }}
             >
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+              {Links.map(({ name, path }) => (
+                <NavLink key={path} path={path}>
+                  {name}
+                </NavLink>
               ))}
             </HStack>
           </HStack>
@@ -81,7 +77,7 @@ export default function Simple() {
               <Button onClick={toggleColorMode} background={colorMode}>
                 {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
               </Button>
-              <Menu>
+              {/* <Menu>
                 <MenuButton
                   as={Button}
                   rounded={"full"}
@@ -102,7 +98,7 @@ export default function Simple() {
                   <MenuDivider />
                   <MenuItem>Link 3</MenuItem>
                 </MenuList>
-              </Menu>
+              </Menu> */}
             </Stack>
           </Flex>
         </Flex>
