@@ -106,8 +106,10 @@ export default function Simple() {
         {isOpen ? (
           <Box pb={4} display={{ md: "none" }}>
             <Stack as={"nav"} spacing={4}>
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+              {Links.map(({ name, path }) => (
+                <NavLink key={path} path={path}>
+                  {name}
+                </NavLink>
               ))}
             </Stack>
           </Box>
