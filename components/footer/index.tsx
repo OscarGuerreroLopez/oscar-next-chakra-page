@@ -6,6 +6,8 @@ import {
   Link,
   useColorModeValue
 } from "@chakra-ui/react";
+import { Links } from "@/constants/links";
+import NavLink from "../navbar/navlink";
 
 export default function SmallWithNavigation() {
   return (
@@ -22,12 +24,14 @@ export default function SmallWithNavigation() {
         justify={{ base: "center", md: "space-between" }}
         align={{ base: "center", md: "center" }}
         minH={"10vh"}
+        mt="40px"
       >
         <Stack direction={"row"} spacing={6}>
-          <Link href={"#"}>Home</Link>
-          <Link href={"#"}>About</Link>
-          <Link href={"#"}>Blog</Link>
-          <Link href={"#"}>Contact</Link>
+          {Links.map(({ name, path }) => (
+            <NavLink key={path} path={path}>
+              {name}
+            </NavLink>
+          ))}
         </Stack>
         <Text>© 2022 Chakra Templates. All rights reserved</Text>
       </Container>

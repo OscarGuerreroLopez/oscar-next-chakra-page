@@ -20,15 +20,7 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
 import NavLink from "./navlink";
-
-const Links = [
-  { name: "Home", path: "/" },
-  {
-    name: "Projects",
-    path: "https://github.com/OscarGuerreroLopez?tab=repositories"
-  },
-  { name: "Posts", path: "/posts" }
-];
+import { Links } from "@/constants/links";
 
 export default function Simple() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -41,9 +33,9 @@ export default function Simple() {
           minH={"10vh"}
           alignItems={"center"}
           justifyContent={"space-between"}
-          borderBottom={1}
-          borderStyle={"solid"}
-          borderColor={useColorModeValue("gray.200", "white.200")}
+          //   borderBottom={1}
+          //   borderStyle={"solid"}
+          //   borderColor={useColorModeValue("gray.200", "white.200")}
         >
           <IconButton
             size={"md"}
@@ -60,6 +52,8 @@ export default function Simple() {
                 Oscar Guerrero
               </Heading>
             </Box>
+          </HStack>
+          <Flex alignItems={"center"}>
             <HStack
               as={"nav"}
               spacing={4}
@@ -71,8 +65,6 @@ export default function Simple() {
                 </NavLink>
               ))}
             </HStack>
-          </HStack>
-          <Flex alignItems={"center"}>
             <Stack direction={"row"} spacing={{ base: 1, md: 3, lg: 5 }}>
               <Button onClick={toggleColorMode} background={colorMode}>
                 {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
