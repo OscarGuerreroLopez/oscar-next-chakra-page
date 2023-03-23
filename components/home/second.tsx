@@ -21,8 +21,7 @@ export default function CallToActionWithVideo() {
         sm: "2xl",
         base: "4xl",
         md: "5xl",
-        lg: "8xl",
-        xl: "10xl"
+        lg: "6xl"
       }}
     >
       <Stack

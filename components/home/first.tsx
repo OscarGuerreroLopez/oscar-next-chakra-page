@@ -7,6 +7,7 @@ import {
   Text,
   Image
 } from "@chakra-ui/react";
+import Link from "next/link";
 
 const firstHome = () => {
   return (
@@ -51,7 +52,7 @@ const firstHome = () => {
                 bg: "red.500"
               }}
             >
-              More about me
+              <Link href={"/about"}>More about me</Link>
             </Button>
           </Stack>
         </Stack>
