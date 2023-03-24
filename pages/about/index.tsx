@@ -16,9 +16,11 @@ import {
   LittleCardContent,
   Intro
 } from "@/data/aboutMe";
+import PageIntro from "@/components/about/pageIntro";
+import Layout from "@/components/layout";
 
 export default function gridListWith() {
-  const [aboutMeContext, useAboutMeContext] = useState<LittleCardContent[]>([]);
+  const [aboutMeContext, setAboutMeContext] = useState<LittleCardContent[]>([]);
   useEffect(() => {
     const contextArray: LittleCardContent[] = [];
     const context = Object.keys(
@@ -28,34 +30,30 @@ export default function gridListWith() {
     context.forEach((item) => {
       contextArray.push(AboutMeLittleCardContext[item]);
     });
-    useAboutMeContext(contextArray);
+    setAboutMeContext(contextArray);
   }, []);
 
   return (
-    <Box p={4}>
-      <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
-        <Heading fontSize={{ base: "2xl", sm: "4xl" }} fontWeight={"bold"}>
-          {Intro.title}
-        </Heading>
-        <Text color={"gray.600"} fontSize={{ base: "sm", sm: "lg" }}>
-          {Intro.desc}
-        </Text>
-      </Stack>
-
-      <Container maxW={"5xl"} mt={12}>
-        <Flex flexWrap="wrap" gridGap={6} justify="center">
-          {aboutMeContext.length &&
-            aboutMeContext.map((item) => (
-              <LittleCard
-                heading={item.title}
-                description={item.desc}
-                icon={<Icon as={item.icon} w={10} h={10} />}
-                href={"bla"}
-                key={item.title}
-              />
-            ))}
-        </Flex>
-      </Container>
-    </Box>
+    <>
+      <Layout>
+        <Box p={4}>
+          <PageIntro title={Intro.title} desc={Intro.desc} />
+          <Container maxW={"5xl"} mt={12}>
+            <Flex flexWrap="wrap" gridGap={6} justify="center">
+              {aboutMeContext.length &&
+                aboutMeContext.map((item) => (
+                  <LittleCard
+                    heading={item.title}
+                    description={item.desc}
+                    icon={<Icon as={item.icon} w={10} h={10} />}
+                    href={item.href}
+                    key={item.title}
+                  />
+                ))}
+            </Flex>
+          </Container>
+        </Box>
+      </Layout>
+    </>
   );
 }

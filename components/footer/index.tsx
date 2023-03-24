@@ -3,7 +3,6 @@ import {
   Container,
   Stack,
   Text,
-  Link,
   useColorModeValue
 } from "@chakra-ui/react";
 import { Links } from "@/constants/links";
@@ -24,7 +23,7 @@ export default function SmallWithNavigation() {
         justify={{ base: "center", md: "space-between" }}
         align={{ base: "center", md: "center" }}
         minH={"10vh"}
-        mt="40px"
+        // mt="40px"
       >
         <Stack direction={"row"} spacing={6}>
           {Links.map(({ name, path }) => (

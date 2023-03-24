@@ -4,10 +4,10 @@ import {
   useColorModeValue,
   Heading,
   Button,
-  Icon,
   Box,
   Text
 } from "@chakra-ui/react";
+import Link from "next/link";
 
 import { ReactElement } from "react";
 
@@ -47,7 +47,7 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
           </Text>
         </Box>
         <Button variant={"link"} colorScheme={"blue"} size={"sm"}>
-          Learn more
+          <Link href={`/about/${href}`}>Learn more</Link>
         </Button>
       </Stack>
     </Box>

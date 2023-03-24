@@ -23,6 +23,7 @@ export default function CallToActionWithVideo() {
         md: "5xl",
         lg: "6xl"
       }}
+      mb="40px"
     >
       <Stack
         align={"center"}
