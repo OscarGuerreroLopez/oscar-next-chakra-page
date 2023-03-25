@@ -56,7 +56,7 @@ const stats = [
     title: "Overall",
     content: (
       <>
-        my personal interests reflect my love of physical activity, adventure,
+        My personal interests reflect my love of physical activity, adventure,
         and exploration. Although my specific interests may have evolved over
         time, I remain committed to staying active and engaged outside of work
         and finding new ways to challenge myself both physically and mentally.

@@ -6,8 +6,7 @@ import {
   Text,
   Heading,
   SimpleGrid,
-  HStack,
-  useColorModeValue
+  HStack
 } from "@chakra-ui/react";
 import { Links } from "@/constants/links";
 import Link from "next/link";
@@ -53,7 +52,7 @@ const Topics: React.FC<TopicsParams> = ({
         <Box py={{ base: 2, md: 2, xl: 3 }}>
           <HStack as={"nav"} spacing={6}>
             {Links.map(({ name, path }) => (
-              <Link href={path}>
+              <Link href={path} key={`${name}.${path}`}>
                 <Text color={"white"}>{name}</Text>
               </Link>
             ))}
