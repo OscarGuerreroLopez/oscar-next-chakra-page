@@ -72,11 +72,11 @@ export interface TextContent {
   third: string;
 }
 
-export type AboutMePageText = {
+export type AboutMePageTextType = {
   [key in PageTextType]: TextContent;
 };
 
-export const PageText: AboutMePageText = {
+export const PageText: AboutMePageTextType = {
   experience: {
     title: "Experience",
     first:

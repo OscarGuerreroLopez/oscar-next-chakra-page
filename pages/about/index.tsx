@@ -1,12 +1,4 @@
-import {
-  Box,
-  Container,
-  Flex,
-  Heading,
-  Icon,
-  Stack,
-  Text
-} from "@chakra-ui/react";
+import { Box, Container, Flex, Icon } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 
 import LittleCard from "@/components/about/littleCard";
