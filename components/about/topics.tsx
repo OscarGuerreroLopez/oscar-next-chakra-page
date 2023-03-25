@@ -5,8 +5,12 @@ import {
   Flex,
   Text,
   Heading,
-  SimpleGrid
+  SimpleGrid,
+  HStack,
+  useColorModeValue
 } from "@chakra-ui/react";
+import { Links } from "@/constants/links";
+import Link from "next/link";
 
 interface TopicsParams {
   mainTitle: string;
@@ -46,12 +50,21 @@ const Topics: React.FC<TopicsParams> = ({
         />
       </Flex>
       <Container maxW={"7xl"} zIndex={10} position={"relative"}>
+        <Box py={{ base: 2, md: 2, xl: 3 }}>
+          <HStack as={"nav"} spacing={6}>
+            {Links.map(({ name, path }) => (
+              <Link href={path}>
+                <Text color={"white"}>{name}</Text>
+              </Link>
+            ))}
+          </HStack>
+        </Box>
         <Stack direction={{ base: "column", lg: "row" }}>
           <Stack
             flex={1}
             color={"gray.400"}
             justify={{ lg: "center" }}
-            py={{ base: 4, md: 20, xl: 60 }}
+            py={{ base: 4, md: 10, xl: 39 }}
           >
             <Box mb={{ base: 8, md: 20 }}>
               <Text
