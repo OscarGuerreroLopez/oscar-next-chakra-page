@@ -38,14 +38,37 @@ const BlogTags: React.FC<IBlogTags> = (props) => {
 
 const BlogRight: React.FC<BlogProps> = ({ title, tags, blogTitle, desc }) => {
   return (
-    <Container maxW={"5xl"} p={{ base: "3", md: "22" }}>
+    <Container maxW={"5xl"} p={{ base: "3", md: "12" }}>
       <Heading as="h1">{title}</Heading>
+
       <Box
         marginTop={{ base: "1", sm: "3" }}
         display="flex"
         flexDirection={{ base: "column", sm: "row" }}
         justifyContent="space-between"
       >
+        <Box
+          display="flex"
+          flex="1"
+          flexDirection="column"
+          justifyContent="center"
+          marginTop={{ base: "3", sm: "0" }}
+        >
+          <BlogTags tags={tags} />
+          <Heading marginTop="1">
+            <Link textDecoration="none" _hover={{ textDecoration: "none" }}>
+              {blogTitle}
+            </Link>
+          </Heading>
+          <Text
+            as="p"
+            marginTop="2"
+            color={useColorModeValue("gray.700", "gray.200")}
+            fontSize="lg"
+          >
+            {desc}
+          </Text>
+        </Box>
         <Box
           display="flex"
           flex="1"
@@ -81,28 +104,6 @@ const BlogRight: React.FC<BlogProps> = ({ title, tags, blogTitle, desc }) => {
               height="100%"
             />
           </Box>
-        </Box>
-        <Box
-          display="flex"
-          flex="1"
-          flexDirection="column"
-          justifyContent="center"
-          marginTop={{ base: "3", sm: "0" }}
-        >
-          <BlogTags tags={tags} />
-          <Heading marginTop="1">
-            <Link textDecoration="none" _hover={{ textDecoration: "none" }}>
-              {blogTitle}
-            </Link>
-          </Heading>
-          <Text
-            as="p"
-            marginTop="2"
-            color={useColorModeValue("gray.700", "gray.200")}
-            fontSize="lg"
-          >
-            {desc}
-          </Text>
         </Box>
       </Box>
     </Container>

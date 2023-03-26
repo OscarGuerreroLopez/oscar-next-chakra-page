@@ -8,11 +8,10 @@ import {
   Button,
   Image,
   Icon,
-  IconButton,
-  createIcon,
   IconProps,
   useColorModeValue
 } from "@chakra-ui/react";
+import Link from "next/link";
 
 export default function CallToActionWithVideo() {
   return (
@@ -76,7 +75,7 @@ export default function CallToActionWithVideo() {
               bg={"red.400"}
               _hover={{ bg: "red.500" }}
             >
-              Services
+              <Link href={"/services"}>Services</Link>
             </Button>
           </Stack>
         </Stack>
@@ -93,7 +92,7 @@ export default function CallToActionWithVideo() {
             top={"-20%"}
             left={0}
             zIndex={-1}
-            color={useColorModeValue("red.50", "red.400")}
+            color={useColorModeValue("red.200", "red.400")}
           />
           <Box
             position={"relative"}
