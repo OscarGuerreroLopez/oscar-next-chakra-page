@@ -23,7 +23,7 @@ export default function Simple() {
   return (
     <>
       <Box px={4}>
-        <Container minW={{ base: "none", md: "5xl" }}>
+        <Container minW={{ base: "none", md: "3xl", lg: "4xl" }}>
           <Flex
             minH={"10vh"}
             alignItems={"center"}

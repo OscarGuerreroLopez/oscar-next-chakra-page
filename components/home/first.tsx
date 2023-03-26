@@ -12,7 +12,7 @@ import Link from "next/link";
 
 const firstHome = () => {
   return (
-    <Container minW={{ base: "none", md: "6xl" }}>
+    <Container maxW={{ base: "none", md: "4xl", lg: "5xl" }}>
       <Stack minH={"90vh"} direction={{ base: "column", md: "row" }}>
         <Flex p={8} flex={1} align={"center"} justify={"center"}>
           <Stack spacing={6} w={"full"} maxW={"lg"}>
@@ -39,11 +39,15 @@ const firstHome = () => {
               </Text>{" "}
             </Heading>
             <Text fontSize={{ base: "md", lg: "lg" }} color={"gray.500"}>
-              Experienced Programmer and Operations Engineer with a demonstrated
-              history of working in the information technology and services
-              industry. Team player, communicative, problem-solving and eager to
-              learn everyday are just part of my soft skills. EU passport so
-              free to work anywhere in the EU. Scrum Master
+              With over 15 years of experience as a software engineer, I
+              specialize in creating microservices environments using
+              node/typescript. I believe software development is both an art and
+              a science, requiring creativity, discipline, and collaboration. I
+              take pride in writing clean, well-organized code and mentoring
+              others. On this website, you'll find more about my background, my
+              philosophy on software development, and my vision for the future.
+              Explore my work and connect with me to learn more. Thank you for
+              visiting!
             </Text>
             <Stack direction={{ base: "column", md: "row" }} spacing={4}>
               <Button
