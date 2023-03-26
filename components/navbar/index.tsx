@@ -1,41 +1,20 @@
-import { ReactNode } from "react";
 import {
   Box,
   Flex,
-  Avatar,
   HStack,
-  Link,
   IconButton,
   Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
   useDisclosure,
   useColorModeValue,
   useColorMode,
   Stack,
-  Heading
+  Heading,
+  Text,
+  Container
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
-
-const Links = ["Dashboard", "Projects", "Team"];
-
-const NavLink = ({ children }: { children: ReactNode }) => (
-  <Link
-    px={2}
-    py={1}
-    rounded={"md"}
-    _hover={{
-      textDecoration: "none",
-      bg: useColorModeValue("gray.200", "gray.700")
-    }}
-    href={"#"}
-  >
-    {children}
-  </Link>
-);
+import NavLink from "./navlink";
+import { Links } from "@/constants/links";
 
 export default function Simple() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -44,44 +23,47 @@ export default function Simple() {
   return (
     <>
       <Box px={4}>
-        <Flex
-          minH={"10vh"}
-          alignItems={"center"}
-          justifyContent={"space-between"}
-          borderBottom={1}
-          borderStyle={"solid"}
-          borderColor={useColorModeValue("gray.200", "white.200")}
-        >
-          <IconButton
-            size={"md"}
-            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
-            aria-label={"Open Menu"}
-            display={{ md: "none" }}
-            onClick={isOpen ? onClose : onOpen}
-          />
-          <HStack spacing={8} alignItems={"center"}>
-            <Box>
-              {" "}
-              <Heading as="h3" size={"md"}>
-                Oscar Guerrero
-              </Heading>
-            </Box>
-            <HStack
-              as={"nav"}
-              spacing={4}
-              display={{ base: "none", md: "flex" }}
-            >
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
-              ))}
+        <Container minW={{ base: "none", md: "3xl", lg: "4xl" }}>
+          <Flex
+            minH={"10vh"}
+            alignItems={"center"}
+            justifyContent={"space-between"}
+          >
+            <IconButton
+              size={"md"}
+              icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+              aria-label={"Open Menu"}
+              display={{ md: "none" }}
+              onClick={isOpen ? onClose : onOpen}
+              bg={useColorModeValue("white.200", "black.200")}
+            />
+            <HStack spacing={8} alignItems={"center"}>
+              <Box>
+                {" "}
+                <Heading as="h3" size={"md"}>
+                  <Text as={"span"} color={"red.400"}>
+                    Oscar Guerrero
+                  </Text>
+                </Heading>
+              </Box>
             </HStack>
-          </HStack>
-          <Flex alignItems={"center"}>
-            <Stack direction={"row"} spacing={{ base: 1, md: 3, lg: 5 }}>
-              <Button onClick={toggleColorMode} background={colorMode}>
-                {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-              </Button>
-              <Menu>
+            <Flex alignItems={"center"}>
+              <HStack
+                as={"nav"}
+                spacing={4}
+                display={{ base: "none", md: "flex" }}
+              >
+                {Links.map(({ name, path }) => (
+                  <NavLink key={path} path={path}>
+                    {name}
+                  </NavLink>
+                ))}
+              </HStack>
+              <Stack direction={"row"} spacing={{ base: 1, md: 3, lg: 5 }}>
+                <Button onClick={toggleColorMode} background={colorMode}>
+                  {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+                </Button>
+                {/* <Menu>
                 <MenuButton
                   as={Button}
                   rounded={"full"}
@@ -102,20 +84,23 @@ export default function Simple() {
                   <MenuDivider />
                   <MenuItem>Link 3</MenuItem>
                 </MenuList>
-              </Menu>
-            </Stack>
+              </Menu> */}
+              </Stack>
+            </Flex>
           </Flex>
-        </Flex>
 
-        {isOpen ? (
-          <Box pb={4} display={{ md: "none" }}>
-            <Stack as={"nav"} spacing={4}>
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
-              ))}
-            </Stack>
-          </Box>
-        ) : null}
+          {isOpen ? (
+            <Box pb={4} display={{ md: "none" }}>
+              <Stack as={"nav"} spacing={4}>
+                {Links.map(({ name, path }) => (
+                  <NavLink key={path} path={path}>
+                    {name}
+                  </NavLink>
+                ))}
+              </Stack>
+            </Box>
+          ) : null}
+        </Container>
       </Box>
     </>
   );
