@@ -29,7 +29,7 @@ export default function gridListWith() {
     <>
       <Layout>
         <Box p={4}>
-          <PageIntro title={Intro.title} desc={Intro.desc} />
+          <PageIntro />
           <Container maxW={"5xl"} mt={12}>
             <Flex flexWrap="wrap" gridGap={6} justify="center">
               {aboutMeContext.length &&
