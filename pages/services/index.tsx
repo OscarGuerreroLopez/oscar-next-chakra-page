@@ -59,7 +59,7 @@ export default function SplitWithImage() {
               color={"white"}
               fontWeight={600}
               fontSize={"sm"}
-              bg={useColorModeValue("orange.500", "orange.600")}
+              bg={useColorModeValue("orange.500", "orange.700")}
               p={2}
               alignSelf={"flex-start"}
               rounded={"md"}
@@ -210,19 +210,19 @@ export default function SplitWithImage() {
         desc="Leverage my broad experience as a software engineer to gain insights and advice on architecture design, software development methodologies, and best practices. I provide technical consultation services to help you achieve your goals."
       />
       <Stats
-        mainTitle="advantages of cloud-based infrastructure"
+        mainTitle="how I normally work"
         stats={[
           {
-            title: "Scalability",
-            stat: "Quickly scale resources up/down to meet changing demand."
+            title: "Initial Assessment",
+            stat: "Identify areas where technical consultation is needed."
           },
           {
-            title: "Flexibility",
-            stat: "Easily adapt to changing needs and requirements."
+            title: "Customized Solutions",
+            stat: "Tailor technical solutions to client's specific needs."
           },
           {
-            title: "Cost-efficiency",
-            stat: " Pay only for what you need and optimize costs."
+            title: "Ongoing Support",
+            stat: "Provide ongoing technical support and consultation."
           }
         ]}
       />

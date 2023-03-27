@@ -41,9 +41,7 @@ export default function Simple() {
               <Box>
                 {" "}
                 <Heading as="h3" size={"md"}>
-                  <Text as={"span"} color={"red.400"}>
-                    Oscar Guerrero
-                  </Text>
+                  <Text as={"span"}>Oscar Guerrero</Text>
                 </Heading>
               </Box>
             </HStack>

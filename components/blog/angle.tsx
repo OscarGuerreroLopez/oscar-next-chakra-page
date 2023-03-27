@@ -2,7 +2,7 @@ import { Box, chakra, Container, Flex } from "@chakra-ui/react";
 
 const angle = () => {
   return (
-    <Container maxW={"5xl"}>
+    <Container maxW={"5xl"} mt="10">
       <Flex
         bg="#edf3f8"
         _dark={{

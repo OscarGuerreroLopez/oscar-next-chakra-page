@@ -38,7 +38,7 @@ const BlogTags: React.FC<IBlogTags> = (props) => {
 
 const BlogRight: React.FC<BlogProps> = ({ title, tags, blogTitle, desc }) => {
   return (
-    <Container maxW={"5xl"} p={{ base: "3", md: "22" }}>
+    <Container maxW={"5xl"} p={{ base: "3", md: "22" }} mt="10">
       <Heading as="h1">{title}</Heading>
       <Box
         marginTop={{ base: "1", sm: "3" }}
@@ -49,7 +49,7 @@ const BlogRight: React.FC<BlogProps> = ({ title, tags, blogTitle, desc }) => {
         <Box
           display="flex"
           flex="1"
-          marginRight="3"
+          marginRight={{ base: "0", md: "3" }}
           position="relative"
           alignItems="center"
         >

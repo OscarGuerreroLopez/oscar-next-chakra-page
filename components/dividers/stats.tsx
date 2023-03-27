@@ -41,7 +41,7 @@ function StatsCard(props: StatsCardProps) {
 
 const BasicStatistics: React.FC<StatsProps> = ({ mainTitle, stats }) => {
   return (
-    <Box maxW="5xl" mx={"auto"} px={{ base: 2, sm: 12, md: 17 }} mb="15px">
+    <Box maxW="5xl" mx={"auto"} px={{ base: 2, sm: 12, md: 17 }} mb="10">
       <chakra.h1
         textAlign={"center"}
         fontSize={"4xl"}
