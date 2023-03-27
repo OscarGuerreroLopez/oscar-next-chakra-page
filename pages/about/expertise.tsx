@@ -19,14 +19,15 @@ export default function StatsGridWithImage() {
 
 const stats = [
   {
-    title: "Front End",
+    title: "Development",
     content: (
       <>
-        In addition to my BackEnd expertise, I am also proficient in{" "}
-        <StatsText>front-end development using React</StatsText>. I have worked
-        on several projects that involve developing user interfaces, and I
-        understand the importance of creating a seamless user experience that is
-        both intuitive and visually appealing.
+        I specialize in <StatsText>designing and developing</StatsText> scalable
+        software solutions, focusing on microservices architectures using
+        node.js and TypeScript. With 15 years of experience, I work with
+        cloud-based technologies, including AWS, and leverage the latest tools
+        and best practices to ensure high-quality and efficient software
+        development.
       </>
     )
   },
@@ -34,27 +35,36 @@ const stats = [
     title: "Cloud",
     content: (
       <>
-        To ensure the scalability, reliability, and security of the applications
-        I build, I always deploy them on AWS (Amazon Web Services). I have
-        experience with various AWS services, including EC2, S3, RDS, and
-        Lambda, and I am proficient in setting up and managing the
-        <StatsText> infrastructure required</StatsText> to support the
-        applications I build.
+        I have extensive experience designing and implementing{" "}
+        <StatsText>cloud-based infrastructures</StatsText>, with a
+        specialization in scalable microservices architectures on AWS. My
+        approach focuses on optimizing performance, ensuring security,{" "}
+        <StatsText>reducing costs</StatsText>, and providing flexibility for
+        businesses.
       </>
     )
   },
   {
-    title: "Overall",
+    title: "Technologies",
     content: (
       <>
-        My expertise in BackEnd development using microservices, Node.js, and
-        TypeScript, combined with my front-end development skills using React,
-        and my proficiency in deploying on AWS, allows me to develop
-        <StatsText>
-          {" "}
-          high-quality, robust, and scalable software systems
-        </StatsText>{" "}
-        that meet the needs of my clients.
+        As an expert in <StatsText>emerging technologies</StatsText>, I stay
+        up-to-date on the latest advancements and tools to deliver cutting-edge
+        solutions. I specialize in leveraging emerging technologies to develop
+        innovative software solutions and provide consultation on their
+        potential applications to help businesses stay ahead of the curve.
+      </>
+    )
+  },
+  {
+    title: "Collaboration",
+    content: (
+      <>
+        With extensive experience in collaboration, I excel in team environments
+        and enjoy working with clients to deliver solutions that meet their
+        unique needs. I specialize in effective communication, project
+        management, and fostering a culture of collaboration to ensure
+        <StatsText> successful outcomes</StatsText> for all stakeholders.
       </>
     )
   }
