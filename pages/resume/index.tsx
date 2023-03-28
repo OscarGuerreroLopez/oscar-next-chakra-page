@@ -1,12 +1,23 @@
 import Layout from "@/components/layout";
 
-import { Container } from "@chakra-ui/react";
+import { Box, Container, VStack, Image, Heading } from "@chakra-ui/react";
 import CustomCard from "@/components/resume/card";
+import EducationCard from "@/components/resume/educationCard";
 
 const resume = () => {
   return (
     <Layout>
-      <Container maxW={"4xl"} mt="10">
+      <Container maxW={"4xl"} mt={{ base: 0, md: 8 }}>
+        <VStack mb={6}>
+          <Box>
+            <Image src="/cv.svg" p={4} maxBlockSize={"500px"}></Image>
+          </Box>
+          <Box>
+            <Heading as={"h2"} fontSize={{ base: 18, md: 30 }}>
+              Professional Experience:
+            </Heading>
+          </Box>
+        </VStack>
         <CustomCard
           mainHeader="Senior Software Engineer"
           subHeader="Freelancer, Madrid"
@@ -34,7 +45,9 @@ const resume = () => {
             "DataDog",
             "ELK stack",
             "React",
-            "Chakra UI"
+            "Chakra UI",
+            "Buddy",
+            "Next.js"
           ]}
         />
         <CustomCard
@@ -46,7 +59,7 @@ const resume = () => {
             "Node.js",
             "TypeScript",
             "Docker",
-            "ECS with fargate",
+            "ECS/fargate",
             "Redis",
             "AWS SQS",
             "RabbitMq",
@@ -64,6 +77,19 @@ const resume = () => {
           subHeader="Red Acre Ltd, Malta"
           body="June 2019 – July 2020"
           desc="Full Stack developing the new microservice backend for the company using Node.js with typescript. Alternating GraphQL and Rest endpoints. Also collaborating with the development of the frontend part with React(Redux, Mobx, rebass, theme-ui, Emotion, SWR). All of this in AWS (Lambda, S3, ECS...). Microservices using Docker and the ELK stack as a monitoring tool. mongoDb as the database."
+          stack={[
+            "node.js",
+            "express",
+            "serverless",
+            "ELK",
+            "React",
+            "Redux",
+            "SWR",
+            "Emotion",
+            "ECS/fargate",
+            "theme-ui",
+            "rebass"
+          ]}
         />
 
         <CustomCard
@@ -106,21 +132,57 @@ const resume = () => {
         />
 
         <CustomCard
-          mainHeader="Full-Stack engineer"
-          subHeader="Europcar, Madrid"
-          body="June 2016 – January 2018"
-          desc="
-          Developed and maintained applications using Angular2/4, Bootstrap, Node JS, and MySql. Also, I was required to develop scripts in Python and Bash."
-          stack={[
-            "REST APIs",
-            "GIT",
-            "Angular",
-            "node.js",
-            "Typescript",
-            "MySql",
-            "Python",
-            "Bash"
-          ]}
+          mainHeader="Manager/owner"
+          subHeader="Ciclos Barajas S.L, Madrid"
+          body="January 2010 – May 2016"
+          desc="Created and ran my own sports business."
+          stack={["Management"]}
+        />
+
+        <CustomCard
+          mainHeader="Programmer Analyst"
+          subHeader="Freelance, Madrid"
+          body="November 2005 – December 2009"
+          desc="Developed and maintained applications and databases for different clients working through the entire life cycle, from the problem definition all the way to deployment and maintenance. Used programming languages such as C++ and Java"
+          stack={["Java", "C++"]}
+        />
+        <CustomCard
+          mainHeader="Programmer Analyst"
+          subHeader="Drago Solutions, Madrid"
+          body="September 2001 – June 2005"
+          desc="Worked on IBM AS/400 systems with RPG IV and SQL, mainly at CEMEX.
+          Acquired as well as developed test data, revising program(s) resulting in improved performance."
+          stack={["RPG IV", "SQL", "AS/400"]}
+        />
+        <CustomCard
+          mainHeader="Programmer Analyst"
+          subHeader="Stryker Corporation, Michigan, EEUU"
+          body="May 2000 – August 2001"
+          desc="Developed programs in RPG III, RPG IV, ILE and CL. Monitored the execution of strategies and kept up to date with the new technology and researched the latest technology market trends."
+          stack={["RPG III", "RPG IV", "ILE", "AS/400"]}
+        />
+        <VStack mb={6}>
+          <Box>
+            <Image
+              src="/certificate.svg"
+              p={4}
+              objectFit="cover"
+              maxBlockSize={"500px"}
+            ></Image>
+          </Box>
+          <Box>
+            <Heading as={"h2"}>Education:</Heading>
+          </Box>
+        </VStack>
+        <EducationCard
+          mainHeader="Scrum Master certification"
+          subHeader="Scrum Manager number 32675"
+          body="November 2020"
+        />
+        <EducationCard
+          mainHeader="Computer and Information Systems"
+          subHeader="Kalamazoo Valley Community College, Michigan, USA"
+          body="January 1998 – August 2001"
         />
       </Container>
     </Layout>

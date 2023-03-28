@@ -20,6 +20,7 @@ interface BlogProps {
   tags: string[];
   blogTitle: string;
   desc: string;
+  pic: string;
 }
 
 const BlogTags: React.FC<IBlogTags> = (props) => {
@@ -36,7 +37,13 @@ const BlogTags: React.FC<IBlogTags> = (props) => {
   );
 };
 
-const BlogRight: React.FC<BlogProps> = ({ title, tags, blogTitle, desc }) => {
+const BlogRight: React.FC<BlogProps> = ({
+  title,
+  tags,
+  blogTitle,
+  desc,
+  pic
+}) => {
   return (
     <Container maxW={"5xl"} p={{ base: "3", md: "12" }} mt="10">
       <Heading as="h1">{title}</Heading>
@@ -85,9 +92,7 @@ const BlogRight: React.FC<BlogProps> = ({ title, tags, blogTitle, desc }) => {
             <Link textDecoration="none" _hover={{ textDecoration: "none" }}>
               <Image
                 borderRadius="lg"
-                src={
-                  "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80"
-                }
+                src={pic}
                 alt="some good alt text"
                 objectFit="contain"
               />

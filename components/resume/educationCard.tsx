@@ -5,30 +5,20 @@ import {
   Flex,
   Heading,
   CardBody,
-  Divider,
-  CardFooter,
-  HStack,
   Box,
-  Text,
-  VStack,
-  Tag,
-  SimpleGrid
+  Text
 } from "@chakra-ui/react";
 
 interface CustomCardProps {
   mainHeader: string;
   subHeader: string;
   body: string;
-  desc: string;
-  stack?: string[];
 }
 
 const CustomCard: React.FC<CustomCardProps> = ({
   mainHeader,
   subHeader,
-  body,
-  desc,
-  stack
+  body
 }) => {
   return (
     <Card
@@ -41,14 +31,14 @@ const CustomCard: React.FC<CustomCardProps> = ({
           <Box>
             <Heading
               as="h3"
-              size={"lg"}
+              size={"md"}
               color={useColorModeValue("purple.600", "purple.400")}
             >
               {mainHeader}
             </Heading>
             <Heading
               as="h5"
-              size={"md"}
+              size={"sm"}
               mt="2"
               color={useColorModeValue("purple.600", "purple.400")}
             >
@@ -61,30 +51,6 @@ const CustomCard: React.FC<CustomCardProps> = ({
       <CardBody color={"gray.500"}>
         <Text color={useColorModeValue("gray.600", "gray.300")}>{body}</Text>
       </CardBody>
-      <Divider borderColor={"grey.200"} />
-      <CardFooter alignSelf={"left"}>
-        <VStack align="left">
-          <Text color={useColorModeValue("gray.600", "gray.300")}>{desc}</Text>
-          <HStack spacing={2} marginTop={2}>
-            <SimpleGrid columns={{ base: 3, md: 6, lg: 6 }} spacing={4}>
-              {stack &&
-                stack.map((item) => {
-                  return (
-                    <Tag
-                      size={"md"}
-                      variant="solid"
-                      colorScheme="purple"
-                      fontSize={{ base: "14px", md: "14px", lg: "18px" }}
-                      justifyContent="center"
-                    >
-                      {item}
-                    </Tag>
-                  );
-                })}
-            </SimpleGrid>
-          </HStack>
-        </VStack>
-      </CardFooter>
     </Card>
   );
 };
