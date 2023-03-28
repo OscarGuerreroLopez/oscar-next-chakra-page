@@ -5,8 +5,7 @@ import LittleCard from "@/components/about/littleCard";
 import {
   AboutMeLittleCardContext,
   LittleCardContextType,
-  LittleCardContent,
-  Intro
+  LittleCardContent
 } from "@/data/aboutMe";
 import PageIntro from "@/components/about/pageIntro";
 import Layout from "@/components/layout";

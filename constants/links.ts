@@ -4,5 +4,6 @@ export const Links = [
     name: "Repos",
     path: "https://github.com/OscarGuerreroLopez?tab=repositories"
   },
-  { name: "Posts", path: "/posts" }
+  { name: "Services", path: "/services" },
+  { name: "Resume", path: "/resume" }
 ];

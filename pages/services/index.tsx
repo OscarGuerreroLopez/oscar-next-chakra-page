@@ -51,7 +51,7 @@ const Feature = ({ text, icon, iconBg }: FeatureProps) => {
 export default function SplitWithImage() {
   return (
     <Layout>
-      <Container maxW={"5xl"} py={12}>
+      <Container maxW={"5xl"} py={{ base: 2, md: 16 }}>
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
           <Stack spacing={4}>
             <Text

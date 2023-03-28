@@ -12,7 +12,7 @@ import {
 
 const PageIntro: React.FC = () => {
   return (
-    <Center py={6}>
+    <Center py={{ base: 0, md: 6 }}>
       <Box
         maxW={"690px"}
         w={"full"}
