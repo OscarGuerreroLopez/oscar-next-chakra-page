@@ -32,7 +32,7 @@ export default function SmallWithNavigation() {
             </NavLink>
           ))}
         </Stack>
-        <Text>© 2022 Chakra Templates. All rights reserved</Text>
+        <Text>© 2023 Oscar Guerrero. All rights reserved</Text>
       </Container>
     </Box>
   );

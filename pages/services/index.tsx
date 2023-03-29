@@ -51,7 +51,7 @@ const Feature = ({ text, icon, iconBg }: FeatureProps) => {
 export default function SplitWithImage() {
   return (
     <Layout>
-      <Container maxW={"5xl"} py={12}>
+      <Container maxW={"5xl"} py={{ base: 2, md: 16 }}>
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
           <Stack spacing={4}>
             <Text
@@ -147,6 +147,7 @@ export default function SplitWithImage() {
         tags={["Microservices", "Scalable"]}
         blogTitle="Expert Services for Scalable Microservices Infrastructure"
         desc="Design and implement a scalable microservices architecture that meets your business needs. I offer end-to-end services to optimize your system's performance, reliability, and scalability."
+        pic="/arch_design.webp"
       />
 
       <Stats
@@ -171,6 +172,7 @@ export default function SplitWithImage() {
         tags={["Cloud", "Infrastructure"]}
         blogTitle="Building Cloud-Based Solutions for Your Business Needs"
         desc="Leverage my experience in building cloud-based solutions to achieve scalability, reliability, and cost-efficiency for your business. I offer end-to-end services from migration to deployment on AWS or other cloud platforms."
+        pic="/cloud_infra.jpeg"
       />
       <Stats
         mainTitle="advantages of cloud-based infrastructure"
@@ -194,6 +196,7 @@ export default function SplitWithImage() {
         tags={["Full-Stack", "Development"]}
         blogTitle="Full-Stack Development Solutions for Your Digital Strategy"
         desc="I offer full-stack development services to build robust, scalable, and user-friendly applications that meet your business needs. From front-end design to back-end development, I ensure seamless integration and optimal performance."
+        pic="/full-stack.avif"
       />
 
       <BlogLeft
@@ -201,6 +204,7 @@ export default function SplitWithImage() {
         tags={["Performance", "Optimization"]}
         blogTitle="Performance Optimization for Maximum Efficiency"
         desc="Optimize your system's performance, reduce latency, and improve response times with my performance optimization services. I leverage my expertise in microservices architecture and cloud infrastructure to deliver efficient and effective solutions."
+        pic="/performance.png"
       />
       <Angle />
       <BlogRight
@@ -208,6 +212,7 @@ export default function SplitWithImage() {
         tags={["Consultation"]}
         blogTitle="Consulting Services for Your Technical Needs"
         desc="Leverage my broad experience as a software engineer to gain insights and advice on architecture design, software development methodologies, and best practices. I provide technical consultation services to help you achieve your goals."
+        pic="/tech_consultation.jpeg"
       />
       <Stats
         mainTitle="how I normally work"

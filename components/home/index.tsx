@@ -11,13 +11,11 @@ export default function SplitScreen() {
       <Methods />
       <Second />
       <BlogRight
-        title="This is the main title"
-        tags={["Engineering", "Petardo"]}
-        blogTitle="Anothe title here"
-        desc="Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text
-          ever since the 1500s, when an unknown printer took a galley of type
-          and scrambled it to make a type specimen book."
+        title="Build scalable systems"
+        tags={["Scalability", "Resilience"]}
+        blogTitle="The cloud approach"
+        desc="Cloud-based systems offer scalable and flexible infrastructure, reduced costs, improved security, and accessibility from anywhere. They allow businesses to quickly adapt to changing needs and provide a competitive edge. I am here to help you achieve your goals"
+        pic="/cloud.jpeg"
       />
     </>
   );

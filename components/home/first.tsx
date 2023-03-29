@@ -12,8 +12,11 @@ import Link from "next/link";
 
 const firstHome = () => {
   return (
-    <Container maxW={{ base: "none", md: "4xl", lg: "5xl" }}>
-      <Stack minH={"90vh"} direction={{ base: "column", md: "row" }}>
+    <Container
+      maxW={{ base: "none", md: "4xl", lg: "5xl" }}
+      mt={{ base: 0, md: 6 }}
+    >
+      <Stack minH={"80vh"} direction={{ base: "column", md: "row" }}>
         <Flex p={8} flex={1} align={"center"} justify={"center"}>
           <Stack spacing={6} w={"full"} maxW={"lg"}>
             <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
@@ -64,11 +67,7 @@ const firstHome = () => {
           </Stack>
         </Flex>
         <Flex flex={1}>
-          <Image
-            alt={"Login Image"}
-            objectFit={"cover"}
-            src={"/software-engineering.jpeg"}
-          />
+          <Image alt={"Login Image"} objectFit={"cover"} src={"/code4.jpeg"} />
         </Flex>
       </Stack>
     </Container>

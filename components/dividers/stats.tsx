@@ -52,7 +52,7 @@ const BasicStatistics: React.FC<StatsProps> = ({ mainTitle, stats }) => {
       </chakra.h1>
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 8 }}>
         {stats.map((stat) => (
-          <StatsCard title={stat.title} stat={stat.stat} />
+          <StatsCard title={stat.title} stat={stat.stat} key={stat.stat} />
         ))}
       </SimpleGrid>
     </Box>
