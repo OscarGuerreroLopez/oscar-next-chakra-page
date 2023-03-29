@@ -1,23 +1,14 @@
 import Layout from "@/components/layout";
-
-import { Box, Container, VStack, Image, Heading } from "@chakra-ui/react";
+import { Container } from "@chakra-ui/react";
 import CustomCard from "@/components/resume/card";
 import EducationCard from "@/components/resume/educationCard";
+import CVSection from "@/components/resume/cvSection";
 
 const resume = () => {
   return (
     <Layout>
       <Container maxW={"4xl"} mt={{ base: 0, md: 8 }}>
-        <VStack mb={6}>
-          <Box>
-            <Image src="/cv.svg" p={4} maxBlockSize={"500px"}></Image>
-          </Box>
-          <Box>
-            <Heading as={"h2"} fontSize={{ base: 18, md: 30 }}>
-              Professional Experience:
-            </Heading>
-          </Box>
-        </VStack>
+        <CVSection title="Professional Experience" imgSrc="/cv.svg" />
         <CustomCard
           mainHeader="Senior Software Engineer"
           subHeader="Freelancer, Madrid"
@@ -50,6 +41,7 @@ const resume = () => {
             "Next.js"
           ]}
         />
+
         <CustomCard
           mainHeader="Software Engineer (Backend Lead)"
           subHeader="Grupo OneTec, Madrid"
@@ -146,6 +138,7 @@ const resume = () => {
           desc="Developed and maintained applications and databases for different clients working through the entire life cycle, from the problem definition all the way to deployment and maintenance. Used programming languages such as C++ and Java"
           stack={["Java", "C++"]}
         />
+
         <CustomCard
           mainHeader="Programmer Analyst"
           subHeader="Drago Solutions, Madrid"
@@ -154,6 +147,7 @@ const resume = () => {
           Acquired as well as developed test data, revising program(s) resulting in improved performance."
           stack={["RPG IV", "SQL", "AS/400"]}
         />
+
         <CustomCard
           mainHeader="Programmer Analyst"
           subHeader="Stryker Corporation, Michigan, EEUU"
@@ -161,24 +155,15 @@ const resume = () => {
           desc="Developed programs in RPG III, RPG IV, ILE and CL. Monitored the execution of strategies and kept up to date with the new technology and researched the latest technology market trends."
           stack={["RPG III", "RPG IV", "ILE", "AS/400"]}
         />
-        <VStack mb={6}>
-          <Box>
-            <Image
-              src="/certificate.svg"
-              p={4}
-              objectFit="cover"
-              maxBlockSize={"500px"}
-            ></Image>
-          </Box>
-          <Box>
-            <Heading as={"h2"}>Education:</Heading>
-          </Box>
-        </VStack>
+
+        <CVSection title="Education" imgSrc="/certificate.svg" />
+
         <EducationCard
           mainHeader="Scrum Master certification"
           subHeader="Scrum Manager number 32675"
           body="November 2020"
         />
+
         <EducationCard
           mainHeader="Computer and Information Systems"
           subHeader="Kalamazoo Valley Community College, Michigan, USA"

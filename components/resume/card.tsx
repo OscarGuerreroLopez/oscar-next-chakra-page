@@ -76,6 +76,7 @@ const CustomCard: React.FC<CustomCardProps> = ({
                       colorScheme="purple"
                       fontSize={{ base: "14px", md: "14px", lg: "18px" }}
                       justifyContent="center"
+                      key={item}
                     >
                       {item}
                     </Tag>
