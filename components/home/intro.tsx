@@ -32,14 +32,17 @@ const introHome = () => {
                   position: "absolute",
                   bottom: 1,
                   left: 0,
-                  bg: "red.400",
+                  bg: useColorModeValue("blue.500", "blue.400"),
                   zIndex: -1
                 }}
               >
                 Freelancer
               </Text>
               <br />{" "}
-              <Text color={"red.400"} as={"span"}>
+              <Text
+                color={useColorModeValue("blue.500", "blue.400")}
+                as={"span"}
+              >
                 Software Engineer
               </Text>{" "}
             </Heading>

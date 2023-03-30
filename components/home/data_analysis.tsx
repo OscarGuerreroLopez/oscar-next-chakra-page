@@ -46,14 +46,14 @@ export default function Analysis() {
                 position: "absolute",
                 bottom: 1,
                 left: 0,
-                bg: "red.400",
+                bg: useColorModeValue("blue.500", "blue.400"),
                 zIndex: -1
               }}
             >
               Data analysis
             </Text>
             <br />
-            <Text as={"span"} color={"red.400"}>
+            <Text as={"span"} color={useColorModeValue("blue.500", "blue.400")}>
               Don't know what to do with your data?
             </Text>
           </Heading>
@@ -82,7 +82,7 @@ export default function Analysis() {
             top={"-20%"}
             left={0}
             zIndex={-1}
-            color={useColorModeValue("red.200", "red.400")}
+            color={useColorModeValue("blue.500", "blue.400")}
           />
           <Box
             position={"relative"}

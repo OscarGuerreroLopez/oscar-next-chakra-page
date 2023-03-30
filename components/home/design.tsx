@@ -25,7 +25,7 @@ export default function CallToActionWithIllustration() {
           lineHeight={"110%"}
         >
           Software design{" "}
-          <Text as={"span"} color={"orange.400"}>
+          <Text as={"span"} color={useColorModeValue("blue.500", "blue.400")}>
             made easy
           </Text>
         </Heading>
