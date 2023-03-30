@@ -13,7 +13,7 @@ import {
 } from "@chakra-ui/react";
 import Link from "next/link";
 
-export default function CallToActionWithVideo() {
+export default function Analysis() {
   return (
     <Container
       maxW={{
@@ -57,7 +57,7 @@ export default function CallToActionWithVideo() {
               Don't know what to do with your data?
             </Text>
           </Heading>
-          <Text color={"gray.500"}>
+          <Text color={useColorModeValue("gray.700", "gray.400")}>
             Data analysis is defined as a process of cleaning, transforming, and
             modeling data to discover useful information for business
             decision-making. I can help you with that.

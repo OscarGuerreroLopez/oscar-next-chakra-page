@@ -6,11 +6,12 @@ import {
   Button,
   Text,
   Image,
-  Container
+  Container,
+  useColorModeValue
 } from "@chakra-ui/react";
 import Link from "next/link";
 
-const firstHome = () => {
+const introHome = () => {
   return (
     <Container
       maxW={{ base: "none", md: "4xl", lg: "5xl" }}
@@ -41,7 +42,10 @@ const firstHome = () => {
                 Software Engineer
               </Text>{" "}
             </Heading>
-            <Text fontSize={{ base: "md", lg: "lg" }} color={"gray.500"}>
+            <Text
+              fontSize={{ base: "md", lg: "lg" }}
+              color={useColorModeValue("gray.700", "gray.400")}
+            >
               With over 15 years of experience as a software engineer, I
               specialize in creating microservices environments using
               node/typescript. I believe software development is both an art and
@@ -67,11 +71,16 @@ const firstHome = () => {
           </Stack>
         </Flex>
         <Flex flex={1}>
-          <Image alt={"Login Image"} objectFit={"cover"} src={"/code4.jpeg"} />
+          <Image
+            alt={"Login Image"}
+            objectFit={"cover"}
+            src={"/code4.jpeg"}
+            rounded={"2xl"}
+          />
         </Flex>
       </Stack>
     </Container>
   );
 };
 
-export default firstHome;
+export default introHome;

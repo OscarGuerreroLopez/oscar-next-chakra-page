@@ -8,7 +8,6 @@ import {
   Text,
   useColorModeValue,
   Image,
-  Button,
   Icon
 } from "@chakra-ui/react";
 import { SiLinkedin } from "react-icons/si";
@@ -43,7 +42,9 @@ const PageIntro: React.FC = () => {
             <Heading fontSize={"2xl"} fontWeight={500} fontFamily={"body"}>
               Oscar Guerrero
             </Heading>
-            <Text color={"gray.500"}>Full-Stack Developer</Text>
+            <Text color={useColorModeValue("gray.600", "gray.300")}>
+              Full-Stack Developer
+            </Text>
           </Stack>
           <Stack direction={"row"} justify={"center"} spacing={10}>
             <Link

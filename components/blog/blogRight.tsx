@@ -76,7 +76,7 @@ const BlogRight: React.FC<BlogProps> = ({
         <Text
           as="p"
           marginTop="2"
-          color={useColorModeValue("gray.700", "gray.200")}
+          color={useColorModeValue("gray.700", "gray.400")}
           fontSize="lg"
         >
           {desc}

@@ -6,7 +6,8 @@ import {
   Text,
   Icon,
   IconProps,
-  Button
+  Button,
+  useColorModeValue
 } from "@chakra-ui/react";
 import Link from "next/link";
 
@@ -29,7 +30,7 @@ export default function CallToActionWithIllustration() {
             made easy
           </Text>
         </Heading>
-        <Text color={"gray.500"} maxW={"3xl"}>
+        <Text color={useColorModeValue("gray.700", "gray.400")} maxW={"3xl"}>
           I offer consultancy services for any type of companies that are
           looking to implement or improve their technology stack. Contact me if
           you need help.
