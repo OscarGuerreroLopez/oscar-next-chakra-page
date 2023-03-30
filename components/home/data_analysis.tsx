@@ -5,13 +5,13 @@ import {
   Box,
   Heading,
   Text,
-  Button,
   Image,
   Icon,
   IconProps,
   useColorModeValue
 } from "@chakra-ui/react";
-import Link from "next/link";
+
+import LinkButton from "./linkButton";
 
 export default function Analysis() {
   return (
@@ -66,17 +66,7 @@ export default function Analysis() {
             spacing={{ base: 4, sm: 6 }}
             direction={{ base: "column", sm: "row" }}
           >
-            <Button
-              rounded={"full"}
-              size={"lg"}
-              color={"white"}
-              px={6}
-              colorScheme={"red"}
-              bg={"red.400"}
-              _hover={{ bg: "red.500" }}
-            >
-              <Link href={"/services"}>Services</Link>
-            </Button>
+            <LinkButton name="Services" link="/services" />
           </Stack>
         </Stack>
         <Flex

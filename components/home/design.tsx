@@ -6,10 +6,9 @@ import {
   Text,
   Icon,
   IconProps,
-  Button,
   useColorModeValue
 } from "@chakra-ui/react";
-import Link from "next/link";
+import LinkButton from "./linkButton";
 
 export default function CallToActionWithIllustration() {
   return (
@@ -42,17 +41,8 @@ export default function CallToActionWithIllustration() {
             mt={{ base: 12, sm: 16 }}
           />
         </Flex>
-        <Button
-          rounded={"full"}
-          size={"lg"}
-          px={6}
-          colorScheme={"red"}
-          color={"white"}
-          bg={"red.400"}
-          _hover={{ bg: "red.500" }}
-        >
-          <Link href={"/services"}>Services</Link>
-        </Button>
+
+        <LinkButton name="Services" link="/services" />
       </Stack>
     </Container>
   );

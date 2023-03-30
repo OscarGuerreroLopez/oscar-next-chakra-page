@@ -10,6 +10,7 @@ import {
   useColorModeValue
 } from "@chakra-ui/react";
 import Link from "next/link";
+import LinkButton from "./linkButton";
 
 const introHome = () => {
   return (
@@ -57,16 +58,7 @@ const introHome = () => {
               visiting!
             </Text>
             <Stack direction={{ base: "column", md: "row" }} spacing={4}>
-              <Button
-                rounded={"full"}
-                bg={"red.400"}
-                color={"white"}
-                _hover={{
-                  bg: "red.500"
-                }}
-              >
-                <Link href={"/about"}>More about me</Link>
-              </Button>
+              <LinkButton name="More about me" link="/about" />
             </Stack>
           </Stack>
         </Flex>
