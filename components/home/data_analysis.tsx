@@ -69,7 +69,7 @@ export default function Analysis() {
             <Button
               rounded={"full"}
               size={"lg"}
-              fontWeight={"normal"}
+              color={"white"}
               px={6}
               colorScheme={"red"}
               bg={"red.400"}

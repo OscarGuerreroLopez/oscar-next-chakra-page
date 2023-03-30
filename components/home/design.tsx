@@ -45,9 +45,9 @@ export default function CallToActionWithIllustration() {
         <Button
           rounded={"full"}
           size={"lg"}
-          fontWeight={"normal"}
           px={6}
           colorScheme={"red"}
+          color={"white"}
           bg={"red.400"}
           _hover={{ bg: "red.500" }}
         >
