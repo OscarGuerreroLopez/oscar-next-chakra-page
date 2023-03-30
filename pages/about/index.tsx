@@ -9,6 +9,7 @@ import {
 } from "@/data/aboutMe";
 import PageIntro from "@/components/about/pageIntro";
 import Layout from "@/components/layout";
+import Contact from "@/components/about/contact";
 
 export default function gridListWith() {
   const [aboutMeContext, setAboutMeContext] = useState<LittleCardContent[]>([]);
@@ -41,6 +42,10 @@ export default function gridListWith() {
                     key={item.title}
                   />
                 ))}
+            </Flex>
+            <Flex flexWrap="wrap" gridGap={6} justify="center">
+              {" "}
+              <Contact />
             </Flex>
           </Container>
         </Box>

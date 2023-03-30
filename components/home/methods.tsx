@@ -14,13 +14,19 @@ import { features } from "@/data/systems";
 
 export default function GridListWithHeading() {
   return (
-    <Box p={4}>
-      <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
-        <Heading fontSize={"3xl"}>Implementing the right approach</Heading>
+    <Box p={4} mb={{ base: "8", md: "32" }}>
+      <Stack spacing={4} as={Container} maxW={"4xl"}>
+        <Heading fontSize={"3xl"} textAlign={"center"}>
+          Hiring a freelancer to help you
+        </Heading>
         <Text color={"gray.600"} fontSize={"xl"}>
-          The Systems Development Life Cycle (SDLC) is a methodology used in
-          software engineering to describe the stages involved in the
-          development of information systems. In general, the approach I follow:
+          In today's fast-paced digital world, having a reliable and efficient
+          IT system is crucial for any business. Whether you're a startup or a
+          well-established company, you need to have the right technology in
+          place to stay ahead of the competition. One way to achieve this is by
+          hiring an IT freelancer. Not only can they provide you with the
+          expertise you need, but they can also offer a number of other
+          benefits.
         </Text>
       </Stack>
 

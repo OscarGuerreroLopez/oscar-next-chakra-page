@@ -5,8 +5,10 @@ import {
   Stack,
   Text,
   Icon,
-  IconProps
+  IconProps,
+  Button
 } from "@chakra-ui/react";
+import Link from "next/link";
 
 export default function CallToActionWithIllustration() {
   return (
@@ -39,6 +41,17 @@ export default function CallToActionWithIllustration() {
             mt={{ base: 12, sm: 16 }}
           />
         </Flex>
+        <Button
+          rounded={"full"}
+          size={"lg"}
+          fontWeight={"normal"}
+          px={6}
+          colorScheme={"red"}
+          bg={"red.400"}
+          _hover={{ bg: "red.500" }}
+        >
+          <Link href={"/services"}>Services</Link>
+        </Button>
       </Stack>
     </Container>
   );

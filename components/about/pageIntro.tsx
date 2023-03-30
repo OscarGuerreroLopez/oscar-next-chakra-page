@@ -7,8 +7,14 @@ import {
   Stack,
   Text,
   useColorModeValue,
-  Image
+  Image,
+  Button,
+  Icon
 } from "@chakra-ui/react";
+import { SiLinkedin } from "react-icons/si";
+import { AiOutlineMail } from "react-icons/ai";
+import { BsWhatsapp } from "react-icons/bs";
+import Link from "next/link";
 
 const PageIntro: React.FC = () => {
   return (
@@ -33,11 +39,36 @@ const PageIntro: React.FC = () => {
         </Flex>
 
         <Box p={6}>
-          <Stack spacing={0} align={"center"} mb={5}>
+          <Stack spacing={2} align={"center"} mb={5}>
             <Heading fontSize={"2xl"} fontWeight={500} fontFamily={"body"}>
               Oscar Guerrero
             </Heading>
             <Text color={"gray.500"}>Full-Stack Developer</Text>
+          </Stack>
+          <Stack direction={"row"} justify={"center"} spacing={10}>
+            <Link
+              href={"https://www.linkedin.com/in/oscar-guerrero-a59289153/"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <Stack spacing={0} align={"center"}>
+                <Icon as={SiLinkedin} w={5} h={5} />
+              </Stack>
+            </Link>
+            <Link href={"mailto:oscar.computer.guy@gmail.com"}>
+              <Stack spacing={0} align={"center"}>
+                <Icon as={AiOutlineMail} w={5} h={5} />
+              </Stack>
+            </Link>
+            <Link
+              href={
+                "https://api.whatsapp.com/send?phone=34622450008&text=%20Hello"
+              }
+            >
+              <Stack spacing={0} align={"center"}>
+                <Icon as={BsWhatsapp} w={5} h={5} />
+              </Stack>
+            </Link>
           </Stack>
         </Box>
       </Box>

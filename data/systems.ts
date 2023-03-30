@@ -1,32 +1,22 @@
 export const features = [
   {
     id: 1,
-    title: "Planning",
-    text: " In this initial phase, the project's objectives are identified, and a plan is created to guide the development process. This includes identifying the scope of the project, defining the requirements, and determining the project's feasibility."
+    title: "Cost savings",
+    text: "By hiring an IT freelancer, you can save money on employee benefits, training, and other costs associated with hiring a full-time employee. You only pay for the work that needs to be done, and there are no long-term commitments."
   },
   {
     id: 2,
-    title: "Analysis",
-    text: "In this phase, the requirements are analyzed in detail to understand the user's needs and expectations. This includes gathering and documenting user requirements, analyzing existing systems, and defining the system's functional and non-functional requirements."
+    title: "Flexibility",
+    text: "IT freelancers can work on a project basis, which means you can hire them for a specific task or for a set period of time. This gives you the flexibility to adjust your IT needs as your business grows and changes."
   },
   {
     id: 3,
-    title: "Design",
-    text: "In this phase, the system's architecture is designed, and the specifications for the system components are created. The design includes the physical layout of the system, software architecture, network architecture, and database design."
+    title: "Specialized expertise",
+    text: "IT freelancers often have specific skills and expertise that are difficult to find in-house. They can provide you with the knowledge and experience you need to tackle complex IT projects and challenges."
   },
   {
     id: 4,
-    title: "Implementation",
-    text: "In this phase, the system is built and tested. This includes programming, testing, and debugging the system. The system is then installed and integrated with other systems and applications."
-  },
-  {
-    id: 5,
-    title: "Maintenance/refinement ",
-    text: "In this phase, the system is maintained, updated, and modified as needed. This includes ongoing support, user training, and troubleshooting."
-  },
-  {
-    id: 6,
-    title: "Retirement",
-    text: "In this final phase, the system is retired from use. This includes archiving data, removing the system from operation, and disposing of hardware and software components."
+    title: "Faster turnaround",
+    text: "IT freelancers are often more agile than full-time employees, which means they can respond quickly to your IT needs. They can work on short notice and complete projects more efficiently, which can help you stay on schedule and meet your deadlines."
   }
 ];
