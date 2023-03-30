@@ -17,7 +17,7 @@ export default function CallToActionWithIllustration() {
         textAlign={"center"}
         align={"center"}
         spacing={{ base: 8, md: 10 }}
-        py={{ base: 20, md: 28 }}
+        py={{ base: 10, md: 24 }}
       >
         <Heading
           fontWeight={600}
@@ -38,7 +38,7 @@ export default function CallToActionWithIllustration() {
         <Flex w={"full"}>
           <Illustration
             height={{ sm: "24rem", lg: "28rem" }}
-            mt={{ base: 12, sm: 16 }}
+            mt={{ base: 5, sm: 10 }}
           />
         </Flex>
 

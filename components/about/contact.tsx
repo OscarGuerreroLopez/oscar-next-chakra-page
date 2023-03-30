@@ -81,7 +81,9 @@ const contact = () => {
             </Link>
             <Link href={"mailto:oscar.computer.guy@gmail.com"}>
               <Feature
-                icon={<Icon as={AiOutlineMail} color={"red.500"} w={5} h={5} />}
+                icon={
+                  <Icon as={AiOutlineMail} color={"purple.500"} w={5} h={5} />
+                }
                 text={"oscar.computer.guy@gmail.com"}
               />
             </Link>

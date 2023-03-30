@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import Link from "next/link";
 import { Box, useColorModeValue } from "@chakra-ui/react";
 
@@ -6,7 +5,7 @@ const NavLink = ({
   children,
   path
 }: {
-  children: ReactNode;
+  children: string;
   path: string;
 }): JSX.Element => {
   return (

@@ -1,4 +1,4 @@
-import First from "./intro";
+import Intro from "./intro";
 import DataAnalysis from "./data_analysis";
 import Design from "./design";
 import Freelancer from "./freelancer";
@@ -6,7 +6,7 @@ import BlogRight from "@/components/blog/blogRight";
 export default function SplitScreen() {
   return (
     <>
-      <First />
+      <Intro />
       <Design />
       <Freelancer />
       <DataAnalysis />

@@ -22,7 +22,7 @@ export default function Analysis() {
         md: "5xl",
         lg: "6xl"
       }}
-      mb="40px"
+      mb={{ base: 1, md: 4 }}
     >
       <Stack
         align={"center"}
@@ -82,7 +82,7 @@ export default function Analysis() {
             top={"-20%"}
             left={0}
             zIndex={-1}
-            color={useColorModeValue("blue.500", "blue.400")}
+            color={useColorModeValue("blue.500", "blue.600")}
           />
           <Box
             position={"relative"}

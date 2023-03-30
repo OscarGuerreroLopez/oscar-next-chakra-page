@@ -15,7 +15,7 @@ import { features } from "@/data/systems";
 
 export default function GridListWithHeading() {
   return (
-    <Box p={4} mb={{ base: "8", md: "32" }}>
+    <Box mb={{ base: "8", md: "32" }}>
       <Stack spacing={4} as={Container} maxW={"4xl"}>
         <Heading fontSize={"3xl"} textAlign={"center"}>
           Hiring a freelancer to help you

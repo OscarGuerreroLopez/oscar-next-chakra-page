@@ -1,4 +1,10 @@
-import { Box, chakra, Container, Flex } from "@chakra-ui/react";
+import {
+  Box,
+  chakra,
+  Container,
+  Flex,
+  useColorModeValue
+} from "@chakra-ui/react";
 import Link from "next/link";
 
 const angle = () => {
@@ -7,10 +13,10 @@ const angle = () => {
       <Flex
         bg="#edf3f8"
         _dark={{
-          bg: "orange.600"
+          bg: "purple.600"
         }}
         _light={{
-          bg: "orange.400"
+          bg: "purple.400"
         }}
         p={50}
         w="full"
@@ -52,7 +58,10 @@ const angle = () => {
               }}
               mb={6}
             >
-              <chakra.span display="block" color={"orange.400"}>
+              <chakra.span
+                display="block"
+                color={useColorModeValue("blue.500", "blue.400")}
+              >
                 Ready to make the change?
               </chakra.span>
               <Link href={"/about"}>
