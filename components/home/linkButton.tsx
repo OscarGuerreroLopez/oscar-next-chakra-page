@@ -1,4 +1,4 @@
-import { Button } from "@chakra-ui/react";
+import { Button, useColorModeValue } from "@chakra-ui/react";
 import Link from "next/link";
 
 interface ButtonProps {
@@ -14,8 +14,8 @@ const linkButton: React.FC<ButtonProps> = ({ name, link }) => {
       px={6}
       colorScheme={"red"}
       color={"white"}
-      bg={"red.400"}
-      _hover={{ bg: "red.500" }}
+      bg={useColorModeValue("blue.500", "blue.400")}
+      _hover={{ bg: "blue.700" }}
     >
       <Link href={link}>{name}</Link>
     </Button>

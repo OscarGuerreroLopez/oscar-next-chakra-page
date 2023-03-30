@@ -3,7 +3,6 @@ import {
   Flex,
   Heading,
   useBreakpointValue,
-  Button,
   Text,
   Image,
   Container,
@@ -19,7 +18,12 @@ const introHome = () => {
       mt={{ base: 0, md: 6 }}
     >
       <Stack minH={"80vh"} direction={{ base: "column", md: "row" }}>
-        <Flex p={8} flex={1} align={"center"} justify={"center"}>
+        <Flex
+          p={{ base: 0, md: 8 }}
+          flex={1}
+          align={"center"}
+          justify={"center"}
+        >
           <Stack spacing={6} w={"full"} maxW={"lg"}>
             <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
               <Text
@@ -32,14 +36,17 @@ const introHome = () => {
                   position: "absolute",
                   bottom: 1,
                   left: 0,
-                  bg: "red.400",
+                  bg: useColorModeValue("blue.500", "blue.400"),
                   zIndex: -1
                 }}
               >
                 Freelancer
               </Text>
               <br />{" "}
-              <Text color={"red.400"} as={"span"}>
+              <Text
+                color={useColorModeValue("blue.500", "blue.400")}
+                as={"span"}
+              >
                 Software Engineer
               </Text>{" "}
             </Heading>
@@ -68,6 +75,7 @@ const introHome = () => {
             objectFit={"cover"}
             src={"/code4.jpeg"}
             rounded={"2xl"}
+            mt={{ base: 4, md: "none" }}
           />
         </Flex>
       </Stack>

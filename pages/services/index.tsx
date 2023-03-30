@@ -8,7 +8,8 @@ import {
   Stack,
   StackDivider,
   Icon,
-  useColorModeValue
+  useColorModeValue,
+  useMediaQuery
 } from "@chakra-ui/react";
 import {
   IoAnalyticsSharp,
@@ -49,6 +50,8 @@ const Feature = ({ text, icon, iconBg }: FeatureProps) => {
 };
 
 export default function SplitWithImage() {
+  const [isLargerThan1280] = useMediaQuery("(min-width: 768px)");
+
   return (
     <Layout>
       <Container maxW={"5xl"} py={{ base: 2, md: 16 }}>
@@ -59,7 +62,7 @@ export default function SplitWithImage() {
               color={"white"}
               fontWeight={600}
               fontSize={"sm"}
-              bg={useColorModeValue("orange.500", "orange.700")}
+              bg={useColorModeValue("blue.500", "blue.600")}
               p={2}
               alignSelf={"flex-start"}
               rounded={"md"}
@@ -170,15 +173,28 @@ export default function SplitWithImage() {
           }
         ]}
       />
-      <BlogLeft
-        title="Cloud-Based Infrastructure"
-        tags={["Cloud", "Infrastructure"]}
-        blogTitle="Building Cloud-Based Solutions for Your Business Needs"
-        desc="Leverage my experience in building cloud-based solutions to achieve scalability, reliability, and cost-efficiency for your business. I offer end-to-end services from migration to deployment on AWS or other cloud platforms."
-        pic="/cloud_infra.jpeg"
-      />
+      {isLargerThan1280 && (
+        <BlogLeft
+          title="Cloud-Based Infrastructure"
+          tags={["Cloud", "Infrastructure"]}
+          blogTitle="Building Cloud-Based Solutions for Your Business Needs"
+          desc="Leverage my experience in building cloud-based solutions to achieve scalability, reliability, and cost-efficiency for your business. I offer end-to-end services from migration to deployment on AWS or other cloud platforms."
+          pic="/cloud_infra.jpeg"
+        />
+      )}
+
+      {!isLargerThan1280 && (
+        <BlogRight
+          title="Cloud-Based Infrastructure"
+          tags={["Cloud", "Infrastructure"]}
+          blogTitle="Building Cloud-Based Solutions for Your Business Needs"
+          desc="Leverage my experience in building cloud-based solutions to achieve scalability, reliability, and cost-efficiency for your business. I offer end-to-end services from migration to deployment on AWS or other cloud platforms."
+          pic="/cloud_infra.jpeg"
+        />
+      )}
+
       <Stats
-        mainTitle="advantages of cloud-based infrastructure"
+        mainTitle="Advantages of cloud based infrastructure"
         stats={[
           {
             title: "Scalability",
@@ -202,13 +218,26 @@ export default function SplitWithImage() {
         pic="/full-stack.avif"
       />
 
-      <BlogLeft
-        title="Performance Optimization"
-        tags={["Performance", "Optimization"]}
-        blogTitle="Performance Optimization for Maximum Efficiency"
-        desc="Optimize your system's performance, reduce latency, and improve response times with my performance optimization services. I leverage my expertise in microservices architecture and cloud infrastructure to deliver efficient and effective solutions."
-        pic="/performance.png"
-      />
+      {isLargerThan1280 && (
+        <BlogLeft
+          title="Performance Optimization"
+          tags={["Performance", "Optimization"]}
+          blogTitle="Performance Optimization for Maximum Efficiency"
+          desc="Optimize your system's performance, reduce latency, and improve response times with my performance optimization services. I leverage my expertise in microservices architecture and cloud infrastructure to deliver efficient and effective solutions."
+          pic="/performance.png"
+        />
+      )}
+
+      {!isLargerThan1280 && (
+        <BlogRight
+          title="Performance Optimization"
+          tags={["Performance", "Optimization"]}
+          blogTitle="Performance Optimization for Maximum Efficiency"
+          desc="Optimize your system's performance, reduce latency, and improve response times with my performance optimization services. I leverage my expertise in microservices architecture and cloud infrastructure to deliver efficient and effective solutions."
+          pic="/performance.png"
+        />
+      )}
+
       <Angle />
       <BlogRight
         title="Technical Consultation"
