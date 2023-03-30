@@ -67,7 +67,10 @@ export default function SplitWithImage() {
               Services
             </Text>
             <Heading>Consulting Services for Your Technical Needs</Heading>
-            <Text color={"gray.500"} fontSize={"lg"}>
+            <Text
+              color={useColorModeValue("gray.700", "gray.400")}
+              fontSize={"lg"}
+            >
               I offer expert services in scalable microservices infrastructure,
               cloud-based solutions, full-stack development, and technical
               consultation to help businesses achieve their goals.

@@ -6,9 +6,9 @@ import {
   Text,
   Icon,
   IconProps,
-  Button
+  useColorModeValue
 } from "@chakra-ui/react";
-import Link from "next/link";
+import LinkButton from "./linkButton";
 
 export default function CallToActionWithIllustration() {
   return (
@@ -29,7 +29,7 @@ export default function CallToActionWithIllustration() {
             made easy
           </Text>
         </Heading>
-        <Text color={"gray.500"} maxW={"3xl"}>
+        <Text color={useColorModeValue("gray.700", "gray.400")} maxW={"3xl"}>
           I offer consultancy services for any type of companies that are
           looking to implement or improve their technology stack. Contact me if
           you need help.
@@ -41,17 +41,8 @@ export default function CallToActionWithIllustration() {
             mt={{ base: 12, sm: 16 }}
           />
         </Flex>
-        <Button
-          rounded={"full"}
-          size={"lg"}
-          fontWeight={"normal"}
-          px={6}
-          colorScheme={"red"}
-          bg={"red.400"}
-          _hover={{ bg: "red.500" }}
-        >
-          <Link href={"/services"}>Services</Link>
-        </Button>
+
+        <LinkButton name="Services" link="/services" />
       </Stack>
     </Container>
   );

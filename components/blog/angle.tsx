@@ -1,4 +1,5 @@
 import { Box, chakra, Container, Flex } from "@chakra-ui/react";
+import Link from "next/link";
 
 const angle = () => {
   return (
@@ -54,15 +55,17 @@ const angle = () => {
               <chakra.span display="block" color={"orange.400"}>
                 Ready to make the change?
               </chakra.span>
-              <chakra.span
-                display="block"
-                color="brand.600"
-                _dark={{
-                  color: "gray.500"
-                }}
-              >
-                Contact me today.
-              </chakra.span>
+              <Link href={"/about"}>
+                <chakra.span
+                  display="block"
+                  color="brand.600"
+                  _dark={{
+                    color: "gray.500"
+                  }}
+                >
+                  Contact me today.
+                </chakra.span>
+              </Link>
             </chakra.span>
           </Box>
         </Flex>

@@ -1,15 +1,15 @@
-import First from "./first";
-import Second from "./second";
-import Third from "./third";
-import Methods from "./methods";
+import First from "./intro";
+import DataAnalysis from "./data_analysis";
+import Design from "./design";
+import Freelancer from "./freelancer";
 import BlogRight from "@/components/blog/blogRight";
 export default function SplitScreen() {
   return (
     <>
       <First />
-      <Third />
-      <Methods />
-      <Second />
+      <Design />
+      <Freelancer />
+      <DataAnalysis />
       <BlogRight
         title="Build scalable systems"
         tags={["Scalability", "Resilience"]}

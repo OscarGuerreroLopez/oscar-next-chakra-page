@@ -7,7 +7,8 @@ import {
   Text,
   Stack,
   HStack,
-  VStack
+  VStack,
+  useColorModeValue
 } from "@chakra-ui/react";
 import { CheckIcon } from "@chakra-ui/icons";
 import { features } from "@/data/systems";
@@ -19,7 +20,7 @@ export default function GridListWithHeading() {
         <Heading fontSize={"3xl"} textAlign={"center"}>
           Hiring a freelancer to help you
         </Heading>
-        <Text color={"gray.600"} fontSize={"xl"}>
+        <Text color={useColorModeValue("gray.700", "gray.400")} fontSize={"xl"}>
           In today's fast-paced digital world, having a reliable and efficient
           IT system is crucial for any business. Whether you're a startup or a
           well-established company, you need to have the right technology in
@@ -39,7 +40,9 @@ export default function GridListWithHeading() {
               </Box>
               <VStack align={"start"}>
                 <Text fontWeight={600}>{feature.title}</Text>
-                <Text color={"gray.600"}>{feature.text}</Text>
+                <Text color={useColorModeValue("gray.700", "gray.400")}>
+                  {feature.text}
+                </Text>
               </VStack>
             </HStack>
           ))}
