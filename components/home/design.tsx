@@ -9,6 +9,7 @@ import {
   useColorModeValue
 } from "@chakra-ui/react";
 import LinkButton from "./linkButton";
+import Description from "@/components/custom/description";
 
 export default function CallToActionWithIllustration() {
   return (
@@ -29,11 +30,17 @@ export default function CallToActionWithIllustration() {
             made easy
           </Text>
         </Heading>
-        <Text color={useColorModeValue("gray.700", "gray.400")} maxW={"3xl"}>
+        {/* <Text color={useColorModeValue("gray.700", "gray.400")} maxW={"3xl"}>
           I offer consultancy services for any type of companies that are
           looking to implement or improve their technology stack. Contact me if
           you need help.
-        </Text>
+        </Text> */}
+        <Description
+          desc="I offer consultancy services for any type of companies that are
+          looking to implement or improve their technology stack. Contact me if
+          you need help."
+          props={{ maxW: "3xl" }}
+        />
 
         <Flex w={"full"}>
           <Illustration
