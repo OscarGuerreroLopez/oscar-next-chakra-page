@@ -2,7 +2,7 @@ import { useColorModeValue, Text, TextProps } from "@chakra-ui/react";
 
 interface DescriptionProps {
   desc: string;
-  props?: Omit<TextProps, "color">;
+  props?: Omit<TextProps, "color" | "fontSize">;
 }
 const description: React.FC<DescriptionProps> = ({ desc, props }) => {
   return (
