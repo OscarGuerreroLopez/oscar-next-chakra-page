@@ -8,6 +8,7 @@ import {
 } from "@chakra-ui/react";
 import BlogTags from "./blogTags";
 import MainBlock from "./mainBlock";
+import Description from "@/components/custom/description";
 
 interface BlogProps {
   title: string;
@@ -39,14 +40,7 @@ const BlogLeft: React.FC<BlogProps> = ({
             {blogTitle}
           </Link>
         </Heading>
-        <Text
-          as="p"
-          marginTop="2"
-          color={useColorModeValue("gray.700", "gray.200")}
-          fontSize="lg"
-        >
-          {desc}
-        </Text>
+        <Description desc={desc} props={{ as: "p", marginTop: "2" }} />
       </Box>
       <Box
         display="flex"
