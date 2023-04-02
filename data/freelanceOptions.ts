@@ -1,4 +1,4 @@
-export const features = [
+export const FreelanceOptions = [
   {
     id: 1,
     title: "Cost savings",

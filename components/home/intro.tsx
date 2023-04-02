@@ -8,8 +8,8 @@ import {
   Container,
   useColorModeValue
 } from "@chakra-ui/react";
-import Link from "next/link";
 import LinkButton from "./linkButton";
+import Description from "@/components/custom/description";
 
 const introHome = () => {
   return (
@@ -50,11 +50,9 @@ const introHome = () => {
                 Software Engineer
               </Text>{" "}
             </Heading>
-            <Text
-              fontSize={{ base: "md", lg: "lg" }}
-              color={useColorModeValue("gray.700", "gray.400")}
-            >
-              With over 15 years of experience as a software engineer, I
+
+            <Description
+              desc="With over 15 years of experience as a software engineer, I
               specialize in creating microservices environments using
               node/typescript. I believe software development is both an art and
               a science, requiring creativity, discipline, and collaboration. I
@@ -62,8 +60,8 @@ const introHome = () => {
               others. On this website, you'll find more about my background, my
               philosophy on software development, and my vision for the future.
               Explore my work and connect with me to learn more. Thank you for
-              visiting!
-            </Text>
+              visiting!"
+            />
             <Stack direction={{ base: "column", md: "row" }} spacing={4}>
               <LinkButton name="More about me" link="/about" />
             </Stack>

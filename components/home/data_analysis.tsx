@@ -10,7 +10,7 @@ import {
   IconProps,
   useColorModeValue
 } from "@chakra-ui/react";
-
+import Description from "@/components/custom/description";
 import LinkButton from "./linkButton";
 
 export default function Analysis() {
@@ -57,11 +57,12 @@ export default function Analysis() {
               Don't know what to do with your data?
             </Text>
           </Heading>
-          <Text color={useColorModeValue("gray.700", "gray.400")}>
-            Data analysis is defined as a process of cleaning, transforming, and
+
+          <Description
+            desc="Data analysis is defined as a process of cleaning, transforming, and
             modeling data to discover useful information for business
-            decision-making. I can help you with that.
-          </Text>
+            decision-making. I can help you with that."
+          />
           <Stack
             spacing={{ base: 4, sm: 6 }}
             direction={{ base: "column", sm: "row" }}

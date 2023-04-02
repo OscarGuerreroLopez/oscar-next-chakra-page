@@ -1,5 +1,4 @@
 import Topic from "@/components/about/topics";
-
 import StatsText from "@/components/about/statsText";
 
 const mainTitle = "Experience";

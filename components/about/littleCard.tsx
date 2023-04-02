@@ -4,10 +4,11 @@ import {
   useColorModeValue,
   Heading,
   Button,
-  Box,
-  Text
+  Box
+  // Text
 } from "@chakra-ui/react";
 import Link from "next/link";
+import Description from "@/components/custom/description";
 
 import { ReactElement } from "react";
 
@@ -42,13 +43,14 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
         </Flex>
         <Box mt={2}>
           <Heading size="md">{heading}</Heading>
-          <Text
+          {/* <Text
             mt={1}
             fontSize={"sm"}
             color={useColorModeValue("gray.700", "gray.400")}
           >
             {description}
-          </Text>
+          </Text> */}
+          <Description desc={description} props={{ mt: 1 }} />
         </Box>
         <Button variant={"link"} colorScheme={"blue"} size={"sm"}>
           <Link href={`/about/${href}`}>Learn more</Link>

@@ -59,7 +59,7 @@ const resume = () => {
             "Rest apis",
             "MySql",
             "MongoDb",
-            "Jest for testing",
+            "Jest ",
             "Angular 9"
           ]}
         />
