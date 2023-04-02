@@ -7,8 +7,7 @@ import {
   Text,
   Stack,
   HStack,
-  VStack,
-  useColorModeValue
+  VStack
 } from "@chakra-ui/react";
 import { CheckIcon } from "@chakra-ui/icons";
 import { FreelanceOptions } from "@/data/freelanceOptions";

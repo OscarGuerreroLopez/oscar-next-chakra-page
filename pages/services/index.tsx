@@ -247,7 +247,7 @@ export default function SplitWithImage() {
         pic="/tech_consultation.jpeg"
       />
       <Stats
-        mainTitle="how I normally work"
+        mainTitle="How I normally work"
         stats={[
           {
             title: "Initial Assessment",

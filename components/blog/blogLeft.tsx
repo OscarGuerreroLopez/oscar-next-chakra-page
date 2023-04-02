@@ -1,11 +1,4 @@
-import {
-  Box,
-  Heading,
-  Link,
-  useColorModeValue,
-  Image,
-  Text
-} from "@chakra-ui/react";
+import { Box, Heading, Link, useColorModeValue, Image } from "@chakra-ui/react";
 import BlogTags from "./blogTags";
 import MainBlock from "./mainBlock";
 import Description from "@/components/custom/description";
