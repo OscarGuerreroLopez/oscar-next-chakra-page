@@ -3,10 +3,12 @@ import DataAnalysis from "./data_analysis";
 import Design from "./design";
 import Freelancer from "./freelancer";
 import BlogRight from "@/components/blog/blogRight";
+import CustomHeader from "@/components/head";
 
 export default function SplitScreen() {
   return (
     <>
+      <CustomHeader />
       <Intro />
       <Design />
       <Freelancer />

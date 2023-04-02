@@ -1,6 +1,5 @@
 import { Box, Container, Flex, Icon } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
-
 import LittleCard from "@/components/about/littleCard";
 import {
   AboutMeLittleCardContext,
@@ -10,6 +9,7 @@ import {
 import PageIntro from "@/components/about/pageIntro";
 import Layout from "@/components/layout";
 import Contact from "@/components/about/contact";
+import CustomHeader from "@/components/head";
 
 export default function gridListWith() {
   const [aboutMeContext, setAboutMeContext] = useState<LittleCardContent[]>([]);
@@ -27,6 +27,7 @@ export default function gridListWith() {
 
   return (
     <>
+      <CustomHeader />
       <Layout>
         <Box p={4}>
           <PageIntro />
