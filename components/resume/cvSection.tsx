@@ -9,7 +9,12 @@ const cvSection: React.FC<SectionProps> = ({ title, imgSrc }) => {
   return (
     <VStack mb={6}>
       <Box>
-        <Image src={imgSrc} p={4} maxBlockSize={"500px"}></Image>
+        <Image
+          src={imgSrc}
+          p={4}
+          maxBlockSize={"500px"}
+          alt={`${title} sofware engineer`}
+        ></Image>
       </Box>
       <Box>
         <Heading as={"h2"} size={{ base: "md", md: "xl" }}>
