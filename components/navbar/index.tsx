@@ -58,7 +58,11 @@ export default function Simple() {
                 ))}
               </HStack>
               <Stack direction={"row"} spacing={{ base: 1, md: 3, lg: 5 }}>
-                <Button onClick={toggleColorMode} background={colorMode}>
+                <Button
+                  onClick={toggleColorMode}
+                  background={colorMode}
+                  aria-label="buy product"
+                >
                   {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
                 </Button>
               </Stack>
