@@ -1,4 +1,4 @@
-import { Box, Heading, VStack, Image } from "@chakra-ui/react";
+import { Box, Heading, VStack, Image, Center } from "@chakra-ui/react";
 
 interface SectionProps {
   title: string;
@@ -8,14 +8,17 @@ interface SectionProps {
 const cvSection: React.FC<SectionProps> = ({ title, imgSrc }) => {
   return (
     <VStack mb={6}>
-      <Box>
+      <Center alignContent={"center"}>
         <Image
           src={imgSrc}
           p={4}
-          maxBlockSize={"500px"}
-          alt={`${title} sofware engineer`}
-        ></Image>
-      </Box>
+          boxSize="auto"
+          maxW="75%"
+          maxH="75%"
+          objectFit="contain"
+          alt={`${title} software engineer`}
+        />
+      </Center>
       <Box>
         <Heading as={"h2"} size={{ base: "md", md: "xl" }}>
           {title}:
