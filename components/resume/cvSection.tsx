@@ -14,7 +14,6 @@ const cvSection: React.FC<SectionProps> = ({ title, imgSrc }) => {
           p={4}
           boxSize="auto"
           maxW="75%"
-          maxH="75%"
           objectFit="contain"
           alt={`${title} software engineer`}
         />
