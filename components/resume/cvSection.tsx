@@ -5,21 +5,18 @@ interface SectionProps {
   imgSrc: string;
 }
 
-const imageStyles = {
-  width: "75%",
-  height: "auto"
-};
-
 const cvSection: React.FC<SectionProps> = ({ title, imgSrc }) => {
   return (
     <VStack mb={6}>
-      <Center bg={"yellow"} alignContent={"center"}>
+      <Center>
         <Image
           src={imgSrc}
           p={4}
+          boxSize="auto"
+          maxW="75%"
+          maxH="75%"
+          objectFit="contain"
           alt={`${title} software engineer`}
-          style={imageStyles}
-          bg={"orange"}
         />
       </Center>
       <Box>
