@@ -3,12 +3,10 @@ import { Container } from "@chakra-ui/react";
 import CustomCard from "@/components/resume/card";
 import EducationCard from "@/components/resume/educationCard";
 import CVSection from "@/components/resume/cvSection";
-import CustomHeader from "@/components/head";
 
 const resume = () => {
   return (
     <>
-      <CustomHeader />
       <Layout>
         <Container maxW={"4xl"} mt={{ base: 0, md: 8 }}>
           <CVSection title="Professional Experience" imgSrc="/cv.svg" />

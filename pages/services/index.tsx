@@ -24,7 +24,6 @@ import BlogLeft from "@/components/blog/blogLeft";
 import Angle from "@/components/blog/angle";
 import Stats from "@/components/dividers/stats";
 import Layout from "@/components/layout";
-import CustomHeader from "@/components/head";
 
 interface FeatureProps {
   text: string;
@@ -55,7 +54,6 @@ export default function SplitWithImage() {
 
   return (
     <>
-      <CustomHeader />
       <Layout>
         <Container maxW={"5xl"} py={{ base: 2, md: 16 }}>
           <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
