@@ -1,6 +1,12 @@
+/* eslint-disable no-sparse-arrays */
 import { Box, Container, Flex, Icon } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
-import { CorporateContactJsonLd, NextSeo, SocialProfileJsonLd } from "next-seo";
+import {
+  BreadcrumbJsonLd,
+  CorporateContactJsonLd,
+  NextSeo,
+  SocialProfileJsonLd
+} from "next-seo";
 import LittleCard from "@/components/about/littleCard";
 import {
   AboutMeLittleCardContext,
@@ -59,6 +65,32 @@ export default function gridListWith() {
               email: "oscar.computer.guy@gmail.com",
               areaServed: "EU",
               availableLanguage: ["English", "Spanish"]
+            }
+          ]}
+        />
+
+        <BreadcrumbJsonLd
+          itemListElements={[
+            {
+              position: 1,
+              name: "Experience",
+              item: "https://oscarcomputerguy.com/about/experience"
+            },
+            {
+              position: 2,
+              name: "Expertise",
+              item: "https://oscarcomputerguy.com/about/expertise"
+            },
+            {
+              position: 3,
+              name: "Problem",
+              item: "https://oscarcomputerguy.com/about/problem"
+            },
+            ,
+            {
+              position: 5,
+              name: "Goals",
+              item: "https://oscarcomputerguy.com/about/goals"
             }
           ]}
         />
