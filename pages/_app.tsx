@@ -33,8 +33,6 @@ export default function App({ Component, pageProps }: AppProps) {
           maxImagePreview: "none",
           maxVideoPreview: -1
         }}
-        dangerouslySetAllPagesToNoFollow
-        dangerouslySetAllPagesToNoIndex
         canonical="https://oscarcomputerguy.com"
       />
       <Component {...pageProps} />
