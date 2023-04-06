@@ -11,6 +11,7 @@ import {
   useColorModeValue,
   useMediaQuery
 } from "@chakra-ui/react";
+import { NextSeo, SocialProfileJsonLd } from "next-seo";
 import {
   IoAnalyticsSharp,
   IoCloudUploadSharp,
@@ -24,7 +25,6 @@ import BlogLeft from "@/components/blog/blogLeft";
 import Angle from "@/components/blog/angle";
 import Stats from "@/components/dividers/stats";
 import Layout from "@/components/layout";
-import CustomHeader from "@/components/head";
 
 interface FeatureProps {
   text: string;
@@ -55,8 +55,28 @@ export default function SplitWithImage() {
 
   return (
     <>
-      <CustomHeader />
       <Layout>
+        <NextSeo
+          title="Oscar freelance Software Engineer"
+          description="Best Software Engineer. Freelance Software Engineer. Software Developer"
+          openGraph={{
+            type: "website",
+            locale: "en_US",
+            url: "https://oscarcomputerguy.com/services",
+            siteName: "Oscar Software Engineer services"
+          }}
+        />
+
+        <SocialProfileJsonLd
+          type="Person"
+          name="Oscar Guerrero"
+          url="https://oscarcomputerguy.com/services"
+          sameAs={[
+            "https://www.facebook.com/oscar.lopez.33331508",
+            "https://www.linkedin.com/in/oscar-guerrero-a59289153/"
+          ]}
+        />
+
         <Container maxW={"5xl"} py={{ base: 2, md: 16 }}>
           <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
             <Stack spacing={4}>

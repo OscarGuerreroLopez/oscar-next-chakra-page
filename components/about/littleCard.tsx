@@ -43,17 +43,12 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
         </Flex>
         <Box mt={2}>
           <Heading size="md">{heading}</Heading>
-          {/* <Text
-            mt={1}
-            fontSize={"sm"}
-            color={useColorModeValue("gray.700", "gray.400")}
-          >
-            {description}
-          </Text> */}
           <Description desc={description} props={{ mt: 1 }} />
         </Box>
         <Button variant={"link"} colorScheme={"blue"} size={"sm"}>
-          <Link href={`/about/${href}`}>Learn more</Link>
+          <Link href={`/about/${href}`} passHref legacyBehavior>
+            <a title={heading}>Learn more...</a>
+          </Link>
         </Button>
       </Stack>
     </Box>

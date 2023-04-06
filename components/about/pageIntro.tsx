@@ -26,11 +26,18 @@ const PageIntro: React.FC = () => {
         rounded={"md"}
         overflow={"hidden"}
       >
-        <Image h={"120px"} w={"full"} src={"/code2.png"} objectFit={"cover"} />
+        <Image
+          h={"120px"}
+          w={"full"}
+          src={"/code2.png"}
+          objectFit={"cover"}
+          alt="code"
+        />
         <Flex justify={"center"} mt={-12}>
           <Avatar
             size={"xl"}
             src={"/photo.jpeg"}
+            name="Profile picture"
             css={{
               border: "2px solid white"
             }}
