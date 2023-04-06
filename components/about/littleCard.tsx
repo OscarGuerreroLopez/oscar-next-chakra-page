@@ -46,8 +46,8 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
           <Description desc={description} props={{ mt: 1 }} />
         </Box>
         <Button variant={"link"} colorScheme={"blue"} size={"sm"}>
-          <Link href={`/about/${href}`} aria-label={heading.toLowerCase()}>
-            Learn more
+          <Link href={`/about/${href}`} passHref legacyBehavior>
+            <a title={heading}>Learn more...</a>
           </Link>
         </Button>
       </Stack>
