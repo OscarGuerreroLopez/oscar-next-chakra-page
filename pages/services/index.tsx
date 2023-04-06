@@ -57,9 +57,8 @@ export default function SplitWithImage() {
     <>
       <Layout>
         <NextSeo
-          title="Oscar Software Engineer"
-          description="Best Software Engineer"
-          canonical="https://oscarcomputerguy.com/services"
+          title="Oscar freelance Software Engineer"
+          description="Best Software Engineer. Freelance Software Engineer. Software Developer"
           openGraph={{
             type: "website",
             locale: "en_US",

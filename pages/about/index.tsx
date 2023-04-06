@@ -31,8 +31,7 @@ export default function gridListWith() {
       <Layout>
         <NextSeo
           title="Oscar Software Engineer"
-          description="Best Software Engineer"
-          canonical="https://oscarcomputerguy.com/about"
+          description="Best Software Engineer. Freelance Software Engineer. Software Developer"
           openGraph={{
             type: "website",
             locale: "en_US",

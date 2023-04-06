@@ -13,7 +13,16 @@ export default function App({ Component, pageProps }: AppProps) {
           type: "website",
           locale: "en_US",
           url: "https://www.oscarcomputerguy.com/",
-          siteName: "Oscar Software Engineer"
+          siteName: "Oscar Software Engineer",
+          images: [
+            {
+              url: "/photo.jpeg",
+              width: 800,
+              height: 600,
+              alt: "Og Image Alt",
+              type: "image/jpeg"
+            }
+          ]
         }}
         robotsProps={{
           nosnippet: true,
@@ -24,6 +33,9 @@ export default function App({ Component, pageProps }: AppProps) {
           maxImagePreview: "none",
           maxVideoPreview: -1
         }}
+        dangerouslySetAllPagesToNoFollow
+        dangerouslySetAllPagesToNoIndex
+        canonical="https://oscarcomputerguy.com"
       />
       <Component {...pageProps} />
       <Analytics />

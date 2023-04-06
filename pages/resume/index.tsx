@@ -11,8 +11,7 @@ const resume = () => {
       <Layout>
         <NextSeo
           title="Oscar Software Engineer"
-          description="Best Software Engineer. Professional Experience, resume, cv"
-          canonical="https://oscarcomputerguy.com/resume"
+          description="Best Software Engineer. Professional Experience, resume, cv. Freelance Software Engineer. Software Developer"
           openGraph={{
             type: "website",
             locale: "en_US",
