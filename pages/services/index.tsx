@@ -11,6 +11,7 @@ import {
   useColorModeValue,
   useMediaQuery
 } from "@chakra-ui/react";
+import { NextSeo, SocialProfileJsonLd } from "next-seo";
 import {
   IoAnalyticsSharp,
   IoCloudUploadSharp,
@@ -55,6 +56,28 @@ export default function SplitWithImage() {
   return (
     <>
       <Layout>
+        <NextSeo
+          title="Oscar Software Engineer"
+          description="Best Software Engineer"
+          canonical="https://oscarcomputerguy.com/services"
+          openGraph={{
+            type: "website",
+            locale: "en_US",
+            url: "https://oscarcomputerguy.com/services",
+            siteName: "Oscar Software Engineer services"
+          }}
+        />
+
+        <SocialProfileJsonLd
+          type="Person"
+          name="Oscar Guerrero"
+          url="https://oscarcomputerguy.com/services"
+          sameAs={[
+            "https://www.facebook.com/oscar.lopez.33331508",
+            "https://www.linkedin.com/in/oscar-guerrero-a59289153/"
+          ]}
+        />
+
         <Container maxW={"5xl"} py={{ base: 2, md: 16 }}>
           <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
             <Stack spacing={4}>
