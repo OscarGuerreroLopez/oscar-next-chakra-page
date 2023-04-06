@@ -53,7 +53,7 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
           <Description desc={description} props={{ mt: 1 }} />
         </Box>
         <Button variant={"link"} colorScheme={"blue"} size={"sm"}>
-          <Link href={`/about/${href}`} as={`about ${heading}`}>
+          <Link href={`/about/${href}`} as={`about/${heading.toLowerCase()}`}>
             Learn more
           </Link>
         </Button>
