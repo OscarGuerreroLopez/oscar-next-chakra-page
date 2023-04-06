@@ -69,32 +69,6 @@ export default function gridListWith() {
           ]}
         />
 
-        <BreadcrumbJsonLd
-          itemListElements={[
-            {
-              position: 1,
-              name: "Experience",
-              item: "https://oscarcomputerguy.com/about/experience"
-            },
-            {
-              position: 2,
-              name: "Expertise",
-              item: "https://oscarcomputerguy.com/about/expertise"
-            },
-            {
-              position: 3,
-              name: "Problem",
-              item: "https://oscarcomputerguy.com/about/problem"
-            },
-            ,
-            {
-              position: 5,
-              name: "Goals",
-              item: "https://oscarcomputerguy.com/about/goals"
-            }
-          ]}
-        />
-
         <Box p={4}>
           <PageIntro />
           <Container maxW={"5xl"} mt={12}>

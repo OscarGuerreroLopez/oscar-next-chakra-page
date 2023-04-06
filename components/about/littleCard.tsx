@@ -53,7 +53,9 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
           <Description desc={description} props={{ mt: 1 }} />
         </Box>
         <Button variant={"link"} colorScheme={"blue"} size={"sm"}>
-          <Link href={`/about/${href}`}>Learn more</Link>
+          <Link href={`/about/${href}`} legacyBehavior>
+            <a>Learn more</a>
+          </Link>
         </Button>
       </Stack>
     </Box>
