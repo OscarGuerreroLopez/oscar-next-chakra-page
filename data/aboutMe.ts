@@ -1,10 +1,6 @@
 import { IconType } from "react-icons";
 import {
-  FcAbout,
-  FcAssistant,
   FcBusinessman,
-  FcCollaboration,
-  FcDonate,
   FcFlowChart,
   FcList,
   FcManager,
