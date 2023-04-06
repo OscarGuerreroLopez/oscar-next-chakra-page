@@ -18,6 +18,7 @@ const resume = () => {
             url: "https://oscarcomputerguy.com/resume",
             siteName: "Oscar Software Engineer resume"
           }}
+          canonical="https://oscarcomputerguy.com/resume"
         />
 
         <SocialProfileJsonLd

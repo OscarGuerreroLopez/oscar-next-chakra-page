@@ -65,6 +65,7 @@ export default function SplitWithImage() {
             url: "https://oscarcomputerguy.com/services",
             siteName: "Oscar Software Engineer services"
           }}
+          canonical="https://oscarcomputerguy.com/services"
         />
 
         <SocialProfileJsonLd
