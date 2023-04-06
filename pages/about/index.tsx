@@ -1,12 +1,7 @@
 /* eslint-disable no-sparse-arrays */
 import { Box, Container, Flex, Icon } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
-import {
-  BreadcrumbJsonLd,
-  CorporateContactJsonLd,
-  NextSeo,
-  SocialProfileJsonLd
-} from "next-seo";
+import { CorporateContactJsonLd, NextSeo, SocialProfileJsonLd } from "next-seo";
 import LittleCard from "@/components/about/littleCard";
 import {
   AboutMeLittleCardContext,
