@@ -14,6 +14,7 @@ const intro = () => {
           url: "https://oscarcomputerguy.com/intro",
           siteName: "Oscar Software Engineer intro"
         }}
+        canonical="https://oscarcomputerguy.com/intro"
       />
       <ArticleJsonLd
         type="BlogPosting"

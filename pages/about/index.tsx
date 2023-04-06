@@ -38,6 +38,7 @@ export default function gridListWith() {
             url: "https://oscarcomputerguy.com/about",
             siteName: "Oscar Software Engineer about"
           }}
+          canonical="https://oscarcomputerguy.com/about"
         />
 
         <SocialProfileJsonLd
