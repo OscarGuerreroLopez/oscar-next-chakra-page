@@ -1,3 +1,4 @@
+import CustomHeader from "@/components/head";
 import Topic from "@/components/about/topics";
 import StatsText from "@/components/about/statsText";
 
@@ -8,12 +9,21 @@ const mainDesc =
 
 export default function StatsGridWithImage() {
   return (
-    <Topic
-      mainTitle={mainTitle}
-      subTitle={subTitle}
-      mainDesc={mainDesc}
-      stats={stats}
-    />
+    <>
+      <CustomHeader
+        title="Oscar Software Engineer"
+        description="Best Software Engineer. Freelance Software Engineer. Software Developer"
+        url="https://oscarcomputerguy.com/about/experience"
+        siteName="Oscar Software Engineer experience"
+      />
+
+      <Topic
+        mainTitle={mainTitle}
+        subTitle={subTitle}
+        mainDesc={mainDesc}
+        stats={stats}
+      />
+    </>
   );
 }
 
