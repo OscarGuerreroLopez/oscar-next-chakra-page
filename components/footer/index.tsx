@@ -31,6 +31,14 @@ export default function SmallWithNavigation() {
               {name}
             </NavLink>
           ))}
+          <NavLink
+            key={"page_code"}
+            path={
+              "https://github.com/OscarGuerreroLopez/oscar-next-chakra-page"
+            }
+          >
+            Page Code
+          </NavLink>
         </Stack>
         <Text>© 2023 Oscar Guerrero. All rights reserved</Text>
       </Container>
