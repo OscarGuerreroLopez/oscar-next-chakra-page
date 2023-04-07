@@ -1,7 +1,6 @@
 /* eslint-disable no-sparse-arrays */
 import { Box, Container, Flex, Icon } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
-import { CorporateContactJsonLd, NextSeo, SocialProfileJsonLd } from "next-seo";
 import LittleCard from "@/components/about/littleCard";
 import {
   AboutMeLittleCardContext,
@@ -11,6 +10,7 @@ import {
 import PageIntro from "@/components/about/pageIntro";
 import Layout from "@/components/layout";
 import Contact from "@/components/about/contact";
+import CustomHeader from "@/components/head/customHeader";
 
 export default function gridListWith() {
   const [aboutMeContext, setAboutMeContext] = useState<LittleCardContent[]>([]);
@@ -29,39 +29,11 @@ export default function gridListWith() {
   return (
     <>
       <Layout>
-        <NextSeo
+        <CustomHeader
           title="Oscar Software Engineer"
           description="Best Software Engineer. Freelance Software Engineer. Software Developer"
-          openGraph={{
-            type: "website",
-            locale: "en_US",
-            url: "https://oscarcomputerguy.com/about",
-            siteName: "Oscar Software Engineer about"
-          }}
-          canonical="https://oscarcomputerguy.com/about"
-        />
-
-        <SocialProfileJsonLd
-          type="Person"
-          name="Oscar Guerrero"
           url="https://oscarcomputerguy.com/about"
-          sameAs={[
-            "https://www.facebook.com/oscar.lopez.33331508",
-            "https://www.linkedin.com/in/oscar-guerrero-a59289153/"
-          ]}
-        />
-
-        <CorporateContactJsonLd
-          url="https://oscarcomputerguy.com/about"
-          contactPoint={[
-            {
-              telephone: "+34-622-450-008",
-              contactType: "Freelance Software Engineer",
-              email: "oscar.computer.guy@gmail.com",
-              areaServed: "EU",
-              availableLanguage: ["English", "Spanish"]
-            }
-          ]}
+          siteName="Oscar Software Engineer about"
         />
 
         <Box p={4}>
