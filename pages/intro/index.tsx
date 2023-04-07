@@ -1,40 +1,15 @@
 import Layout from "@/components/layout";
-import { ArticleJsonLd, NextSeo, SocialProfileJsonLd } from "next-seo";
 import Home from "@/components/home";
+import CustomHeader from "@/components/head/customHeader";
 
 const intro = () => {
   return (
     <Layout>
-      <NextSeo
+      <CustomHeader
         title="Oscar Software Engineer"
         description="Best Software Engineer. Freelance Software Engineer. Software Developer"
-        openGraph={{
-          type: "website",
-          locale: "en_US",
-          url: "https://oscarcomputerguy.com/intro",
-          siteName: "Oscar Software Engineer intro"
-        }}
-        canonical="https://oscarcomputerguy.com/intro"
-      />
-      <ArticleJsonLd
-        type="BlogPosting"
         url="https://oscarcomputerguy.com/intro"
-        title="Oscar Guerrero Software Engineer"
-        images={["/code4.jpeg", "/analytics.png", "/cloud.jpeg"]}
-        datePublished="2023-04-05T23:04:13Z"
-        dateModified="2023-04-05T23:04:13Z"
-        authorName="Oscar Guerrero"
-        description="Oscar Guerrero Software Engineer intro page"
-      />
-
-      <SocialProfileJsonLd
-        type="Person"
-        name="Oscar Guerrero"
-        url="https://oscarcomputerguy.com/intro"
-        sameAs={[
-          "https://www.facebook.com/oscar.lopez.33331508",
-          "https://www.linkedin.com/in/oscar-guerrero-a59289153/"
-        ]}
+        siteName="Oscar Software Engineer intro"
       />
       <Home />
     </Layout>

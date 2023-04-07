@@ -1,5 +1,5 @@
 import Topic from "@/components/about/topics";
-import CustomHeader from "@/components/head";
+import CustomHeader from "@/components/head/customHeader";
 
 const mainTitle = "PERSONAL INTERESTS";
 const subTitle = "Work-life balance";

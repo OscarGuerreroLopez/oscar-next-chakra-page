@@ -1,36 +1,20 @@
 import Layout from "@/components/layout";
 import { Container } from "@chakra-ui/react";
-import { NextSeo, SocialProfileJsonLd } from "next-seo";
 import CustomCard from "@/components/resume/card";
 import EducationCard from "@/components/resume/educationCard";
 import CVSection from "@/components/resume/cvSection";
+import CustomHeader from "@/components/head/customHeader";
 
 const resume = () => {
   return (
     <>
       <Layout>
-        <NextSeo
+        <CustomHeader
           title="Oscar Software Engineer"
-          description="Best Software Engineer. Professional Experience, resume, cv. Freelance Software Engineer. Software Developer"
-          openGraph={{
-            type: "website",
-            locale: "en_US",
-            url: "https://oscarcomputerguy.com/resume",
-            siteName: "Oscar Software Engineer resume"
-          }}
-          canonical="https://oscarcomputerguy.com/resume"
-        />
-
-        <SocialProfileJsonLd
-          type="Person"
-          name="Oscar Guerrero"
+          description="Best Software Engineer. Freelance Software Engineer. Software Developer"
           url="https://oscarcomputerguy.com/resume"
-          sameAs={[
-            "https://www.facebook.com/oscar.lopez.33331508",
-            "https://www.linkedin.com/in/oscar-guerrero-a59289153/"
-          ]}
+          siteName="Oscar Software Engineer resume"
         />
-
         <Container maxW={"4xl"} mt={{ base: 0, md: 8 }}>
           <CVSection title="Professional Experience" imgSrc="/cv.svg" />
           <CustomCard

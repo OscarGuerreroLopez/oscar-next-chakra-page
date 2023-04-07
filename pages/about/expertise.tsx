@@ -1,7 +1,6 @@
-import { NextSeo, SocialProfileJsonLd, CorporateContactJsonLd } from "next-seo";
 import Topic from "@/components/about/topics";
 import StatsText from "@/components/about/statsText";
-import CustomHeader from "@/components/head";
+import CustomHeader from "@/components/head/customHeader";
 
 const mainTitle = "expertise";
 const subTitle = " Areas of expertise";

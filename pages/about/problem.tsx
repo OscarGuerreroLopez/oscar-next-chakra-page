@@ -1,6 +1,6 @@
 import Topic from "@/components/about/topics";
 import StatsText from "@/components/about/statsText";
-import CustomHeader from "@/components/head";
+import CustomHeader from "@/components/head/customHeader";
 
 const mainTitle = "PROBLEM-SOLVING";
 const subTitle = "Solving complex problems";

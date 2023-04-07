@@ -1,4 +1,4 @@
-import CustomHeader from "@/components/head";
+import CustomHeader from "@/components/head/customHeader";
 import Topic from "@/components/about/topics";
 import StatsText from "@/components/about/statsText";
 
