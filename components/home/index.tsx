@@ -1,10 +1,11 @@
+import { Container, SimpleGrid } from "@chakra-ui/react";
 import Intro from "./intro";
 import DataAnalysis from "./data_analysis";
 import Design from "./design";
 import Freelancer from "./freelancer";
 import BlogRight from "@/components/blog/blogRight";
 import PageCode from "./pageCode";
-import { Center, Container, SimpleGrid } from "@chakra-ui/react";
+import Challenges from "./challenges";
 
 export default function SplitScreen() {
   return (
@@ -31,7 +32,7 @@ export default function SplitScreen() {
       >
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: 0, md: 8 }}>
           {" "}
-          <PageCode /> <PageCode />
+          <PageCode /> <Challenges />
         </SimpleGrid>
       </Container>
     </>
