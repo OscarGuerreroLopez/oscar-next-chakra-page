@@ -23,22 +23,19 @@ export default function SmallWithNavigation() {
         justify={{ base: "center", md: "space-between" }}
         align={{ base: "center", md: "center" }}
         minH={"10vh"}
-        // mt="40px"
       >
-        <Stack direction={"row"} spacing={6}>
+        <Stack
+          direction={"row"}
+          spacing={{ base: 1, sm: 2, md: 4, lg: 6 }}
+          maxWidth="3xl"
+          flexWrap="wrap"
+          justifyContent={"center"}
+        >
           {Links.map(({ name, path }) => (
             <NavLink key={path} path={path}>
               {name}
             </NavLink>
           ))}
-          <NavLink
-            key={"page_code"}
-            path={
-              "https://github.com/OscarGuerreroLopez/oscar-next-chakra-page"
-            }
-          >
-            Page Code
-          </NavLink>
         </Stack>
         <Text>© 2023 Oscar Guerrero. All rights reserved</Text>
       </Container>
