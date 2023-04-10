@@ -27,7 +27,7 @@ const littleCard: React.FC<LittleCard> = ({
   linkDesc
 }) => {
   return (
-    <Card direction="column" overflow="hidden" variant="outline">
+    <Card direction="column" overflow="hidden" variant="outline" shadow={"xl"}>
       <Image
         objectFit="cover"
         maxW="100%"

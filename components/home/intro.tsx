@@ -6,7 +6,8 @@ import {
   Text,
   Image,
   Container,
-  useColorModeValue
+  useColorModeValue,
+  Center
 } from "@chakra-ui/react";
 import LinkButton from "./linkButton";
 import Description from "@/components/custom/description";
@@ -63,7 +64,9 @@ const introHome = () => {
               visiting!"
             />
             <Stack direction={{ base: "column", md: "row" }} spacing={4}>
-              <LinkButton name="More about me" link="/about" />
+              <Center>
+                <LinkButton name="More about me" link="/about" />
+              </Center>
             </Stack>
           </Stack>
         </Flex>
