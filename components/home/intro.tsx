@@ -15,7 +15,7 @@ import Description from "@/components/custom/description";
 const introHome = () => {
   return (
     <Container
-      maxW={{ base: "none", md: "4xl", lg: "5xl" }}
+      maxW={{ base: "none", md: "5xl", lg: "6xl" }}
       mt={{ base: 0, md: 6 }}
     >
       <Stack minH={"80vh"} direction={{ base: "column", md: "row" }}>

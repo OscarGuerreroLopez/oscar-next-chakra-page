@@ -13,7 +13,7 @@ import Description from "@/components/custom/description";
 
 export default function CallToActionWithIllustration() {
   return (
-    <Container maxW={"5xl"}>
+    <Container maxW={{ base: "none", md: "5xl", lg: "6xl" }}>
       <Stack
         textAlign={"center"}
         align={"center"}

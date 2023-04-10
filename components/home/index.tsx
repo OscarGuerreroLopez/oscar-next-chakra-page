@@ -26,7 +26,10 @@ export default function SplitScreen() {
         />
       )}
 
-      <Container maxW={"6xl"} py={{ base: 8, md: 16 }}>
+      <Container
+        maxW={{ base: "none", md: "5xl", lg: "6xl" }}
+        py={{ base: 8, md: 16 }}
+      >
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
           <LittleCard
             title="Page Code"

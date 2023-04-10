@@ -17,12 +17,7 @@ import LinkButton from "../custom/linkButton";
 export default function Analysis() {
   return (
     <Container
-      maxW={{
-        sm: "2xl",
-        base: "4xl",
-        md: "5xl",
-        lg: "6xl"
-      }}
+      maxW={{ base: "none", md: "5xl", lg: "6xl" }}
       mb={{ base: 1, md: 4 }}
     >
       <Stack
