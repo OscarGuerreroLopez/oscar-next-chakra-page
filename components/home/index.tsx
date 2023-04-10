@@ -4,8 +4,7 @@ import DataAnalysis from "./data_analysis";
 import Design from "./design";
 import Freelancer from "./freelancer";
 import BlogRight from "@/components/blog/blogRight";
-import PageCode from "./pageCode";
-import Challenges from "./challenges";
+import LittleCard from "@/components/custom/littleCard";
 
 export default function SplitScreen() {
   return (
@@ -21,20 +20,29 @@ export default function SplitScreen() {
         desc="Cloud-based systems offer scalable and flexible infrastructure, reduced costs, improved security, and accessibility from anywhere. They allow businesses to quickly adapt to changing needs and provide a competitive edge. I am here to help you achieve your goals"
         pic="/cloud.jpeg"
       />
-      <Container
-        maxW={{
-          sm: "2xl",
-          base: "4xl",
-          md: "5xl",
-          lg: "6xl"
-        }}
-        mb={{ base: 1, md: 4 }}
-      >
-        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: 0, md: 8 }}>
-          {" "}
-          <PageCode /> <Challenges />
+
+      <Container maxW={"6xl"} py={8}>
+        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
+          <LittleCard
+            title="Page Code"
+            desc="For this page I used Next.js with Chakra UI. Next.js is a
+            React-based framework that offers several advantages for web
+            development"
+            imgSrc="/chakra_code.png"
+            linkAddress="https://github.com/OscarGuerreroLopez/oscar-next-chakra-page"
+            linkDesc="Check out the code...."
+          />
+          <LittleCard
+            title="Blog"
+            desc="Looking for fresh ideas and unique perspectives? Join me on my personal blog where I share my thoughts and insights. Let's expand our knowledge together."
+            imgSrc="/blog.jpeg"
+            linkAddress="/blog"
+            linkDesc="Click to explore more..."
+          />
         </SimpleGrid>
       </Container>
     </>
   );
 }
+
+// "https://images.unsplash.com/photo-1667489022797-ab608913feeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60"

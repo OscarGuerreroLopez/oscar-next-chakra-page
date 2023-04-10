@@ -45,16 +45,20 @@ export default function blogPostWithImage() {
             fontSize={"sm"}
             letterSpacing={1.1}
           >
-            Quick code challenges
+            Page code
           </Text>
           <Heading
             color={useColorModeValue("gray.700", "white")}
             fontSize={"2xl"}
             fontFamily={"body"}
           >
-            Entry level Code Challenges
+            Code used for this page
           </Heading>
-          <CustomDescription desc="These are some code challenges I have done for some companies to assess my coding. Most are backend, but some are also front end." />
+          <CustomDescription
+            desc="For this page I used Next.js with Chakra UI. Next.js is a
+            React-based framework that offers several advantages for web
+            development, including:"
+          />
 
           <VStack py={4} borderBottomRadius={"xl"}>
             <List spacing={3} textAlign="start" px={12}>
@@ -88,9 +92,7 @@ export default function blogPostWithImage() {
               passHref
               legacyBehavior
             >
-              <a title="code used for this page">
-                Check them at my Github repository
-              </a>
+              <a title="code used for this page">Github repository</a>
             </Link>
           </Button>
         </Stack>

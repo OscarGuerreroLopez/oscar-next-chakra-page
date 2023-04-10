@@ -1,65 +1,81 @@
-import Image from "next/image";
-import {
-  Box,
-  Center,
-  Heading,
-  Text,
-  Stack,
-  Avatar,
-  useColorModeValue,
-  List,
-  VStack,
-  Button
-} from "@chakra-ui/react";
-import Link from "next/link";
+import { Box, Flex, chakra, Link, List, VStack } from "@chakra-ui/react";
+import NavLink from "next/link";
 import CustomDescription from "@/components/custom/description";
 import ListItemWithCheck from "./listItemWithCheck";
 
 export default function blogPostWithImage() {
   return (
-    <Center py={6}>
+    <Flex p={50} w="full" alignItems="center" justifyContent="center">
       <Box
-        maxW={"445px"}
-        w={"full"}
-        bg={useColorModeValue("white", "gray.900")}
-        boxShadow={"2xl"}
-        rounded={"md"}
-        p={6}
-        overflow={"hidden"}
+        bg="white"
+        _dark={{
+          bg: "gray.800"
+        }}
+        mx={{
+          lg: 8
+        }}
+        display={{
+          lg: "flex"
+        }}
+        maxW={{
+          lg: "5xl"
+        }}
+        shadow={{
+          lg: "lg"
+        }}
+        rounded={{
+          lg: "lg"
+        }}
       >
         <Box
-          h={"210px"}
-          bg={"gray.100"}
-          mt={-6}
-          mx={-6}
-          mb={6}
-          pos={"relative"}
+          w={{
+            lg: "50%"
+          }}
         >
-          <Image src={"/coder.avif"} layout={"fill"} alt="Coding" />
+          <Box
+            h={{
+              base: 64,
+              lg: "full"
+            }}
+            rounded={{
+              lg: "lg"
+            }}
+            bgSize="cover"
+            style={{
+              backgroundImage: "/coder.avif"
+            }}
+          ></Box>
         </Box>
-        <Stack>
-          <Text
-            color={"green.500"}
-            textTransform={"uppercase"}
-            fontWeight={800}
-            fontSize={"sm"}
-            letterSpacing={1.1}
-          >
-            Page code
-          </Text>
-          <Heading
-            color={useColorModeValue("gray.700", "white")}
-            fontSize={"2xl"}
-            fontFamily={"body"}
+
+        <Box
+          py={12}
+          px={6}
+          maxW={{
+            base: "xl",
+            lg: "5xl"
+          }}
+          w={{
+            lg: "50%"
+          }}
+        >
+          <chakra.h2
+            fontSize={{
+              base: "2xl",
+              md: "3xl"
+            }}
+            color="gray.800"
+            _dark={{
+              color: "white"
+            }}
+            fontWeight="bold"
           >
             Code used for this page
-          </Heading>
+          </chakra.h2>
           <CustomDescription
-            desc="For this page I used Next.js with Chakra UI. Next.js is a
+            desc=" For this page I used Next.js with Chakra UI. Next.js is a
             React-based framework that offers several advantages for web
             development, including:"
           />
-
           <VStack py={4} borderBottomRadius={"xl"}>
             <List spacing={3} textAlign="start" px={12}>
               <ListItemWithCheck
@@ -86,24 +102,28 @@ export default function blogPostWithImage() {
             </List>
           </VStack>
 
-          <Button variant={"link"} colorScheme={"blue"} size={"sm"}>
-            <Link
-              href="https://github.com/OscarGuerreroLopez/oscar-next-chakra-page"
+          <span>Visit on:</span>
+          <Link
+            mx={2}
+            cursor="pointer"
+            textDecor="underline"
+            color="brand.600"
+            _dark={{
+              color: "brand.400"
+            }}
+          >
+            <NavLink
+              href={
+                "https://github.com/OscarGuerreroLopez/oscar-next-chakra-page"
+              }
               passHref
               legacyBehavior
             >
-              <a title="code used for this page">Github repository</a>
-            </Link>
-          </Button>
-        </Stack>
-        <Stack mt={6} direction={"row"} spacing={4} align={"center"}>
-          <Avatar src={"/photo.jpeg"} name={"Author"} />
-          <Stack direction={"column"} spacing={0} fontSize={"sm"}>
-            <Text fontWeight={600}>Oscar Guerrero</Text>
-            <Text color={"gray.500"}>April 10, 2023</Text>
-          </Stack>
-        </Stack>
+              <a title="github-repo">github.com</a>
+            </NavLink>
+          </Link>
+        </Box>
       </Box>
-    </Center>
+    </Flex>
   );
 }
