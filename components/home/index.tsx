@@ -30,9 +30,7 @@ export default function SplitScreen() {
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
           <LittleCard
             title="Page Code"
-            desc="For this page I used Next.js with Chakra UI. Next.js is a
-            React-based framework that offers several advantages for web
-            development"
+            desc="For this page I used Next.js with Chakra UI. Next.js offers server-side rendering, automatic code splitting, static export, and easy deployment, making it fast and SEO-friendly for building modern web applications."
             imgSrc="/chakra_code.png"
             linkAddress="https://github.com/OscarGuerreroLopez/oscar-next-chakra-page"
             linkDesc="Check out the code...."

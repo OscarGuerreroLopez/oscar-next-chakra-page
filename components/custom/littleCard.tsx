@@ -39,7 +39,7 @@ const littleCard: React.FC<LittleCard> = ({
       <Stack>
         <CardBody>
           <Heading size="md">{title}</Heading>
-          <Text py="2">{TruncateText(desc, 20)}</Text>
+          <Text py="2">{TruncateText(desc, 25)}</Text>
         </CardBody>
 
         {linkAddress && (
