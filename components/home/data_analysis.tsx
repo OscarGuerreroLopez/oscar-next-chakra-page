@@ -8,7 +8,8 @@ import {
   Image,
   Icon,
   IconProps,
-  useColorModeValue
+  useColorModeValue,
+  Center
 } from "@chakra-ui/react";
 import Description from "@/components/custom/description";
 import LinkButton from "./linkButton";
@@ -67,7 +68,10 @@ export default function Analysis() {
             spacing={{ base: 4, sm: 6 }}
             direction={{ base: "column", sm: "row" }}
           >
-            <LinkButton name="Services" link="/services" />
+            <Center>
+              {" "}
+              <LinkButton name="Services" link="/services" />
+            </Center>
           </Stack>
         </Stack>
         <Flex
