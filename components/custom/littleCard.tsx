@@ -5,8 +5,7 @@ import {
   Heading,
   CardFooter,
   Button,
-  Image,
-  Text
+  Image
 } from "@chakra-ui/react";
 import Link from "next/link";
 import { TruncateText } from "@/utils";

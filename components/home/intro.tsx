@@ -9,7 +9,7 @@ import {
   useColorModeValue,
   Center
 } from "@chakra-ui/react";
-import LinkButton from "./linkButton";
+import LinkButton from "../custom/linkButton";
 import Description from "@/components/custom/description";
 
 const introHome = () => {

@@ -8,7 +8,7 @@ import {
   IconProps,
   useColorModeValue
 } from "@chakra-ui/react";
-import LinkButton from "./linkButton";
+import LinkButton from "../custom/linkButton";
 import Description from "@/components/custom/description";
 
 export default function CallToActionWithIllustration() {

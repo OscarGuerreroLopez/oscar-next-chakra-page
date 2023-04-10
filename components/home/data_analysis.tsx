@@ -12,7 +12,7 @@ import {
   Center
 } from "@chakra-ui/react";
 import Description from "@/components/custom/description";
-import LinkButton from "./linkButton";
+import LinkButton from "../custom/linkButton";
 
 export default function Analysis() {
   return (
