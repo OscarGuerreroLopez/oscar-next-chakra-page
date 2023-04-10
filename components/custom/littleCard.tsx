@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import Link from "next/link";
 import { TruncateText } from "@/utils";
+import Description from "@/components/custom/description";
 
 interface LittleCard {
   title: string;
@@ -39,7 +40,7 @@ const littleCard: React.FC<LittleCard> = ({
       <Stack>
         <CardBody>
           <Heading size="md">{title}</Heading>
-          <Text py="2">{TruncateText(desc, 25)}</Text>
+          <Description desc={TruncateText(desc, 25)} props={{ py: 2 }} />
         </CardBody>
 
         {linkAddress && (
