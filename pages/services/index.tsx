@@ -64,7 +64,10 @@ export default function SplitWithImage() {
           siteName="Oscar Software Engineer services"
         />
 
-        <Container maxW={"5xl"} py={{ base: 2, md: 16 }}>
+        <Container
+          maxW={{ base: "none", md: "5xl", lg: "6xl" }}
+          py={{ base: 2, md: 16 }}
+        >
           <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
             <Stack spacing={4}>
               <Text
