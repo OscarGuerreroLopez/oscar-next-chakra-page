@@ -15,7 +15,7 @@ const linkButton: React.FC<ButtonProps> = ({ name, link }) => {
         px={6}
         colorScheme={"red"}
         color={"white"}
-        bg={useColorModeValue("blue.500", "blue.400")}
+        bg={useColorModeValue("blue.500", "blue.600")}
         _hover={{ bg: "blue.700" }}
       >
         {name}

@@ -7,15 +7,24 @@ import {
   Text,
   Stack,
   HStack,
-  VStack
+  VStack,
+  useColorModeValue
 } from "@chakra-ui/react";
 import { CheckIcon } from "@chakra-ui/icons";
 import { FreelanceOptions } from "@/data/freelanceOptions";
 import Description from "@/components/custom/description";
 
-export default function GridListWithHeading() {
+const freeLancer = () => {
   return (
-    <Box mb={{ base: "8", md: "32" }}>
+    <Box
+      mb={{ base: "8", md: "32" }}
+      py={7}
+      background={useColorModeValue(
+        "linear-gradient(180deg, #3182ce 0%, #00BCFF 50%, #8BC34A 100%, #9C27B0 100%)",
+        "linear-gradient(180deg, #00457A 0%, #005D9A 33.33%, #0072B2 66.67%, #1E6449 100%)"
+      )}
+      borderRadius="3xl"
+    >
       <Stack spacing={4} as={Container} maxW={"4xl"}>
         <Heading fontSize={"3xl"} textAlign={"center"}>
           Hiring a freelancer to help you
@@ -36,14 +45,11 @@ export default function GridListWithHeading() {
         <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={10}>
           {FreelanceOptions.map((option) => (
             <HStack key={option.id} align={"top"}>
-              <Box color={"green.400"} px={2}>
+              <Box color={"black.400"} px={2}>
                 <Icon as={CheckIcon} />
               </Box>
               <VStack align={"start"}>
                 <Text fontWeight={600}>{option.title}</Text>
-                {/* <Text color={useColorModeValue("gray.700", "gray.400")}>
-                  {option.text}
-                </Text> */}
                 <Description desc={option.text} />
               </VStack>
             </HStack>
@@ -52,4 +58,6 @@ export default function GridListWithHeading() {
       </Container>
     </Box>
   );
-}
+};
+
+export default freeLancer;
