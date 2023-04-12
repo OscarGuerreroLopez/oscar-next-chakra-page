@@ -6,19 +6,25 @@ import {
   Heading,
   useColorModeValue
 } from "@chakra-ui/react";
+import React from "react";
 
-function GradientBackground() {
+interface Props {
+  text: string;
+  imgSrc: string;
+}
+
+const GradientBackground: React.FC<Props> = ({ text, imgSrc }) => {
   return (
     <Flex
       align="center"
       justify="center"
-      h={{ base: "25vh", md: "50vh", lg: "60vh" }}
+      h={{ base: "25vh", md: "50vh", lg: "100vh" }}
       bgGradient={useColorModeValue(
         "linear(to-r, blue.400, green.400)",
         "linear(to-r, blue.600, green.600)"
       )}
-      my={7}
-      rounded="3xl"
+      my={4}
+      borderRadius="0 0 33px 33px"
     >
       <Box flex="1">
         <Box textAlign="left" p={7}>
@@ -29,17 +35,17 @@ function GradientBackground() {
             fontFamily={"Caveat"}
             color={useColorModeValue("gray.800", "gray.200")}
           >
-            Building scalable cloud infrastructures for modern applications.
+            {text}
           </Heading>
         </Box>
       </Box>
       <Box flex="1" display="flex" justifyContent="center">
         <Center>
           <Image
-            src={"/cloud.svg"}
+            src={imgSrc}
             p={4}
             boxSize="auto"
-            maxW="75%"
+            maxW={{ base: "100%", md: "65%" }}
             objectFit="contain"
             alt={`software engineer`}
           />
@@ -47,6 +53,6 @@ function GradientBackground() {
       </Box>
     </Flex>
   );
-}
+};
 
 export default GradientBackground;
