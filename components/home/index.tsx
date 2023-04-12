@@ -5,6 +5,7 @@ import Design from "./design";
 import Freelancer from "./freelancer";
 import BlogRight from "@/components/blog/blogRight";
 import LittleCard from "@/components/custom/littleCard";
+import Arch from "./arch";
 
 export default function SplitScreen() {
   const [isLargerThan1280] = useMediaQuery("(min-width: 768px)");
@@ -25,6 +26,7 @@ export default function SplitScreen() {
           pic="/cloud.jpeg"
         />
       )}
+      <Arch />
 
       <Container
         maxW={{ base: "none", md: "5xl", lg: "6xl" }}

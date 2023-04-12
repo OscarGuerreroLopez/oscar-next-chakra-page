@@ -7,8 +7,7 @@ import {
   Text,
   Stack,
   HStack,
-  VStack,
-  useColorModeValue
+  VStack
 } from "@chakra-ui/react";
 import { CheckIcon } from "@chakra-ui/icons";
 import { FreelanceOptions } from "@/data/freelanceOptions";
@@ -16,15 +15,7 @@ import Description from "@/components/custom/description";
 
 const freeLancer = () => {
   return (
-    <Box
-      mb={{ base: "8", md: "32" }}
-      py={7}
-      background={useColorModeValue(
-        "linear-gradient(180deg, #3182ce 0%, #00BCFF 50%, #8BC34A 100%, #9C27B0 100%)",
-        "linear-gradient(180deg, #00457A 0%, #005D9A 33.33%, #0072B2 66.67%, #1E6449 100%)"
-      )}
-      borderRadius="3xl"
-    >
+    <Box mb={{ base: "8", md: "32" }} py={7}>
       <Stack spacing={4} as={Container} maxW={"4xl"}>
         <Heading fontSize={"3xl"} textAlign={"center"}>
           Hiring a freelancer to help you
