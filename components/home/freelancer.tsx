@@ -32,8 +32,14 @@ const freeLancer = () => {
         />
       </Stack>
 
-      <Container maxW={{ base: "none", md: "5xl", lg: "6xl" }} mt={10}>
-        <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={10}>
+      <Container
+        maxW={{ base: "none", md: "5xl", lg: "6xl" }}
+        mt={{ base: 4, md: 10 }}
+      >
+        <SimpleGrid
+          columns={{ base: 1, md: 2, lg: 4 }}
+          spacing={{ base: 2, md: 10 }}
+        >
           {FreelanceOptions.map((option) => (
             <HStack key={option.id} align={"top"}>
               <Box color={"black.400"} px={2}>
