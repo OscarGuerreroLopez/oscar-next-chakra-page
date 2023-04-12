@@ -23,7 +23,7 @@ const GradientBackground: React.FC<Props> = ({ text, imgSrc }) => {
         "linear(to-r, blue.400, green.400)",
         "linear(to-r, blue.600, green.600)"
       )}
-      my={4}
+      my={9}
       borderRadius="0 0 33px 33px"
     >
       <Box flex="1">

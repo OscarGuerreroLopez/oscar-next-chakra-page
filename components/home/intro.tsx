@@ -7,12 +7,15 @@ import {
   Image,
   Container,
   useColorModeValue,
-  Center
+  Center,
+  useMediaQuery
 } from "@chakra-ui/react";
 import LinkButton from "../custom/linkButton";
 import Description from "@/components/custom/description";
 
 const introHome = () => {
+  const [isLargerThan1280] = useMediaQuery("(min-width: 768px)");
+
   return (
     <Container
       maxW={{ base: "none", md: "5xl", lg: "6xl" }}
@@ -51,6 +54,16 @@ const introHome = () => {
                 Software Engineer
               </Text>{" "}
             </Heading>
+            {!isLargerThan1280 && (
+              <Flex flex={1}>
+                <Image
+                  alt={"Login Image"}
+                  objectFit={"cover"}
+                  src={"/code4.jpeg"}
+                  rounded={"2xl"}
+                />
+              </Flex>
+            )}
 
             <Description
               desc="With over 15 years of experience as a software engineer, I
@@ -63,6 +76,7 @@ const introHome = () => {
               Explore my work and connect with me to learn more. Thank you for
               visiting!"
             />
+
             <Stack direction={{ base: "column", md: "row" }} spacing={4}>
               <Center>
                 <LinkButton name="More about me" link="/about" />
@@ -70,15 +84,17 @@ const introHome = () => {
             </Stack>
           </Stack>
         </Flex>
-        <Flex flex={1}>
-          <Image
-            alt={"Login Image"}
-            objectFit={"cover"}
-            src={"/code4.jpeg"}
-            rounded={"2xl"}
-            mt={{ base: 4, md: "none" }}
-          />
-        </Flex>
+        {isLargerThan1280 && (
+          <Flex flex={1}>
+            <Image
+              alt={"Login Image"}
+              objectFit={"cover"}
+              src={"/code4.jpeg"}
+              rounded={"2xl"}
+              mt={{ base: 4, md: "none" }}
+            />
+          </Flex>
+        )}
       </Stack>
     </Container>
   );

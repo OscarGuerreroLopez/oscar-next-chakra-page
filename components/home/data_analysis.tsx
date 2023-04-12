@@ -18,7 +18,7 @@ export default function Analysis() {
   return (
     <Container
       maxW={{ base: "none", md: "5xl", lg: "6xl" }}
-      mb={{ base: 1, md: 4 }}
+      mb={{ base: 1, md: 16 }}
     >
       <Stack
         align={"center"}

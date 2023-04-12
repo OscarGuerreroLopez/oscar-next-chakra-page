@@ -5,7 +5,7 @@ import Design from "./design";
 import Freelancer from "./freelancer";
 import BlogRight from "@/components/blog/blogRight";
 import LittleCard from "@/components/custom/littleCard";
-import Arch from "./arch";
+import Divider from "@/components/custom/divider";
 
 export default function SplitScreen() {
   const [isLargerThan1280] = useMediaQuery("(min-width: 768px)");
@@ -14,14 +14,15 @@ export default function SplitScreen() {
     <>
       <Intro />
       <Design />
-      <Arch
+      <Divider
         text="Scalability, flexibility, modularity, and simplified maintenance."
         imgSrc="/programming.svg"
       />
       <Freelancer />
-      <DataAnalysis />
 
-      {/* {!isLargerThan1280 && (
+      {isLargerThan1280 && <DataAnalysis />}
+
+      {!isLargerThan1280 && (
         <BlogRight
           title="Build scalable systems"
           tags={["Scalability", "Resilience"]}
@@ -29,8 +30,8 @@ export default function SplitScreen() {
           desc="Cloud-based systems offer scalable and flexible infrastructure, reduced costs, improved security, and accessibility from anywhere. They allow businesses to quickly adapt to changing needs and provide a competitive edge. I am here to help you achieve your goals"
           pic="/cloud.jpeg"
         />
-      )} */}
-      <Arch
+      )}
+      <Divider
         text="Building scalable cloud infrastructures for modern applications."
         imgSrc="/cloud.svg"
       />

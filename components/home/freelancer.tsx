@@ -15,7 +15,7 @@ import Description from "@/components/custom/description";
 
 const freeLancer = () => {
   return (
-    <Box mb={{ base: "8", md: "32" }} py={7}>
+    <Box mb={{ base: 8, md: 12 }} py={7}>
       <Stack spacing={4} as={Container} maxW={"4xl"}>
         <Heading fontSize={"3xl"} textAlign={"center"}>
           Hiring a freelancer to help you
