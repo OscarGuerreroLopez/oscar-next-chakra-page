@@ -8,7 +8,7 @@ const description: React.FC<DescriptionProps> = ({ desc, props }) => {
   return (
     <Text
       fontSize={{ base: "md", lg: "lg" }}
-      color={useColorModeValue("gray.700", "gray.400")}
+      color={useColorModeValue("gray.700", "gray.300")}
       {...props}
     >
       {desc}

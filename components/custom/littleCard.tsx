@@ -5,8 +5,7 @@ import {
   Heading,
   CardFooter,
   Button,
-  Image,
-  Text
+  Image
 } from "@chakra-ui/react";
 import Link from "next/link";
 import { TruncateText } from "@/utils";
@@ -28,7 +27,13 @@ const littleCard: React.FC<LittleCard> = ({
   linkDesc
 }) => {
   return (
-    <Card direction="column" overflow="hidden" variant="outline" shadow={"lg"}>
+    <Card
+      direction="column"
+      overflow="hidden"
+      variant="outline"
+      shadow={"lg"}
+      borderRadius="2xl"
+    >
       <Image
         objectFit="cover"
         maxW="100%"

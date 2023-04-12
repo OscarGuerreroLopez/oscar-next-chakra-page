@@ -5,6 +5,7 @@ import Design from "./design";
 import Freelancer from "./freelancer";
 import BlogRight from "@/components/blog/blogRight";
 import LittleCard from "@/components/custom/littleCard";
+import Divider from "@/components/custom/divider";
 
 export default function SplitScreen() {
   const [isLargerThan1280] = useMediaQuery("(min-width: 768px)");
@@ -13,8 +14,13 @@ export default function SplitScreen() {
     <>
       <Intro />
       <Design />
+      <Divider
+        text="Scalability, flexibility, modularity, and simplified maintenance."
+        imgSrc="/programming.svg"
+      />
       <Freelancer />
-      <DataAnalysis />
+
+      {isLargerThan1280 && <DataAnalysis />}
 
       {!isLargerThan1280 && (
         <BlogRight
@@ -25,8 +31,15 @@ export default function SplitScreen() {
           pic="/cloud.jpeg"
         />
       )}
+      <Divider
+        text="Building scalable cloud infrastructures for modern applications."
+        imgSrc="/cloud.svg"
+      />
 
-      <Container maxW={"6xl"} py={{ base: 8, md: 16 }}>
+      <Container
+        maxW={{ base: "none", md: "5xl", lg: "6xl" }}
+        py={{ base: 8, md: 16 }}
+      >
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
           <LittleCard
             title="Page Code"
@@ -56,5 +69,3 @@ export default function SplitScreen() {
     </>
   );
 }
-
-// "https://images.unsplash.com/photo-1667489022797-ab608913feeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60"

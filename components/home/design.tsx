@@ -8,17 +8,18 @@ import {
   IconProps,
   useColorModeValue
 } from "@chakra-ui/react";
-import LinkButton from "./linkButton";
+import LinkButton from "../custom/linkButton";
 import Description from "@/components/custom/description";
 
 export default function CallToActionWithIllustration() {
   return (
-    <Container maxW={"5xl"}>
+    <Container maxW={{ base: "none", md: "5xl", lg: "6xl" }}>
       <Stack
         textAlign={"center"}
         align={"center"}
         spacing={{ base: 8, md: 10 }}
-        py={{ base: 10, md: 24 }}
+        pt={{ base: 16, md: 24 }}
+        pb={{ base: 10, md: 10 }}
       >
         <Heading
           fontWeight={600}
