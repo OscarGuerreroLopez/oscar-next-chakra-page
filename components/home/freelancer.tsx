@@ -38,7 +38,7 @@ const freeLancer = () => {
       >
         <SimpleGrid
           columns={{ base: 1, md: 2, lg: 4 }}
-          spacing={{ base: 2, md: 10 }}
+          spacing={{ base: 6, md: 10 }}
         >
           {FreelanceOptions.map((option) => (
             <HStack key={option.id} align={"top"}>
