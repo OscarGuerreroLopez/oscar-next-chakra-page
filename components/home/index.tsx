@@ -15,7 +15,7 @@ export default function SplitScreen() {
       <Intro />
       <Design />
       <Divider
-        text="Scalability, flexibility, modularity, and simplified maintenance."
+        text="Delivering cloud-based solutions with precision and expertise"
         imgSrc="/programming.svg"
       />
       <Freelancer />
