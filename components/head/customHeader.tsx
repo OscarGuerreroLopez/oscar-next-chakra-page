@@ -25,6 +25,7 @@ const customHeader: React.FC<CustomHeader> = ({
           siteName
         }}
         canonical={url}
+        noindex={false}
       />
 
       <SocialProfileJsonLd
