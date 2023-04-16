@@ -24,7 +24,7 @@ const customHeader: React.FC<CustomHeader> = ({
           url,
           siteName
         }}
-        canonical="https://oscarcomputerguy.com/about/expertise"
+        canonical={url}
       />
 
       <SocialProfileJsonLd
