@@ -34,10 +34,9 @@ const defaultHeader: React.FC<DefaultHeader> = ({
         ]
       }}
       robotsProps={{
-        nosnippet: false,
-        notranslate: false,
-        noimageindex: false,
-        noarchive: false,
+        nosnippet: true,
+        notranslate: true,
+        noimageindex: true,
         maxSnippet: -1,
         maxImagePreview: "none",
         maxVideoPreview: -1
