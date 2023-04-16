@@ -1,10 +1,9 @@
 import Layout from "@/components/layout";
 import CustomHeader from "@/components/head/customHeader";
-import { Container, Heading, Stack } from "@chakra-ui/react";
+import { Container, Stack } from "@chakra-ui/react";
 import Description from "@/components/custom/description";
 import BlogEntry from "@/components/blog/entry";
 import { BlogData } from "@/data/blogData";
-import Divider from "@/components/custom/divider";
 
 const intro =
   "Welcome to my blog, where I share my thoughts and experiences on the \
