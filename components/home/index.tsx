@@ -3,7 +3,7 @@ import Intro from "./intro";
 import DataAnalysis from "./data_analysis";
 import Design from "./design";
 import Freelancer from "./freelancer";
-import BlogRight from "@/components/blog/blogRight";
+import BlogRight from "@/components/custom/blogRight";
 import LittleCard from "@/components/custom/littleCard";
 import Divider from "@/components/custom/divider";
 

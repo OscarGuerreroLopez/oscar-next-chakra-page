@@ -20,9 +20,9 @@ import {
   IoSearchSharp
 } from "react-icons/io5";
 import { ReactElement } from "react";
-import BlogRight from "@/components/blog/blogRight";
-import BlogLeft from "@/components/blog/blogLeft";
-import Angle from "@/components/blog/angle";
+import BlogRight from "@/components/custom/blogRight";
+import BlogLeft from "@/components/custom/blogLeft";
+import Angle from "@/components/custom/angle";
 import Stats from "@/components/dividers/stats";
 import Layout from "@/components/layout";
 import CustomHeader from "@/components/head/customHeader";

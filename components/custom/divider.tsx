@@ -4,16 +4,19 @@ import {
   Center,
   Image,
   Heading,
-  useColorModeValue
+  useColorModeValue,
+  FlexProps
 } from "@chakra-ui/react";
 import React from "react";
 
 interface Props {
   text: string;
   imgSrc: string;
+  props?: Pick<FlexProps, "my">;
 }
 
-const GradientBackground: React.FC<Props> = ({ text, imgSrc }) => {
+const GradientBackground: React.FC<Props> = ({ text, imgSrc, props }) => {
+  const my = props?.my ? props.my : 9;
   return (
     <Flex
       align="center"
@@ -23,7 +26,7 @@ const GradientBackground: React.FC<Props> = ({ text, imgSrc }) => {
         "linear(to-r, blue.400, green.400)",
         "linear(to-r, blue.600, green.600)"
       )}
-      my={9}
+      my={my}
       borderRadius="0 0 33px 33px"
     >
       <Box flex="1">

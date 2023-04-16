@@ -17,6 +17,7 @@ const defaultHeader: React.FC<DefaultHeader> = ({
     <DefaultSeo
       title={title}
       description={description}
+      additionalLinkTags={[{ rel: "icon", href: "/performance.png" }]}
       openGraph={{
         type: "website",
         locale: "en_US",
@@ -24,9 +25,9 @@ const defaultHeader: React.FC<DefaultHeader> = ({
         siteName,
         images: [
           {
-            url: "/photo.jpeg",
-            width: 800,
-            height: 600,
+            url: "https://oscarcomputerguy.com/photo.jpeg",
+            width: 375,
+            height: 375,
             alt: "Og Image Alt",
             type: "image/jpeg"
           }
