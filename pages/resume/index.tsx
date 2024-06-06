@@ -19,8 +19,46 @@ const resume = () => {
           <CVSection title="Professional Experience" imgSrc="/cv.svg" />
           <CustomCard
             mainHeader="Senior Software Engineer"
+            subHeader="Crowdfarming, Madrid"
+            body="April 2024 - Present"
+            desc="Senior Software Engineer in the Finance Squad, specializing in backend development. Focused on refactoring code, implementing new features, and ensuring optimal performance using Nest.js, MongoDB, and PostgreSQL. Dedicated to enhancing system efficiency and contributing to high-impact financial projects through innovative solutions and robust database management."
+            stack={[
+              "Node.js",
+              "Typescript",
+              "express",
+              "nest.js",
+              "Jest",
+              "Docker",
+              "ECS",
+              "mongoDB"
+            ]}
+          />
+          <CustomCard
+            mainHeader="Senior Software Engineer"
+            subHeader="Phrasee, London"
+            body="March 2023 - April 2024"
+            desc="Collaborate with a cross-functional team to refactor the backend into a microservice architecture, optimizing performance and scalability.
+            Integrate artificial intelligence for natural language generation, enhancing user experiences and content quality.
+            Ensure seamless integration of AI-generated content using AWS ECS services, Lambdas, and event-driven design, enabling real-time data processing.
+            Utilize technologies including Nest.js, Express, MongoDB, and Postgres to achieve project goals and enhance backend functionality.
+            Contribute to the development of reliable, scalable, and secure backend services, delivering high-quality, AI-generated content to users.
+            Mentor and assist junior programmers, fostering skill development and collaboration within the team."
+            stack={[
+              "Node.js",
+              "Typescript",
+              "express",
+              "nest.js",
+              "Kafka",
+              "Jest",
+              "Docker",
+              "ECS",
+              "mongoDB"
+            ]}
+          />
+          <CustomCard
+            mainHeader="Senior Software Engineer"
             subHeader="Freelancer, Madrid"
-            body="October 2021 –Present"
+            body="October 2021 - February 2023"
             desc="Collaborating with tech companies to improve, create, and refactor the backend. Working in a microservice environment with Node (Express, Fastify, and Nest.js), TypeScript, and DDD with RabbitMQ and Kafka. Developing code for IoT devices to communicate with the backend. Additionally, working with React and Next.js for some frontend development. Some of the tools used to develop and deliver are: Jest for unit testing, Git flow, Docker, CircleCI, ArgoCD, SonarQube and Code Climate, DataDog, and the ELK stack."
             stack={[
               "Node.js",
