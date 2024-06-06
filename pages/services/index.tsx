@@ -156,7 +156,7 @@ export default function SplitWithImage() {
               <Image
                 rounded={"md"}
                 alt={"feature image"}
-                src={"/services1.jpeg"}
+                src={"/cool_image.jpeg"}
                 objectFit={"cover"}
               />
             </Flex>
