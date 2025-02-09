@@ -21,7 +21,8 @@ const resume = () => {
             mainHeader="Senior Software Engineer"
             subHeader="Crowdfarming, Madrid"
             body="April 2024 - Present"
-            desc="Senior Software Engineer in the Finance Squad, specializing in backend development. Focused on refactoring code, implementing new features, and ensuring optimal performance using Nest.js, MongoDB, and PostgreSQL. Dedicated to enhancing system efficiency and contributing to high-impact financial projects through innovative solutions and robust database management."
+            desc="Senior Software Engineer in the Finance Squad, specializing in backend development. Refactoring existing code, implementing new features, and optimizing system performance using Node.js/NestJS and MongoDB. Building and integrating payment solutions, including Stripe. Enhancing
+                system efficiency and contributing to high-impact financial projects through scalable, high-performance solutions."
             stack={[
               "Node.js",
               "Typescript",
@@ -35,14 +36,15 @@ const resume = () => {
           />
           <CustomCard
             mainHeader="Senior Software Engineer"
-            subHeader="Phrasee, London"
+            subHeader="Jacquard, London"
             body="March 2023 - April 2024"
-            desc="Collaborate with a cross-functional team to refactor the backend into a microservice architecture, optimizing performance and scalability.
-            Integrate artificial intelligence for natural language generation, enhancing user experiences and content quality.
-            Ensure seamless integration of AI-generated content using AWS ECS services, Lambdas, and event-driven design, enabling real-time data processing.
-            Utilize technologies including Nest.js, Express, MongoDB, and Postgres to achieve project goals and enhance backend functionality.
-            Contribute to the development of reliable, scalable, and secure backend services, delivering high-quality, AI-generated content to users.
-            Mentor and assist junior programmers, fostering skill development and collaboration within the team."
+            desc="Collaborated with a cross-functional team to refactor the backend into
+              a microservices architecture, optimizing performance and scalability.
+              Integrated artificial intelligence for natural language generation,
+              enhancing user experience and content quality. Using AWS ECS,
+              Lambdas, and event-driven design, enabling real-time data processing.
+              Utilized technologies such as NestJS, Express, MongoDB, and PostgreSQL
+              to enhance backend functionality and achieve project goals."
             stack={[
               "Node.js",
               "Typescript",
@@ -59,7 +61,11 @@ const resume = () => {
             mainHeader="Senior Software Engineer"
             subHeader="Freelancer, Madrid"
             body="October 2021 - February 2023"
-            desc="Collaborating with tech companies to improve, create, and refactor the backend. Working in a microservice environment with Node (Express, Fastify, and Nest.js), TypeScript, and DDD with RabbitMQ and Kafka. Developing code for IoT devices to communicate with the backend. Additionally, working with React and Next.js for some frontend development. Some of the tools used to develop and deliver are: Jest for unit testing, Git flow, Docker, CircleCI, ArgoCD, SonarQube and Code Climate, DataDog, and the ELK stack."
+            desc="Collaborated with a variety of tech companies, including Tier, PayFit, and
+                  GoStudent. Developed and refactored backend systems into microservices
+                  architectures using Node.js (Express, Fastify, NestJS) and TypeScript.
+                  Worked with React and Next.js for frontend development in some of the
+                  projects."
             stack={[
               "Node.js",
               "Typescript",
@@ -91,8 +97,13 @@ const resume = () => {
           <CustomCard
             mainHeader="Software Engineer (Backend Lead)"
             subHeader="Grupo OneTec, Madrid"
-            body="October 2020 – September 2021"
-            desc="Developed a microservices infrastructure for new projects and migrated old ones following a DDD approach when possible. Managed a group of developers to follow best practices and meet deadlines using agile methods. Utilized Node.js/TypeScript, Docker with AWS ECS/Fargate, Redis with pub/sub, AWS SQS, RabbitMQ, GraphQL, and Rest APIs against MySQL (Sequelize) and MongoDB (Mongoose). Tested with Jest and worked with Angular 9."
+            body="August 2020 – September 2021"
+            desc="Developed a microservices infrastructure for new projects and migrated
+                  legacy systems, applying Domain-Driven Design (DDD) principles when
+                  possible. Built and optimized backend services using Node.js/TypeScript, Docker
+                  with AWS ECS/Fargate, Redis (Pub/Sub), AWS SQS, RabbitMQ, GraphQL,
+                  and REST APIs with MySQL (Sequelize) and MongoDB (Mongoose),
+                  improving system scalability and reducing deployment time by 30%."
             stack={[
               "Node.js",
               "TypeScript",
@@ -114,7 +125,11 @@ const resume = () => {
             mainHeader="Software Engineer (Full Stack)"
             subHeader="Red Acre Ltd, Malta"
             body="June 2019 – July 2020"
-            desc="Developed a new microservices backend using Node.js with TypeScript and alternating between GraphQL and Rest endpoints. Also collaborated with the frontend development using React (Redux, Mobx, rebass, theme-ui, Emotion, SWR). Utilized AWS (Lambda, S3, ECS) and Docker for microservices and the ELK stack for monitoring, with MongoDB as the database."
+            desc="Developed a new microservices backend using Node.js with TypeScript,
+                  implementing both GraphQL and REST endpoints. Collaborated on frontend development with React, working with Redux,
+                  MobX, Rebass, Theme UI, Emotion, and SWR. Utilized AWS services (Lambda, S3, ECS) and Docker for microservices
+                  deployment. Implemented monitoring and logging solutions with the ELK
+                  stack. Managed data storage and retrieval using MongoDB."
             stack={[
               "node.js",
               "express",
@@ -131,28 +146,16 @@ const resume = () => {
           />
 
           <CustomCard
-            mainHeader="Software Engineer"
-            subHeader="LiveScore, Prague, Czechia"
-            body="November 2018 – May 2019"
-            desc="Worked as a frontend developer using React, Redux (+thunk), Styled Components, Axios, Lodash, Normalizr, Material-UI, AtlasKit, PWA, and more."
-            stack={[
-              "React",
-              "Redux (+thunk)",
-              "Styled Components",
-              "Axios",
-              "Lodash",
-              "Normalizr",
-              "Material-UI",
-              "AtlasKit",
-              "PWA"
-            ]}
-          />
-
-          <CustomCard
             mainHeader="Software Operations Engineer"
             subHeader="Techona, Prague, Czechia"
-            body="February 2018 – October 2018"
-            desc="Created internal applications with Angular 5 and Node.js, built Rest APIs with Node.js (Express) and Swagger, managed SQL databases, monitored and debugged APIs, handled Windows APP/Web Servers, performed rollouts and deployments, supported CDNs (Limelight, Cloudflare, CDNetworks), and used tools such as Confluence, Jira, and Swagger."
+            body="June 2016 – May 2019"
+            desc="Developed internal applications using Node.js/TypeScript (Express).
+                  Worked on frontend development with React, Redux (Thunk), Styled
+                  Components, Axios, Lodash, Normalizr, Material-UI, AtlasKit, and PWA. 
+                  Managed SQL databases, monitored and debugged APIs, and handled
+                  Windows app/web servers. Performed rollouts and deployments while
+                  supporting CDNs like Limelight, Cloudflare, and CDNetworks. Utilized tools such as Confluence, Jira, and Swagger for documentation
+                  and collaboration."
             stack={[
               "Angular",
               "node",
@@ -170,43 +173,24 @@ const resume = () => {
           />
 
           <CustomCard
-            mainHeader="Full Stack Engineer"
-            subHeader="Europcar, Madrid"
-            body="June 2016 – January 2018"
-            desc="Developed and maintained applications using Angular2/4, Bootstrap, Node.js, and MySQL. Also developed scripts in Python and Bash."
-            stack={["Node", "Typescript", "Angular", "MySql", "Python", "Bash"]}
-          />
-
-          <CustomCard
             mainHeader="Manager/owner"
             subHeader="Ciclos Barajas S.L, Madrid"
-            body="January 2010 – May 2016"
-            desc="Created and ran my own sports business."
+            body="January 2006 – May 2016"
+            desc="Founded and managed a sports (cycling) business, adapting to
+                dynamic market conditions with effective sales strategies. Developed a deep understanding of customer needs and adjusted
+                marketing approaches accordingly. Created my own bike brand. Leveraged my IT background to automate inventory management and
+                build an online store to expand sales channels."
             stack={["Management"]}
           />
 
           <CustomCard
             mainHeader="Programmer Analyst"
-            subHeader="Freelance, Madrid"
-            body="November 2005 – December 2009"
-            desc="Developed and maintained applications and databases for different clients, working through the entire life cycle from problem definition to deployment and maintenance. Used programming languages such as C++ and Java"
-            stack={["Java", "C++"]}
-          />
-
-          <CustomCard
-            mainHeader="Programmer Analyst"
-            subHeader="Drago Solutions, Madrid"
-            body="September 2001 – June 2005"
-            desc="Worked on IBM AS/400 systems with RPG IV and SQL, mainly at CEMEX. Acquired as well as developed test data, revising program(s) resulting in improved performance."
+            subHeader="Stryker, MI, USA / Drago Solutions, Madrid"
+            body="May 2001 – December 2005"
+            desc="Worked as a Programmer Analyst for Stryker (USA) as part of my internship and then
+              Drago Solutions (Madrid). Developed software using RPG III, RPG IV, ILE, CL, as well as Java and C++
+              with SQL databases"
             stack={["RPG IV", "SQL", "AS/400"]}
-          />
-
-          <CustomCard
-            mainHeader="Programmer Analyst"
-            subHeader="Stryker Corporation, Michigan, EEUU"
-            body="May 2000 – August 2001"
-            desc="Developed programs in RPG III, RPG IV, ILE, and CL. Monitored the execution of strategies and kept up-to-date with the latest technology market trends."
-            stack={["RPG III", "RPG IV", "ILE", "AS/400"]}
           />
 
           <CVSection title="Education" imgSrc="/certificate.svg" />
