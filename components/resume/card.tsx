@@ -59,13 +59,23 @@ const CustomCard: React.FC<CustomCardProps> = ({
       </CardHeader>
 
       <CardBody color={"gray.500"}>
-        <Text color={useColorModeValue("gray.600", "gray.300")}>{body}</Text>
+        <Text
+          color={useColorModeValue("gray.600", "gray.300")}
+          whiteSpace="pre-line"
+        >
+          {body}
+        </Text>
       </CardBody>
       <Divider borderColor={"grey.200"} />
       <CardFooter alignSelf={"left"}>
-        <VStack align="left">
-          <Text color={useColorModeValue("gray.600", "gray.300")}>{desc}</Text>
-          <HStack spacing={2} marginTop={2}>
+        <VStack align="left" spacing={6}>
+          <Text
+            color={useColorModeValue("gray.600", "gray.300")}
+            whiteSpace="pre-line"
+          >
+            {desc}
+          </Text>
+          <HStack spacing={2}>
             <SimpleGrid columns={{ base: 3, md: 6, lg: 6 }} spacing={4}>
               {stack &&
                 stack.map((item) => {
