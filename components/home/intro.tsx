@@ -57,7 +57,7 @@ const IntroHome = () => {
             {!isLargerThan1280 && (
               <Flex flex={1}>
                 <Image
-                  alt={"Login Image"}
+                  alt={"Senior software engineer coding"}
                   objectFit={"cover"}
                   src={"/code4.jpeg"}
                   rounded={"2xl"}
@@ -86,7 +86,7 @@ const IntroHome = () => {
         {isLargerThan1280 && (
           <Flex flex={1}>
             <Image
-              alt={"Login Image"}
+              alt={"Senior software engineer coding"}
               objectFit={"cover"}
               src={"/code4.jpeg"}
               rounded={"2xl"}

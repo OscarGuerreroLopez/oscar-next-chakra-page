@@ -10,10 +10,10 @@ const Resume = () => {
     <>
       <Layout>
         <CustomHeader
-          title="Oscar Software Engineer"
-          description="Best Software Engineer. Freelance Software Engineer. Software Developer"
+          title="Resume | Senior Software Engineer | Oscar Guerrero"
+          description="See Oscar Guerrero's resume, including backend and AI engineering experience across PropHero, CrowdFarming, Jacquard, and other product teams."
           url="https://oscarcomputerguy.com/resume"
-          siteName="Oscar Software Engineer resume"
+          siteName="Oscar Guerrero Resume"
         />
         <Container maxW={"4xl"} mt={{ base: 0, md: 8 }}>
           <CVSection title="Professional Experience" imgSrc="/cv.svg" />

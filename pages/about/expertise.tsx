@@ -11,10 +11,10 @@ export default function StatsGridWithImage() {
   return (
     <>
       <CustomHeader
-        title="Oscar Software Engineer"
-        description="Best Software Engineer. Freelance Software Engineer. Software Developer"
+        title="Backend & AI Expertise | Node.js, AWS, RAG"
+        description="Discover Oscar Guerrero's expertise in Node.js, TypeScript, Python, AWS serverless architecture, and AI backend systems with RAG and multi-agent workflows."
         url="https://oscarcomputerguy.com/about/expertise"
-        siteName="Oscar Software Engineer expertise"
+        siteName="Oscar Guerrero Expertise"
       />
 
       <Topic

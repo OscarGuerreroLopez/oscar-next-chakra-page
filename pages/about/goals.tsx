@@ -10,10 +10,10 @@ export default function StatsGridWithImage() {
   return (
     <>
       <CustomHeader
-        title="Oscar Software Engineer"
-        description="Best Software Engineer. Freelance Software Engineer. Software Developer"
+        title="Career Goals | AI Backend Engineering"
+        description="Read Oscar Guerrero's career goals around technical leadership, AI backend engineering, mentoring, and high-quality cloud-native product delivery."
         url="https://oscarcomputerguy.com/about/goals"
-        siteName="Oscar Software Engineer goals"
+        siteName="Oscar Guerrero Career Goals"
       />
 
       <Topic

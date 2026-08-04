@@ -11,10 +11,10 @@ export default function StatsGridWithImage() {
   return (
     <>
       <CustomHeader
-        title="Oscar Software Engineer"
-        description="Best Software Engineer. Freelance Software Engineer. Software Developer"
+        title="Software Engineering Experience | Oscar Guerrero"
+        description="View Oscar Guerrero's software engineering experience across PropHero, CrowdFarming, and Jacquard, including cloud-native and AI backend delivery."
         url="https://oscarcomputerguy.com/about/experience"
-        siteName="Oscar Software Engineer experience"
+        siteName="Oscar Guerrero Experience"
       />
 
       <Topic

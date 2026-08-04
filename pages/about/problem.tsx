@@ -11,10 +11,10 @@ export default function StatsGridWithImage() {
   return (
     <>
       <CustomHeader
-        title="Oscar Software Engineer"
-        description="Best Software Engineer. Freelance Software Engineer. Software Developer"
+        title="Problem-Solving Approach | Senior Software Engineer"
+        description="Learn how Oscar Guerrero solves complex backend and platform challenges with structured analysis, iterative delivery, and collaborative engineering."
         url="https://oscarcomputerguy.com/about/problem"
-        siteName="Oscar Software Engineer problem"
+        siteName="Oscar Guerrero Problem Solving"
       />
       <Topic
         mainTitle={mainTitle}

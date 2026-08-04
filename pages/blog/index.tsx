@@ -18,10 +18,10 @@ const Blog = () => {
   return (
     <Layout>
       <CustomHeader
-        title="Oscar Software Engineer"
-        description="Best Software Engineer. Freelance Software Engineer. Software Developer. Software Engineering Blog"
+        title="Software Engineering Blog | Backend, AWS, AI"
+        description="Read practical software engineering articles from Oscar Guerrero on TypeScript, backend architecture, and AI development challenges."
         url="https://oscarcomputerguy.com/blog"
-        siteName="Oscar Software Engineer blog"
+        siteName="Oscar Guerrero Blog"
       />
 
       <Stack spacing={4} as={Container} maxW={"4xl"} textAlign={"left"}>

@@ -93,7 +93,7 @@ export default function Analysis() {
             overflow={"hidden"}
           >
             <Image
-              alt={"Hero Image"}
+              alt={"Data analysis dashboard"}
               fit={"cover"}
               align={"center"}
               w={"100%"}

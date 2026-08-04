@@ -10,10 +10,10 @@ export default function StatsGridWithImage() {
   return (
     <>
       <CustomHeader
-        title="Oscar Software Engineer"
-        description="Best Software Engineer. Freelance Software Engineer. Software Developer"
+        title="Personal Interests | Oscar Guerrero"
+        description="Get to know the person behind the code, including Oscar Guerrero's interests and how he balances long-term engineering focus with life outside work."
         url="https://oscarcomputerguy.com/about/interest"
-        siteName="Oscar Software Engineer interest"
+        siteName="Oscar Guerrero Interests"
       />
       <Topic
         mainTitle={mainTitle}

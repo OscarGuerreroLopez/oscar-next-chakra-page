@@ -58,10 +58,10 @@ export default function SplitWithImage() {
     <>
       <Layout>
         <CustomHeader
-          title="Oscar Software Engineer"
-          description="Best Software Engineer. Freelance Software Engineer. Software Developer"
+          title="Software Development Services | Node.js, AWS, AI"
+          description="Hire Oscar Guerrero for backend architecture, AWS cloud systems, microservices modernization, and AI backend consulting for product teams."
           url="https://oscarcomputerguy.com/services"
-          siteName="Oscar Software Engineer services"
+          siteName="Oscar Guerrero Services"
         />
 
         <Container

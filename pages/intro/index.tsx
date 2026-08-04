@@ -6,10 +6,10 @@ const intro = () => {
   return (
     <Layout>
       <CustomHeader
-        title="Oscar Software Engineer"
-        description="Best Software Engineer. Freelance Software Engineer. Software Developer"
+        title="Senior Software Engineer Intro | Node.js, AWS, AI Backend"
+        description="Meet Oscar Guerrero, a senior software engineer focused on scalable backend architecture, cloud systems on AWS, and practical AI backend engineering."
         url="https://oscarcomputerguy.com/intro"
-        siteName="Oscar Software Engineer intro"
+        siteName="Oscar Guerrero Intro"
       />
       <Home />
     </Layout>

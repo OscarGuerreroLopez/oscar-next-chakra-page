@@ -47,7 +47,7 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
         </Box>
         <Button variant={"link"} colorScheme={"blue"} size={"sm"}>
           <Link href={`/about/${href}`} passHref legacyBehavior>
-            <a title={heading}>Learn more...</a>
+            <a title={`Learn more about ${heading}`}>Learn more about {heading}</a>
           </Link>
         </Button>
       </Stack>

@@ -7,6 +7,8 @@ interface CustomHeader {
   siteName: string;
 }
 
+const siteUrl = "https://oscarcomputerguy.com";
+
 const customHeader: React.FC<CustomHeader> = ({
   title,
   description,
@@ -31,7 +33,7 @@ const customHeader: React.FC<CustomHeader> = ({
       <SocialProfileJsonLd
         type="Person"
         name="Oscar Guerrero"
-        url={url}
+        url={siteUrl}
         sameAs={[
           "https://www.facebook.com/oscar.lopez.33331508",
           "https://www.linkedin.com/in/oscar-guerrero-a59289153/"
@@ -39,7 +41,7 @@ const customHeader: React.FC<CustomHeader> = ({
       />
 
       <CorporateContactJsonLd
-        url={url}
+        url={siteUrl}
         contactPoint={[
           {
             telephone: "+34-622-450-008",

@@ -28,21 +28,12 @@ const defaultHeader: React.FC<DefaultHeader> = ({
             url: "https://oscarcomputerguy.com/photo.jpeg",
             width: 375,
             height: 375,
-            alt: "Og Image Alt",
+            alt: "Oscar Guerrero - Senior Software Engineer",
             type: "image/jpeg"
           }
         ]
       }}
-      robotsProps={{
-        nosnippet: true,
-        notranslate: true,
-        noimageindex: true,
-        noarchive: true,
-        maxSnippet: -1,
-        maxImagePreview: "none",
-        maxVideoPreview: -1
-      }}
-      canonical="https://oscarcomputerguy.com"
+      canonical={url}
     />
   );
 };

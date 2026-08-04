@@ -8,10 +8,10 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
       <DefaultHeader
-        title="Software Engineer"
-        description="Best Software Engineer"
-        url="https://www.oscarcomputerguy.com/"
-        siteName="Oscar Software Engineer"
+        title="Senior Software Engineer | Node.js, AWS, AI Backend"
+        description="Oscar Guerrero is a senior software engineer helping teams build scalable backend systems with Node.js, TypeScript, Python, AWS, and AI workflows."
+        url="https://oscarcomputerguy.com/"
+        siteName="Oscar Guerrero"
       />
       <Component {...pageProps} />
       <Analytics />

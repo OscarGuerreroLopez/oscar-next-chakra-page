@@ -22,10 +22,10 @@ export default function GridListWith() {
     <>
       <Layout>
         <CustomHeader
-          title="Oscar Software Engineer"
-          description="Best Software Engineer. Freelance Software Engineer. Software Developer"
+          title="About Oscar Guerrero | Senior Software Engineer"
+          description="Explore Oscar Guerrero's background, engineering approach, and expertise in backend architecture, AWS cloud systems, and AI backend development."
           url="https://oscarcomputerguy.com/about"
-          siteName="Oscar Software Engineer about"
+          siteName="About Oscar Guerrero"
         />
 
         <Box p={4}>
