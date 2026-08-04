@@ -27,13 +27,13 @@ export type LittleCardContext = {
 export const AboutMeLittleCardContext: LittleCardContext = {
   experience: {
     title: "Experience",
-    desc: "My 15+ years of experience as a software engineer, combined with my specialization in startups since 2016, have given me the skills, expertise, and adaptability to tackle any software development challenge with confidence and creativity.",
+    desc: "I bring 20+ years of software engineering experience, with recent focus on cloud-native backend and AI platform engineering across PropHero, CrowdFarming, and Jacquard.",
     icon: FcBusinessman,
     href: "experience"
   },
   areasOfExpertise: {
     title: "Areas of expertise",
-    desc: "My expertise in BackEnd development using microservices, Node.js, and TypeScript, combined with my front-end development skills using React, and my proficiency in deploying on AWS, allows me to develop high-quality, robust, and scalable software systems that meet the needs of my clients.",
+    desc: "My expertise includes backend development with Node.js, TypeScript, and Python; microservices and event-driven/serverless architecture on AWS; and modern AI backend patterns such as RAG and multi-agent workflows.",
     icon: FcVoicePresentation,
     href: "expertise"
   },
@@ -59,7 +59,7 @@ export const AboutMeLittleCardContext: LittleCardContext = {
 
 export const Intro = {
   title: "About Me",
-  desc: "As a software engineer with over 15 years of experience, I specialize in creating microservices environments on AWS using node/typescript. I have worked on successful projects and overcome challenges, gaining valuable knowledge and expertise. On this page, you'll learn about my background, my philosophy on software development, and my vision for the future. Explore my work and connect with me to learn more."
+  desc: "I am a Senior Software Engineer focused on AI backend engineering. With over 20 years of experience, I build scalable backend systems for fintech, SaaS, and marketplace products using Node.js, TypeScript, Python, and AWS. I work with microservices, event-driven/serverless architecture, and RAG-based multi-agent workflows. On this page, you can explore my background, engineering approach, and long-term vision."
 };
 
 export type PageTextType = "experience";
@@ -79,10 +79,10 @@ export const PageText: AboutMePageTextType = {
   experience: {
     title: "Experience",
     first:
-      "I've been working as a software engineer for over 15 years, and during that time, I've gained extensive experience in various aspects of software development. I started my career working on enterprise-level applications for large corporations, where I gained a solid foundation in software engineering principles, project management, and collaboration.",
+      "I have been working as a software engineer since 2001, building over 20 years of experience across enterprise software, SaaS platforms, and startup environments. This long trajectory gave me a strong foundation in engineering fundamentals, delivery ownership, and cross-team collaboration.",
     second:
-      "In 2016, I shifted my focus to working with startups, and I've been specializing in this area ever since. Working with startups has allowed me to be part of exciting projects from the ground up and helped me develop a unique skill set that combines technical expertise with a deep understanding of the startup ecosystem. As a software engineer for startups, I've had the opportunity to work on a range of projects, from developing minimum viable products to building out complex software systems. I understand the importance of balancing speed with quality and the need to iterate quickly while keeping the user's needs at the forefront.",
+      "Since 2016, I have focused heavily on product-driven teams and startups, working across companies such as Europcar, Techona, LiveScore, Red Acre, Grupo OneTec, and consulting engagements. I have led backend modernization projects, designed resilient microservices, and delivered cloud-native systems while balancing speed, quality, and business impact.",
     third:
-      "Over the years, I've developed a passion for using technology to solve complex problems, and I've become proficient in several programming languages, platforms, and frameworks. I'm always learning and keeping up with the latest industry trends, and I'm excited to bring my skills and experience to new challenges and opportunities."
+      "In recent roles at Jacquard, CrowdFarming, and PropHero, I have specialized in AI backend engineering on top of Node.js and AWS, including event-driven pipelines, serverless workflows, LangChain/LangGraph orchestration, and RAG systems with Bedrock and OpenSearch."
   }
 };

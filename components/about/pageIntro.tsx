@@ -50,7 +50,7 @@ const PageIntro: React.FC = () => {
               Oscar Guerrero
             </Heading>
             <Text color={useColorModeValue("gray.600", "gray.300")}>
-              Full-Stack Developer
+              Senior Software Engineer · AI Backend Engineering
             </Text>
           </Stack>
           <Stack direction={"row"} justify={"center"} spacing={10}>

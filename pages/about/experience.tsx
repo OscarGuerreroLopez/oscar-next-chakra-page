@@ -5,7 +5,7 @@ import StatsText from "@/components/about/statsText";
 const mainTitle = "Experience";
 const subTitle = "Software Engineering";
 const mainDesc =
-  "My 15+ years of experience as a software engineer, combined with my specialization in startups since 2016, have given me the skills, expertise, and adaptability to tackle any software development challenge with confidence and creativity.";
+  "I bring 20+ years of software engineering experience across enterprise software, startups, and cloud-native product teams, with a current specialization in AI backend engineering.";
 
 export default function StatsGridWithImage() {
   return (
@@ -32,50 +32,46 @@ const stats = [
     title: "Professional Journey",
     content: (
       <>
-        I&apos;ve been working as<StatsText> a software engineer </StatsText>{" "}
-        for over 15 years, and during that time, I&apos;ve gained extensive
-        experience in various aspects of software development. I started my
-        career working on enterprise-level applications for large corporations,
-        where I gained a solid foundation in software engineering principles,
-        project management, and collaboration.
+        I have worked as<StatsText> a software engineer </StatsText> since 2001,
+        building more than 20 years of experience across enterprise and product
+        organizations. This path helped me strengthen software architecture,
+        delivery ownership, and collaboration with cross-functional teams.
       </>
     )
   },
   {
-    title: "Specialization",
+    title: "Recent Roles",
     content: (
       <>
-        In 2016, I shifted my focus to working with{" "}
-        <StatsText>startups</StatsText>, and I&apos;ve been specializing in this
-        area ever since. Working with startups has allowed me to be part of
-        exciting projects from the ground up and helped me develop a unique
-        skill set that combines technical expertise with a deep understanding of
-        the startup ecosystem.
+        Recent roles include <StatsText>PropHero</StatsText> (Apr 2025–Present),{" "}
+        <StatsText>CrowdFarming</StatsText> (Apr 2024–Apr 2025), and{" "}
+        <StatsText>Jacquard</StatsText> (Mar 2023–Apr 2024), where I focused on
+        scalable backend systems, fintech and operational services, and
+        AI-enabled product capabilities.
       </>
     )
   },
   {
-    title: "Projects",
+    title: "Architecture Focus",
     content: (
       <>
-        I&apos;ve had the opportunity to work on a range of projects, from
-        developing minimum viable products to building out complex{" "}
-        <StatsText>software systems</StatsText>. I understand the importance of
-        balancing speed with quality and the need to iterate quickly while
-        keeping the user&apos;s needs at the forefront.
+        I design and deliver <StatsText>cloud-native backend architecture</StatsText>{" "}
+        using Node.js, TypeScript, and AWS. My work includes microservices,
+        event-driven systems, and serverless workflows using Lambda, ECS,
+        Step Functions, and EventBridge, with data platforms such as PostgreSQL,
+        MongoDB, and Prisma.
       </>
     )
   },
   {
-    title: "Passion",
+    title: "AI Backend Engineering",
     content: (
       <>
-        Over the years, I&apos;ve developed a passion for using technology to{" "}
-        <StatsText>solve complex problems</StatsText>, and I&apos;ve become
-        proficient in several programming languages, platforms, and frameworks.
-        I&apos;m always learning and keeping up with the latest industry trends,
-        and I&apos;m excited to bring my skills and experience to new challenges
-        and opportunities.
+        I build AI backend capabilities with <StatsText>Python</StatsText>,
+        LangChain, and LangGraph, including multi-agent orchestration and
+        RAG pipelines powered by AWS Bedrock Knowledge Bases and OpenSearch.
+        My focus is reliable, observable systems that deliver real product value
+        in production.
       </>
     )
   }
