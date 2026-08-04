@@ -13,7 +13,7 @@ import {
 import LinkButton from "../custom/linkButton";
 import Description from "@/components/custom/description";
 
-const introHome = () => {
+const IntroHome = () => {
   const [isLargerThan1280] = useMediaQuery("(min-width: 768px)");
 
   return (
@@ -100,4 +100,4 @@ const introHome = () => {
   );
 };
 
-export default introHome;
+export default IntroHome;

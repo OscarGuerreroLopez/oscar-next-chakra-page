@@ -20,7 +20,7 @@ interface Props {
   desc2?: string[];
 }
 
-const entry: React.FC<Props> = ({ ...props }) => {
+const Entry: React.FC<Props> = ({ ...props }) => {
   return (
     <Container maxW={"4xl"}>
       <Flex
@@ -61,8 +61,14 @@ const entry: React.FC<Props> = ({ ...props }) => {
               {props.title}
             </Heading>
             <Description desc={props.desc1} props={{ mt: 5, p: 2 }} />
-            {props.desc2?.map((desc) => {
-              return <Description desc={desc} props={{ mt: 1, p: 2 }} />;
+            {props.desc2?.map((desc, index) => {
+              return (
+                <Description
+                  key={`${props.title}.${index}`}
+                  desc={desc}
+                  props={{ mt: 1, p: 2 }}
+                />
+              );
             })}
           </Box>
 
@@ -93,4 +99,4 @@ const entry: React.FC<Props> = ({ ...props }) => {
   );
 };
 
-export default entry;
+export default Entry;

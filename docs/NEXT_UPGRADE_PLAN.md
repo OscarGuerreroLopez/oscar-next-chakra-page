@@ -1,6 +1,13 @@
 # Next.js Upgrade Plan (Incremental + Safe)
 
-This project currently uses `next@13.2.4` and the Pages Router.
+Current status (August 4, 2026):
+
+- Upgraded to `next@16.3.0`
+- Lint migrated to ESLint CLI with flat config (`eslint.config.mjs`)
+- `npm run lint` and `npm run typecheck` pass
+- `npm run build` requires Node `>=20.9.0`
+
+This project currently uses the Pages Router.
 
 The safest route is to upgrade one major at a time, validating after each step.
 

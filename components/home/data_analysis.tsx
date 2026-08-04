@@ -50,7 +50,7 @@ export default function Analysis() {
             </Text>
             <br />
             <Text as={"span"} color={useColorModeValue("blue.500", "blue.400")}>
-              Don't know what to do with your data?
+              Don&apos;t know what to do with your data?
             </Text>
           </Heading>
 

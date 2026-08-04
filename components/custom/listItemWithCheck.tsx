@@ -5,7 +5,7 @@ interface ListItemParams {
   desc: string;
 }
 
-const listItemWithCheck: React.FC<ListItemParams> = ({ desc }) => {
+const ListItemWithCheck: React.FC<ListItemParams> = ({ desc }) => {
   return (
     <ListItem color={useColorModeValue("gray.700", "gray.400")}>
       <ListIcon as={FaCheckCircle} color="green.500" />
@@ -14,4 +14,4 @@ const listItemWithCheck: React.FC<ListItemParams> = ({ desc }) => {
   );
 };
 
-export default listItemWithCheck;
+export default ListItemWithCheck;

@@ -7,7 +7,7 @@ import {
 } from "@chakra-ui/react";
 import Link from "next/link";
 
-const angle = () => {
+const Angle = () => {
   return (
     <Container maxW={"5xl"} mt="10">
       <Flex
@@ -83,4 +83,4 @@ const angle = () => {
   );
 };
 
-export default angle;
+export default Angle;

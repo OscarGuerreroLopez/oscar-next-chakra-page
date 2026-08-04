@@ -4,7 +4,7 @@ interface DescriptionProps {
   desc: string;
   props?: Omit<TextProps, "color" | "fontSize">;
 }
-const description: React.FC<DescriptionProps> = ({ desc, props }) => {
+const Description: React.FC<DescriptionProps> = ({ desc, props }) => {
   return (
     <Text
       fontSize={{ base: "md", lg: "lg" }}
@@ -16,4 +16,4 @@ const description: React.FC<DescriptionProps> = ({ desc, props }) => {
   );
 };
 
-export default description;
+export default Description;

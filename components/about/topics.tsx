@@ -28,6 +28,10 @@ const Topics: React.FC<TopicsParams> = ({
   mainDesc,
   stats
 }) => {
+  const navLinkColor = useColorModeValue("gray.400", "gray.200");
+  const mainDescriptionColor = useColorModeValue("gray.400", "gray.400");
+  const statDescriptionColor = useColorModeValue("gray.400", "gray.500");
+
   return (
     <Box bg={"gray.800"} position={"relative"}>
       <Flex
@@ -54,9 +58,7 @@ const Topics: React.FC<TopicsParams> = ({
           <HStack as={"nav"} spacing={6}>
             {Links.map(({ name, path }) => (
               <Link href={path} key={`${name}.${path}`}>
-                <Text color={useColorModeValue("gray.400", "gray.200")}>
-                  {name}
-                </Text>
+                <Text color={navLinkColor}>{name}</Text>
               </Link>
             ))}
           </HStack>
@@ -86,10 +88,7 @@ const Topics: React.FC<TopicsParams> = ({
               >
                 {subTitle}
               </Heading>
-              <Text
-                fontSize={"xl"}
-                color={useColorModeValue("gray.400", "gray.400")}
-              >
+              <Text fontSize={"xl"} color={mainDescriptionColor}>
                 {mainDesc}
               </Text>
             </Box>
@@ -105,10 +104,7 @@ const Topics: React.FC<TopicsParams> = ({
                   >
                     {stat.title}
                   </Text>
-                  <Text
-                    fontSize={"xl"}
-                    color={useColorModeValue("gray.400", "gray.500")}
-                  >
+                  <Text fontSize={"xl"} color={statDescriptionColor}>
                     {stat.content}
                   </Text>
                 </Box>

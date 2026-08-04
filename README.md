@@ -2,6 +2,11 @@
 
 Personal website built with Next.js, TypeScript, and Chakra UI.
 
+## Runtime Requirements
+
+- Node.js `>=20.9.0` (required by Next.js 16)
+- npm `>=10`
+
 ## Tech Stack
 
 - Next.js (Pages Router)
@@ -44,6 +49,7 @@ Open `http://localhost:3000`.
 - The custom Chakra theme is now wired globally in `_app`.
 - Added a dedicated TypeScript validation script (`npm run typecheck`).
 - Added an incremental Next.js upgrade plan in `docs/NEXT_UPGRADE_PLAN.md`.
+- Upgraded to Next.js 16 and migrated linting to ESLint CLI (`eslint .`).
 
 ## Troubleshooting
 
@@ -54,6 +60,8 @@ rm -rf node_modules package-lock.json
 npm install
 npm run build
 ```
+
+If `npm run build` fails with a Node version error, upgrade Node to `>=20.9.0` and reinstall dependencies.
 
 ## Upgrade Path
 
