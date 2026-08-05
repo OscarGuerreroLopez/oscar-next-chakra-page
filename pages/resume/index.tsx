@@ -162,32 +162,21 @@ Implemented centralized logging and monitoring with ELK.`}
           />
 
           <CustomCard
-            mainHeader="Software Engineer"
-            subHeader="LiveScore, Prague"
-            body="November 2018 – May 2019"
-            desc={`Developed React/Redux frontend features in agile teams for high-traffic web products.`}
-            stack={[
-              "React",
-              "Redux",
-              "Styled Components",
-              "Material-UI",
-              "Axios",
-              "PWA"
-            ]}
-          />
-
-          <CustomCard
             mainHeader="Software Operations Engineer"
             subHeader="Techona, Prague"
-            body="June 2017 – October 2018"
+            body="June 2016 – May 2019"
             desc={`Built internal tools and REST APIs with Node.js/Express.
 
 Managed SQL databases and supported deployment/operations reliability.`}
             stack={[
               "Node.js",
               "Express",
+              "TypeScript",
               "Angular",
               "SQL",
+              "MySQL",
+              "Python",
+              "Bash",
               "Swagger",
               "Cloudflare",
               "Limelight"
@@ -195,27 +184,22 @@ Managed SQL databases and supported deployment/operations reliability.`}
           />
 
           <CustomCard
-            mainHeader="Full Stack Engineer"
-            subHeader="Europcar, Madrid"
-            body="June 2016 – January 2018"
-            desc={`Developed and maintained full-stack applications.`}
-            stack={["Angular", "Node.js", "MySQL", "Python", "Bash"]}
-          />
+            mainHeader="Earlier Experience (before 2016)"
+            subHeader="Independent Business Owner, Ciclos Barajas (2010–2016) · Programming Analyst, Freelance (2001–2009, USA & Spain)"
+            body="2001 – 2016"
+            desc={`Built and maintained business software and databases and operated a retail business end-to-end, including process automation and e-commerce implementation.
 
-          <CustomCard
-            mainHeader="Independent Business Owner"
-            subHeader="Ciclos Barajas S.L, Madrid"
-            body="January 2010 – May 2016"
-            desc={`Founded and operated a cycling business, including process automation and e-commerce implementation.`}
-            stack={["Management", "E-commerce", "Process automation"]}
-          />
-
-          <CustomCard
-            mainHeader="Programming Analyst"
-            subHeader="Freelance, USA & Spain"
-            body="May 2001 – December 2009"
-            desc={`Built and maintained business software and databases for clients such as Stryker, CEMEX, and Drago Solutions.`}
-            stack={["RPG III/IV", "ILE", "CL", "Java", "C++", "SQL"]}
+Worked with clients such as Stryker, CEMEX, and Drago Solutions using RPG III/IV, ILE, CL, Java, C++, and SQL.`}
+            stack={[
+              "RPG III/IV",
+              "ILE",
+              "CL",
+              "Java",
+              "C++",
+              "SQL",
+              "E-commerce",
+              "Process automation"
+            ]}
           />
 
           <CVSection title="Education" imgSrc="/certificate.svg" />

@@ -81,7 +81,7 @@ export const PageText: AboutMePageTextType = {
     first:
       "I have been working as a software engineer since 2001, building over 20 years of experience across enterprise software, SaaS platforms, and startup environments. This long trajectory gave me a strong foundation in engineering fundamentals, delivery ownership, and cross-team collaboration.",
     second:
-      "Since 2016, I have focused heavily on product-driven teams and startups, working across companies such as Europcar, Techona, LiveScore, Red Acre, Grupo OneTec, and consulting engagements. I have led backend modernization projects, designed resilient microservices, and delivered cloud-native systems while balancing speed, quality, and business impact.",
+      "Since 2016, I have focused heavily on product-driven teams and startups, working across companies such as Techona, Red Acre, Grupo OneTec, and consulting engagements. I have led backend modernization projects, designed resilient microservices, and delivered cloud-native systems while balancing speed, quality, and business impact.",
     third:
       "In recent roles at Jacquard, CrowdFarming, and PropHero, I have specialized in AI backend engineering on top of Node.js and AWS, including event-driven pipelines, serverless workflows, LangChain/LangGraph orchestration, and RAG systems with Bedrock and OpenSearch."
   }
