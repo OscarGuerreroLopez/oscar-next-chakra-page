@@ -26,6 +26,8 @@ const littleCard: React.FC<LittleCard> = ({
   linkAddress,
   linkDesc
 }) => {
+  const linkText = linkDesc || `Read more about ${title}`;
+
   return (
     <Card
       direction="column"
@@ -39,7 +41,7 @@ const littleCard: React.FC<LittleCard> = ({
         maxW="100%"
         maxH={"200px"}
         src={imgSrc}
-        alt="Caffe Latte"
+        alt={`${title} illustration`}
       />
 
       <Stack>
@@ -52,7 +54,7 @@ const littleCard: React.FC<LittleCard> = ({
           <CardFooter>
             <Button variant={"link"} colorScheme={"blue"} size={"sm"}>
               <Link href={linkAddress} passHref legacyBehavior>
-                <a title={linkAddress}>{linkDesc || "Learn more..."}</a>
+                <a title={linkText}>{linkText}</a>
               </Link>
             </Button>
           </CardFooter>

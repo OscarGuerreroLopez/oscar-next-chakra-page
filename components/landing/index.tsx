@@ -32,8 +32,8 @@ export default function WithBackgroundImage() {
             lineHeight={1.2}
             fontSize={useBreakpointValue({ base: "3xl", md: "4xl" })}
           >
-            Hello, Oscar Guerrero here, I am an experienced software engineer
-            with more than 15 years in the field
+            Hello, Oscar Guerrero here. I am a senior software engineer with
+            more than 20 years of experience in backend and cloud systems.
           </Text>
           <Stack direction={"row"}>
             <Button

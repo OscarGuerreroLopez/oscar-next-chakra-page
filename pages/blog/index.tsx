@@ -14,30 +14,31 @@ const intro =
           find something of value in my posts. Join me on this journey as we \
           explore the exciting and ever-evolving world of technology together!";
 
-const blog = () => {
+const Blog = () => {
   return (
     <Layout>
       <CustomHeader
-        title="Oscar Software Engineer"
-        description="Best Software Engineer. Freelance Software Engineer. Software Developer. Software Engineering Blog"
+        title="Software Engineering Blog | Backend, AWS, AI"
+        description="Read practical software engineering articles from Oscar Guerrero on TypeScript, backend architecture, and AI development challenges."
         url="https://oscarcomputerguy.com/blog"
-        siteName="Oscar Software Engineer blog"
+        siteName="Oscar Guerrero Blog"
       />
 
       <Stack spacing={4} as={Container} maxW={"4xl"} textAlign={"left"}>
         <Description desc={intro} props={{ fontWeight: "bold", mt: 7 }} />
       </Stack>
 
-      {BlogData.map((blog) => {
+      {BlogData.map((blogItem) => {
         return (
           <BlogEntry
-            title={blog.title}
-            date={blog.date}
-            tag={blog.tag}
-            avatar={blog.avatar}
-            author={blog.author}
-            desc1={blog.desc1}
-            desc2={blog.desc2}
+            key={`${blogItem.title}.${blogItem.date}`}
+            title={blogItem.title}
+            date={blogItem.date}
+            tag={blogItem.tag}
+            avatar={blogItem.avatar}
+            author={blogItem.author}
+            desc1={blogItem.desc1}
+            desc2={blogItem.desc2}
           />
         );
       })}
@@ -45,4 +46,4 @@ const blog = () => {
   );
 };
 
-export default blog;
+export default Blog;

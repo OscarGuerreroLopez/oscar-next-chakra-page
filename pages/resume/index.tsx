@@ -5,74 +5,80 @@ import EducationCard from "@/components/resume/educationCard";
 import CVSection from "@/components/resume/cvSection";
 import CustomHeader from "@/components/head/customHeader";
 
-const resume = () => {
+const Resume = () => {
   return (
     <>
       <Layout>
         <CustomHeader
-          title="Oscar Software Engineer"
-          description="Best Software Engineer. Freelance Software Engineer. Software Developer"
+          title="Resume | Senior Software Engineer | Oscar Guerrero"
+          description="See Oscar Guerrero's resume, including backend and AI engineering experience across PropHero, CrowdFarming, Jacquard, and other product teams."
           url="https://oscarcomputerguy.com/resume"
-          siteName="Oscar Software Engineer resume"
+          siteName="Oscar Guerrero Resume"
         />
         <Container maxW={"4xl"} mt={{ base: 0, md: 8 }}>
           <CVSection title="Professional Experience" imgSrc="/cv.svg" />
+
           <CustomCard
             mainHeader="Senior Software Engineer"
             subHeader="PropHero, Madrid"
             body="April 2025 – Present"
-            desc={`Refactoring and extending backend systems using Node.js (Express) and TypeScript, applying Domain-Driven Design (DDD) and Event-Driven Architecture.
+            desc={`Build scalable backend systems in Node.js (Express) and TypeScript.
 
-Building serverless workflows on AWS (Lambda, SST) backed by PostgreSQL (Prisma ORM).
+Develop serverless workflows with AWS Lambda/SST, PostgreSQL, and Prisma.
 
-Integrating AI-driven features to enhance automation and decision-making.
+Implement event-driven integrations and async processing pipelines.
 
-Focused on clean, observable, and maintainable architecture tied to core business domains.`}
+Build AI backend capabilities in Python with LangChain/LangGraph and AWS AgentCore.
+
+Develop multi-agent workflows and RAG pipelines using AWS Bedrock Knowledge Bases and OpenSearch.`}
             stack={[
               "Node.js",
               "TypeScript",
-              "Express",
-              "DDD",
-              "EDA",
+              "Python",
               "AWS Lambda",
               "SST",
               "PostgreSQL",
-              "Prisma ORM"
+              "Prisma",
+              "LangChain",
+              "LangGraph",
+              "AWS Bedrock",
+              "OpenSearch",
+              "EventBridge"
             ]}
           />
+
           <CustomCard
             mainHeader="Senior Software Engineer"
-            subHeader="Crowdfarming, Madrid"
+            subHeader="CrowdFarming, Madrid"
             body="April 2024 – April 2025"
-            desc={`Owned backend development for high-impact financial features, including Stripe integrations.
+            desc={`Owned backend development for financial and operational features.
 
-Designed and deployed serverless workflows (AWS Lambda, Step Functions).
+Integrated Stripe for payments, subscriptions, and billing automation.
 
-Improved system scalability and maintainability with NestJS and MongoDB.
+Designed serverless workflows with Lambda and Step Functions.
 
-Delivered reliable event-driven services powering core finance operations.`}
+Improved maintainability and scalability with NestJS and MongoDB.`}
             stack={[
               "Node.js",
               "TypeScript",
               "NestJS",
               "MongoDB",
-              "Stripe",
               "AWS Lambda",
               "Step Functions",
-              "Event-driven"
+              "Stripe",
+              "Event-Driven Architecture"
             ]}
           />
+
           <CustomCard
             mainHeader="Senior Software Engineer"
-            subHeader="Jacquard, London / Madrid"
+            subHeader="Jacquard (formerly Phrasee), London (Remote)"
             body="March 2023 – April 2024"
-            desc={`Refactored the backend into microservices for scalability and resilience.
+            desc={`Refactored backend systems into resilient microservices.
 
-Integrated AI-powered natural language generation to improve content quality and engagement.
+Built event-driven AI content-generation services.
 
-Used AWS ECS, Lambdas, event-driven patterns for real-time data processing.
-
-Utilized technologies such as NestJS, Express, MongoDB, and PostgreSQL to enhance backend functionality and achieve project goals.`}
+Collaborated across distributed teams and mentored junior engineers.`}
             stack={[
               "Node.js",
               "TypeScript",
@@ -80,134 +86,134 @@ Utilized technologies such as NestJS, Express, MongoDB, and PostgreSQL to enhanc
               "Express",
               "AWS ECS",
               "AWS Lambda",
-              "Event-driven",
               "MongoDB",
               "PostgreSQL"
             ]}
           />
-          <CustomCard
-            mainHeader="Senior Software Engineer"
-            subHeader="Independent, Madrid"
-            body="October 2021 – February 2023"
-            desc={`Supported fast-growing startups (Tier, PayFit, GoStudent, Hurdle) modernizing backends using Node.js, TypeScript, and modern frameworks (Express, NestJS, Fastify).
 
-Utilized tools such as Jest for unit testing, Git Flow, Docker, CircleCI, ArgoCD, SonarQube, Code Climate, Datadog, and the ELK stack to ensure high-quality software delivery.`}
+          <CustomCard
+            mainHeader="Senior Software Engineer Consultant"
+            subHeader="Freelance / Self-Employed, Madrid"
+            body="October 2021 – February 2023"
+            desc={`Supported startups (Tier Mobility, PayFit, GoStudent, Hurdle) modernizing backend/cloud systems.
+
+Designed and refactored microservices in Node.js/TypeScript (NestJS, Fastify, Express).
+
+Worked on AWS-based delivery pipelines with strong DevOps/quality tooling.`}
             stack={[
               "Node.js",
               "TypeScript",
-              "Express",
               "NestJS",
               "Fastify",
-              "Jest",
-              "Git Flow",
+              "Express",
               "Docker",
+              "AWS",
               "CircleCI",
               "ArgoCD",
-              "SonarQube",
-              "Code Climate",
               "Datadog",
-              "ELK"
+              "ELK",
+              "Jest"
             ]}
           />
+
           <CustomCard
             mainHeader="Senior Software Engineer"
             subHeader="Grupo OneTec, Madrid"
-            body="October 2020 – September 2021"
-            desc={`Designed microservices infrastructure from the ground up and migrated legacy systems using Domain-Driven Design principles.
+            body="August 2020 – September 2021"
+            desc={`Designed microservices architecture and led legacy migration using DDD principles.
 
-Built high-throughput services with Node.js/TypeScript, AWS ECS/Fargate, Redis (Pub/Sub), and message queues (SQS, RabbitMQ).`}
+Built high-throughput services and messaging infrastructure.`}
             stack={[
               "Node.js",
               "TypeScript",
-              "DDD",
               "AWS ECS/Fargate",
               "Redis",
-              "AWS SQS",
-              "RabbitMQ"
+              "RabbitMQ",
+              "SQS",
+              "GraphQL",
+              "MySQL",
+              "MongoDB",
+              "Docker",
+              "DDD"
             ]}
           />
+
           <CustomCard
             mainHeader="Software Engineer (Full Stack)"
             subHeader="Red Acre LTD, Malta"
             body="June 2019 – July 2020"
-            desc={`Developed a new microservices backend with TypeScript, supporting both GraphQL and REST APIs.
+            desc={`Built TypeScript microservices supporting GraphQL and REST APIs.
 
-Collaborated on frontend development with React, working with Redux, MobX, Rebass, Theme UI, Emotion, and SWR.
+Contributed to React frontend and deployed services on AWS.
 
-Deployed services on AWS (Lambda, ECS, S3) and implemented centralized logging with the ELK stack.`}
+Implemented centralized logging and monitoring with ELK.`}
             stack={[
               "Node.js",
               "TypeScript",
-              "GraphQL",
-              "REST APIs",
               "React",
               "Redux",
-              "MobX",
-              "Theme UI",
-              "Emotion",
-              "SWR",
+              "GraphQL",
+              "REST",
               "AWS Lambda",
               "AWS ECS",
-              "AWS S3",
+              "MongoDB",
               "ELK"
             ]}
           />
+
           <CustomCard
             mainHeader="Software Operations Engineer"
             subHeader="Techona, Prague"
-            body="June 2017 – May 2019"
-            desc={`Developed internal applications using Node.js/TypeScript (Express).
+            body="June 2016 – May 2019"
+            desc={`Built internal tools and REST APIs with Node.js/Express.
 
-Worked on frontend development with React, Redux (Thunk), Styled Components, Axios, Lodash, Normalizr, Material-UI, AtlasKit, and PWA.
-
-Managed SQL databases, debugged production APIs, and supported global CDN integrations (Cloudflare, Limelight).`}
+Managed SQL databases and supported deployment/operations reliability.`}
             stack={[
               "Node.js",
-              "TypeScript",
               "Express",
-              "React",
-              "Redux",
-              "Styled Components",
-              "Axios",
-              "Lodash",
-              "Normalizr",
-              "Material-UI",
-              "AtlasKit",
-              "PWA",
+              "TypeScript",
+              "Angular",
               "SQL",
+              "MySQL",
+              "Python",
+              "Bash",
+              "Swagger",
               "Cloudflare",
               "Limelight"
             ]}
           />
-          <CustomCard
-            mainHeader="Manager/owner"
-            subHeader="Ciclos Barajas S.L, Madrid"
-            body="January 2010 – May 2016"
-            desc={`Founded and operated a cycling business, launching an e-commerce platform with automated inventory.`}
-            stack={["Management", "E-commerce", "Inventory automation"]}
-          />
-          <CustomCard
-            mainHeader="Programming Analyst"
-            subHeader="Independent, USA and Madrid"
-            body="May 2001 – December 2009"
-            desc={`Developed and maintained software for Stryker, CEMEX, and Drago Solutions.
 
-Technologies: RPG III/IV, CL, Java, C++, SQL.`}
-            stack={["RPG III/IV", "CL", "Java", "C++", "SQL"]}
+          <CustomCard
+            mainHeader="Earlier Experience (before 2016)"
+            subHeader="Independent Business Owner, Ciclos Barajas (2010–2016) · Programming Analyst, Freelance (2001–2009, USA & Spain)"
+            body="2001 – 2016"
+            desc={`Built and maintained business software and databases and operated a retail business end-to-end, including process automation and e-commerce implementation.
+
+Worked with clients such as Stryker, CEMEX, and Drago Solutions using RPG III/IV, ILE, CL, Java, C++, and SQL.`}
+            stack={[
+              "RPG III/IV",
+              "ILE",
+              "CL",
+              "Java",
+              "C++",
+              "SQL",
+              "E-commerce",
+              "Process automation"
+            ]}
           />
 
           <CVSection title="Education" imgSrc="/certificate.svg" />
 
           <EducationCard
-            mainHeader="Scrum Master certification"
-            subHeader="Scrum Manager number 32675, Tanta Training Center, Madrid, Spain"
-            body="November 2020"
+            mainHeader="Associate’s Degree — Computer and Information Systems"
+            subHeader="Kalamazoo Valley Community College, Michigan, USA"
+            body="1998 – 2001"
           />
 
           <EducationCard
-            mainHeader="Computer and Information Systems"
-            subHeader="Virginia Western Community College, Virginia, USA & Kalamazoo Valley Community College, Michigan, USA"
-            body="January 1998 – August 2001"
+            mainHeader="Scrum Master Certification"
+            subHeader="Scrum Manager #32675, Tanta Training Center, Madrid, Spain"
+            body="2020"
           />
         </Container>
       </Layout>
@@ -215,4 +221,4 @@ Technologies: RPG III/IV, CL, Java, C++, SQL.`}
   );
 };
 
-export default resume;
+export default Resume;

@@ -1,38 +1,70 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Oscar Next + Chakra Portfolio
 
-## Getting Started
+Personal website built with Next.js, TypeScript, and Chakra UI.
 
-First, run the development server:
+## Runtime Requirements
+
+- Node.js `>=20.9.0` (required by Next.js 16)
+- npm `>=10`
+
+## Tech Stack
+
+- Next.js (Pages Router)
+- React
+- TypeScript (`strict` enabled)
+- Chakra UI + Emotion
+- `next-seo` for shared SEO defaults
+- Vercel Analytics
+
+## Local Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- `npm run dev` – start development server
+- `npm run build` – create production build
+- `npm run start` – start production server
+- `npm run lint` – run ESLint
+- `npm run typecheck` – run TypeScript checks
+- `npm run prettier-format` – format JS/TS/TSX files
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- `pages/` – route entries (home, about, intro, blog, services, resume)
+- `components/` – reusable UI sections grouped by domain
+- `data/` – text/content objects used by pages and cards
+- `styles/theme.tsx` – Chakra theme configuration
+- `constants/` – navigation and constant values
+- `utils/` – utility helpers
+- `public/` – static assets and images
 
-## Learn More
+## What Was Modernized
 
-To learn more about Next.js, take a look at the following resources:
+- The custom Chakra theme is now wired globally in `_app`.
+- Added a dedicated TypeScript validation script (`npm run typecheck`).
+- Added an incremental Next.js upgrade plan in `docs/NEXT_UPGRADE_PLAN.md`.
+- Upgraded to Next.js 16 and migrated linting to ESLint CLI (`eslint .`).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Troubleshooting
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+If `npm run build` fails with an SWC binary error on Apple Silicon (for example: failed loading `@next/swc-darwin-arm64`), run a clean install:
 
-## Deploy on Vercel
+```bash
+rm -rf node_modules package-lock.json
+npm install
+npm run build
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+If `npm run build` fails with a Node version error, upgrade Node to `>=20.9.0` and reinstall dependencies.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Upgrade Path
+
+For a safe migration path from this codebase to the latest Next.js, follow:
+
+- `docs/NEXT_UPGRADE_PLAN.md`

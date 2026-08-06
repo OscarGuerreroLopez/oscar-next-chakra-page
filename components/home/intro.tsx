@@ -13,7 +13,7 @@ import {
 import LinkButton from "../custom/linkButton";
 import Description from "@/components/custom/description";
 
-const introHome = () => {
+const IntroHome = () => {
   const [isLargerThan1280] = useMediaQuery("(min-width: 768px)");
 
   return (
@@ -44,7 +44,7 @@ const introHome = () => {
                   zIndex: -1
                 }}
               >
-                Freelancer
+                Senior
               </Text>
               <br />{" "}
               <Text
@@ -57,7 +57,7 @@ const introHome = () => {
             {!isLargerThan1280 && (
               <Flex flex={1}>
                 <Image
-                  alt={"Login Image"}
+                  alt={"Senior software engineer coding"}
                   objectFit={"cover"}
                   src={"/code4.jpeg"}
                   rounded={"2xl"}
@@ -66,15 +66,14 @@ const introHome = () => {
             )}
 
             <Description
-              desc="With over 15 years of experience as a software engineer, I
-              specialize in creating microservices environments using
-              node/typescript. I believe software development is both an art and
-              a science, requiring creativity, discipline, and collaboration. I
-              take pride in writing clean, well-organized code and mentoring
-              others. On this website, you'll find more about my background, my
-              philosophy on software development, and my vision for the future.
-              Explore my work and connect with me to learn more. Thank you for
-              visiting!"
+              desc="With more than 20 years of software engineering experience,
+              I specialize in cloud-native backend and AI backend development
+              using Node.js, TypeScript, Python, and AWS. I design microservices,
+              event-driven systems, and serverless workflows, and I build
+              production-ready RAG and multi-agent capabilities when they create
+              clear product value. On this website, you'll find more about my
+              background, my engineering approach, and the kinds of systems I
+              help teams deliver."
             />
 
             <Stack direction={{ base: "column", md: "row" }} spacing={4}>
@@ -87,7 +86,7 @@ const introHome = () => {
         {isLargerThan1280 && (
           <Flex flex={1}>
             <Image
-              alt={"Login Image"}
+              alt={"Senior software engineer coding"}
               objectFit={"cover"}
               src={"/code4.jpeg"}
               rounded={"2xl"}
@@ -100,4 +99,4 @@ const introHome = () => {
   );
 };
 
-export default introHome;
+export default IntroHome;

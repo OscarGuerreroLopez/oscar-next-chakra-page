@@ -33,7 +33,7 @@ const Feature = ({ text, icon }: FeatureProps) => {
   );
 };
 
-const contact = () => {
+const Contact = () => {
   return (
     <Box
       maxW={{ base: "full", md: "575px" }}
@@ -103,4 +103,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default Contact;

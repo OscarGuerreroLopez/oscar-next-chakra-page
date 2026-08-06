@@ -50,7 +50,7 @@ export default function Analysis() {
             </Text>
             <br />
             <Text as={"span"} color={useColorModeValue("blue.500", "blue.400")}>
-              Don't know what to do with your data?
+              Don&apos;t know what to do with your data?
             </Text>
           </Heading>
 
@@ -93,7 +93,7 @@ export default function Analysis() {
             overflow={"hidden"}
           >
             <Image
-              alt={"Hero Image"}
+              alt={"Data analysis dashboard"}
               fit={"cover"}
               align={"center"}
               w={"100%"}

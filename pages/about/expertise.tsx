@@ -2,19 +2,19 @@ import Topic from "@/components/about/topics";
 import StatsText from "@/components/about/statsText";
 import CustomHeader from "@/components/head/customHeader";
 
-const mainTitle = "expertise";
-const subTitle = " Areas of expertise";
+const mainTitle = "EXPERTISE";
+const subTitle = "Areas of expertise";
 const mainDesc =
-  "As a software engineer, my areas of expertise include BackEnd development using microservices architecture, Node.js, and TypeScript. I have extensive experience in designing, developing, and deploying complex BackEnd systems using these technologies.";
+  "As a senior software engineer, my core expertise is cloud-native backend development with Node.js, TypeScript, Python, and AWS, including AI backend systems for real production use cases.";
 
 export default function StatsGridWithImage() {
   return (
     <>
       <CustomHeader
-        title="Oscar Software Engineer"
-        description="Best Software Engineer. Freelance Software Engineer. Software Developer"
+        title="Backend & AI Expertise | Node.js, AWS, RAG"
+        description="Discover Oscar Guerrero's expertise in Node.js, TypeScript, Python, AWS serverless architecture, and AI backend systems with RAG and multi-agent workflows."
         url="https://oscarcomputerguy.com/about/expertise"
-        siteName="Oscar Software Engineer expertise"
+        siteName="Oscar Guerrero Expertise"
       />
 
       <Topic
@@ -33,11 +33,10 @@ const stats = [
     content: (
       <>
         I specialize in <StatsText>designing and developing</StatsText> scalable
-        software solutions, focusing on microservices architectures using
-        node.js and TypeScript. With 15 years of experience, I work with
-        cloud-based technologies, including AWS, and leverage the latest tools
-        and best practices to ensure high-quality and efficient software
-        development.
+        software solutions, focusing on microservices and modular backend
+        architecture with Node.js, TypeScript, and Python. With more than 20
+        years of experience, I prioritize maintainability, observability, and
+        business-aligned delivery.
       </>
     )
   },
@@ -47,10 +46,9 @@ const stats = [
       <>
         I have extensive experience designing and implementing{" "}
         <StatsText>cloud-based infrastructures</StatsText>, with a
-        specialization in scalable microservices architectures on AWS. My
-        approach focuses on optimizing performance, ensuring security,{" "}
-        <StatsText>reducing costs</StatsText>, and providing flexibility for
-        businesses.
+        specialization in scalable microservices and serverless architectures on
+        AWS. I work with Lambda, ECS/Fargate, Step Functions, and EventBridge,
+        focusing on performance, security, and <StatsText>cost efficiency</StatsText>.
       </>
     )
   },
@@ -58,11 +56,10 @@ const stats = [
     title: "Technologies",
     content: (
       <>
-        As an expert in <StatsText>emerging technologies</StatsText>, I stay
-        up-to-date on the latest advancements and tools to deliver cutting-edge
-        solutions. I specialize in leveraging emerging technologies to develop
-        innovative software solutions and provide consultation on their
-        potential applications to help businesses stay ahead of the curve.
+        I build <StatsText>AI backend capabilities</StatsText> with LangChain,
+        LangGraph, and AWS Bedrock, including RAG and multi-agent workflows. I
+        focus on practical AI adoption that improves automation, decision-making,
+        and product outcomes.
       </>
     )
   },
@@ -70,11 +67,10 @@ const stats = [
     title: "Collaboration",
     content: (
       <>
-        With extensive experience in collaboration, I excel in team environments
-        and enjoy working with clients to deliver solutions that meet their
-        unique needs. I specialize in effective communication, project
-        management, and fostering a culture of collaboration to ensure
-        <StatsText> successful outcomes</StatsText> for all stakeholders.
+        I thrive in distributed and cross-functional teams, partnering with
+        product, data, and operations to deliver measurable outcomes. I value
+        clear communication, mentoring, and strong engineering standards to
+        ensure <StatsText>successful delivery</StatsText>.
       </>
     )
   }

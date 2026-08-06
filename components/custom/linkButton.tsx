@@ -6,7 +6,7 @@ interface ButtonProps {
   link: string;
 }
 
-const linkButton: React.FC<ButtonProps> = ({ name, link }) => {
+const LinkButton: React.FC<ButtonProps> = ({ name, link }) => {
   return (
     <Link href={link}>
       <Button
@@ -24,4 +24,4 @@ const linkButton: React.FC<ButtonProps> = ({ name, link }) => {
   );
 };
 
-export default linkButton;
+export default LinkButton;
