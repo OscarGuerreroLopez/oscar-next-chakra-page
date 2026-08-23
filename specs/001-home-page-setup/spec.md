@@ -6,14 +6,15 @@
 
 **Status**: Draft
 
-**Input**: User description: "home page setup - The initial page should have the text flow from right to left making a cool visual effect instead of being static. So the text ‘Hello, Oscar Guerrero here. I am a senior software …..’ Should have a nice effect. Also the button learn more about me should show up after all the text is done."
+**Input**: User description: "Update 001-home-page-setup so the text reveal scrolls slower, like half the speed that it is now."
 
 ## User Scenarios & Testing *(mandatory)*
 
-### User Story 1 - Experience the animated introduction (Priority: P1)
+### User Story 1 - Experience the slower animated introduction (Priority: P1)
 
-As a visitor to the home page, I want Oscar’s introduction to arrive with a polished
-right-to-left motion effect so that the first impression feels personal and dynamic.
+As a visitor to the home page, I want Oscar’s introduction to arrive with a polished,
+slower right-to-left motion effect so that I can comfortably read the first impression
+while it remains personal and dynamic.
 
 **Why this priority**: The introduction is the primary purpose of the initial page and
 defines the visitor’s first impression.
@@ -24,8 +25,9 @@ from its initial state through completion; the copy is readable, animated, and c
 **Acceptance Scenarios**:
 
 1. **Given** the home page has loaded, **When** the introduction begins, **Then** each
-   text unit enters from the right and settles in normal left-to-right reading order,
-   creating a clearly perceptible flow rather than appearing as a static block.
+   text unit enters from the right and settles in normal left-to-right reading order at
+   approximately half the current reveal speed, creating a clearly perceptible flow
+   rather than appearing as a static block.
 2. **Given** the introduction is still animating, **When** a visitor watches the page,
    **Then** the copy remains readable throughout the motion and no text is permanently
    hidden or clipped.
@@ -100,7 +102,9 @@ that the text, button, and layout remain readable, contained, and usable.
   and cloud systems.” as the primary opening content.
 - **FR-002**: The home page MUST reveal the introductory message by having ordered text
   units enter from the right and settle in normal left-to-right reading order, rather
-  than displaying the completed message immediately as a static block.
+  than displaying the completed message immediately as a static block. The reveal MUST
+  proceed at approximately half the current speed, equivalent to taking approximately
+  twice as long as the current reveal.
 - **FR-003**: The reveal effect MUST preserve the message’s reading order, legibility,
   and complete final state.
 - **FR-004**: The home page MUST keep the “Learn more about me” button hidden or
@@ -133,6 +137,9 @@ that the text, button, and layout remain readable, contained, and usable.
   and access the CTA without waiting for an animation.
 - **SC-006**: Reviewers describe the opening as dynamic but readable, with no observed
   visual obstruction or uncertainty about what to do next.
+- **SC-007**: In review of 10 fresh page loads, the reveal duration is approximately
+  twice the current duration in at least 9 of 10 loads while every text unit remains
+  readable and the final message remains stable.
 
 ## Assumptions
 
@@ -140,6 +147,8 @@ that the text, button, and layout remain readable, contained, and usable.
   engineer with more than 20 years of experience in backend and cloud systems.”
 - The “Learn more about me” CTA navigates to the existing `/intro` route.
 - The animation runs once when the home page is initially entered or refreshed.
+- The requested slower speed is understood as approximately half the current speed,
+  or approximately twice the current total reveal duration.
 - The effect is decorative and must not be required for understanding the message.
 - The current project’s existing visual language and responsive layout conventions remain
   the default for this feature.

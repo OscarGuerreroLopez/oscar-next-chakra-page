@@ -19,7 +19,8 @@ Open `http://localhost:3000/` in a browser.
 
 1. Refresh the page in a fresh browser state.
 2. Confirm each text unit visibly enters from the right and settles in normal left-to-right
-   reading order in readable stages.
+   reading order in readable stages. Confirm the reveal progresses at approximately half
+   the previous speed, taking approximately twice as long as before.
 3. Confirm the complete message settles into a stable layout.
 4. Confirm “Learn more about me” is hidden or unavailable during the reveal.
 5. Confirm the CTA appears after the final text stage and navigates to `/intro`.
@@ -28,6 +29,10 @@ Open `http://localhost:3000/` in a browser.
 8. Enable the browser or operating-system reduced-motion preference, refresh, and confirm
    the complete message and CTA are available without disruptive movement.
 9. Refresh during the reveal and confirm the page returns to a coherent initial state.
+
+10. Compare the reveal against the previous behavior over multiple fresh loads and
+    confirm the slower pacing remains consistent without making the message difficult to
+    read.
 
 ## Optional repository checks
 

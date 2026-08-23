@@ -21,12 +21,19 @@ const MESSAGE_UNITS = [
   "in backend and cloud systems."
 ];
 
+const REVEAL_STAGGER = 0.86;
+const REVEAL_DURATION = 1.1;
+
 const messageVariants = {
   hidden: { opacity: 0, x: "30%" },
   visible: (index: number) => ({
     opacity: 1,
     x: 0,
-    transition: { delay: index * 0.28, duration: 0.55, ease: "easeOut" }
+    transition: {
+      delay: index * REVEAL_STAGGER,
+      duration: REVEAL_DURATION,
+      ease: "easeOut"
+    }
   }),
   reduced: { opacity: 1, x: 0, transition: { duration: 0 } }
 };

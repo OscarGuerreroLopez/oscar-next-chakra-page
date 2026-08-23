@@ -7,9 +7,10 @@
 ## Summary
 
 Update the existing home-page landing hero so Oscar’s introduction reveals with a
-right-to-left motion sequence, then reveals the “Learn more about me” CTA after the copy
-has completed. Reuse the existing landing component, Chakra UI primitives, and the
-already-installed Framer Motion dependency; add no animation dependency and no tests.
+slower right-to-left motion sequence, approximately half the current speed, then reveals
+the “Learn more about me” CTA after the copy has completed. Reuse the existing landing
+component, Chakra UI primitives, and the already-installed Framer Motion dependency; add
+no animation dependency and no tests.
 
 ## Technical Context
 
@@ -26,7 +27,8 @@ already-installed Framer Motion dependency; add no animation dependency and no t
 **Project Type**: Web application, static personal portfolio page
 
 **Performance Goals**: Manual review on representative mobile and desktop browsers finds
-no visible stutter, clipping, or layout shift caused by the reveal sequence
+the reveal takes approximately twice its current duration without visible stutter,
+clipping, or layout shift
 
 **Constraints**: Preserve the current home-page route and copy; use Chakra for styling;
   reuse installed dependencies; support reduced-motion preferences; avoid horizontal

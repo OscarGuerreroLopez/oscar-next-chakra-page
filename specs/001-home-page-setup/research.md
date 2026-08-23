@@ -21,6 +21,15 @@ event provides one clear point at which the CTA becomes visible.
 message difficult to read and does not provide a stable final state. A simultaneous whole
 block entrance was rejected because it does not meet the requested flowing effect.
 
+## Decision: Reduce the reveal speed to approximately half its current speed
+
+**Rationale**: The requested change is a pacing adjustment to the existing effect, not a
+new interaction. Doubling the current reveal duration preserves the established text
+sequence and CTA boundary while giving visitors more time to read each unit.
+
+**Alternatives considered**: Changing the copy or replacing the staged reveal was
+rejected because neither addresses the pacing request and both expand the feature scope.
+
 ## Decision: Make reduced motion skip movement while preserving sequence semantics
 
 **Rationale**: Visitors who prefer reduced motion must receive the complete message and

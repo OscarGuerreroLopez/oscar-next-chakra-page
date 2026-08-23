@@ -10,6 +10,8 @@ Represents the static opening content shown on the home page.
 - `introductoryMessage`: “Hello, Oscar Guerrero here. I am a senior software engineer
   with more than 20 years of experience in backend and cloud systems.”
 - `messageUnits`: ordered readable text groups used for the visual reveal
+- `revealSpeed`: approximately half the current speed, represented by approximately
+  twice the current total reveal duration
 - `revealState`: `pending`, `revealing`, or `complete`
 - `reducedMotion`: whether the visitor requests reduced motion
 - `ctaState`: `hidden` or `visible`
@@ -30,5 +32,7 @@ ctaState: hidden -> visible only after revealState = complete
 - Text groups MUST retain their original reading order in the final message.
 - `ctaState` MUST remain `hidden` while `revealState` is `pending` or `revealing`.
 - The final message MUST be visible and stable when `revealState` is `complete`.
+- The reveal MUST take approximately twice the current duration while preserving the
+  ordered text sequence.
 - Reduced-motion mode MUST reach `complete` without requiring animated movement.
 - The CTA destination MUST resolve to an existing page or confirmed route before delivery.
