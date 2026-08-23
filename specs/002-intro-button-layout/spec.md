@@ -6,19 +6,20 @@
 
 **Status**: Draft
 
-**Input**: User description: "Intro button - currently the Learn more about me button at the intro page pushes the text above when it shows up. We need to make it so it does not push the text above and shows right underneath the text without pushing it"
+**Input**: User description: "Intro text, Hello, Oscar Guerrero here...... is still being pushed up when Learn more about me shows up"
 
 ## Clarifications
 
 ### Session 2026-08-23
 
 - Q: Should the page reserve space for the button from the initial load so the text never moves when the button appears? → A: Yes. Reserve the button’s space invisibly from the initial load.
+- Q: Which existing intro-page CTA should this specification apply to? → A: The current “More about me” button on `/intro`, preserving its `/about` destination.
 
 ## User Scenarios & Testing *(mandatory)*
 
 ### User Story 1 - Show the intro button without shifting content (Priority: P1)
 
-As a visitor on the intro page, I want the “Learn more about me” button to appear
+As a visitor on the intro page, I want the “More about me” button to appear
 directly underneath the text without moving the text, so that the page feels stable while
 the next action becomes available.
 
@@ -31,14 +32,14 @@ while the button becomes visible directly below it.
 
 **Acceptance Scenarios**:
 
-1. **Given** the intro page text is visible and the button has not appeared, **When** the
-   button becomes available in its reserved area, **Then** the text remains in the same
-   vertical position.
+1. **Given** the complete intro content is visible and the button has not appeared, **When**
+   the button becomes available in its reserved area, **Then** the heading and descriptive
+   text remain in the same vertical position and the content block is not recentered.
 2. **Given** the button is visible, **When** the visitor views the completed page, **Then**
-   the button is positioned directly underneath the intro text without overlap or a
+   the “More about me” button is positioned directly underneath the intro text without overlap or a
    distracting gap.
 3. **Given** the button is visible, **When** the visitor selects it, **Then** its current
-   label, action, and destination continue to work as before.
+   label, action, and `/about` destination continue to work as before.
 
 ### User Story 2 - Use the intro page across screen sizes (Priority: P2)
 
@@ -74,19 +75,18 @@ desktop viewport sizes and verify that the text and button remain readable and u
 
 ### Functional Requirements
 
-- **FR-001**: The intro page MUST keep the existing text in the same position when the
-  “Learn more about me” button becomes visible.
-- **FR-002**: The intro page MUST display the “Learn more about me” button directly below
+- **FR-001**: The intro page MUST keep the heading and descriptive text in the same
+  anchored position when the “More about me” button is rendered or becomes visible,
+  without vertical shifting, jumping, or obscuring the content.
+- **FR-002**: The intro page MUST display the “More about me” button directly below
   the complete intro text when it is visible.
-- **FR-003**: The button MUST appear without causing the intro text to shift vertically,
-  jump, or become obscured.
-- **FR-004**: The layout MUST reserve the button’s required space from the initial page
+- **FR-003**: The layout MUST reserve the button’s required space from the initial page
   state, keeping that space visually empty or unavailable until the button is shown.
-- **FR-005**: The button MUST preserve its existing label, action, destination, and
-  keyboard accessibility.
-- **FR-006**: The intro text and button MUST remain readable, contained, and non-overlapping
+- **FR-004**: The “More about me” button MUST preserve its existing `/about` destination,
+  action, and keyboard accessibility.
+- **FR-005**: The intro text and button MUST remain readable, contained, and non-overlapping
   across narrow and wide viewport sizes.
-- **FR-007**: The layout MUST remain coherent after refreshes and when the button appears
+- **FR-006**: The layout MUST remain coherent after refreshes and when the button appears
   while the visitor is reading.
 
 ## Success Criteria *(mandatory)*
@@ -107,14 +107,18 @@ desktop viewport sizes and verify that the text and button remain readable and u
 - **SC-006**: In review of 10 fresh intro-page loads, the reserved button area is present
   before the button appears and the button occupies that same area afterward in at least
   10 of 10 loads.
+- **SC-007**: In review of 10 fresh intro-page loads, neither the heading nor descriptive
+  text moves vertically when the button appears in at least 10 of 10 loads.
 
 ## Assumptions
 
-- The intro page’s existing text, button label, action, and destination remain unchanged.
+- The intro page’s existing text, “More about me” button label, action, and `/about`
+  destination remain unchanged.
 - The requested behavior applies only to the intro page button and its surrounding layout.
-- The button may remain unavailable until its existing display condition is met, but its
-  appearance must not reflow or shift the text above it; space for the button is reserved
-  from the initial page state.
+- The CTA area is rendered from the initial page state, while the CTA itself becomes visible
+  after the intro component mounts. Its reserved area must exist from the initial page state,
+  and changing the CTA’s visibility must not reflow, recenter, or shift the complete intro
+  content block.
 - Existing page styling and responsive conventions remain the default.
 - No automated test files or testing gates are added at this stage, in accordance with
   the current project constitution.
