@@ -14,6 +14,9 @@
 
 # production
 /build
+/dist/
+*.log
+.env*
 
 # misc
 .DS_Store
@@ -35,5 +38,18 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# editor and temporary files
+.vscode/
+.idea/
+*.tmp
+*.swp
+
 
 *.pdf
+
+# ai tools
+# .agents/
+# .claude/
+# skills-lock.json
+# .specify/
+# specs/

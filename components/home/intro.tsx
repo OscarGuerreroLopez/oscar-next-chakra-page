@@ -8,13 +8,26 @@ import {
   Container,
   useColorModeValue,
   Center,
-  useMediaQuery
+  useMediaQuery,
+  Box,
+  usePrefersReducedMotion
 } from "@chakra-ui/react";
+import { useEffect, useState } from "react";
 import LinkButton from "../custom/linkButton";
 import Description from "@/components/custom/description";
 
 const IntroHome = () => {
   const [isLargerThan1280] = useMediaQuery("(min-width: 768px)");
+  const [isButtonVisible, setIsButtonVisible] = useState(false);
+  const prefersReducedMotion = usePrefersReducedMotion();
+
+  useEffect(() => {
+    const revealFrame = window.requestAnimationFrame(() => {
+      setIsButtonVisible(true);
+    });
+
+    return () => window.cancelAnimationFrame(revealFrame);
+  }, []);
 
   return (
     <Container
@@ -76,11 +89,26 @@ const IntroHome = () => {
               help teams deliver."
             />
 
-            <Stack direction={{ base: "column", md: "row" }} spacing={4}>
-              <Center>
-                <LinkButton name="More about me" link="/about" />
-              </Center>
-            </Stack>
+            <Box
+              minH={{ base: "56px", md: "56px" }}
+              display="flex"
+              alignItems="flex-start"
+              aria-hidden={!isButtonVisible}
+            >
+              <Stack
+                direction={{ base: "column", md: "row" }}
+                spacing={4}
+                opacity={isButtonVisible ? 1 : 0}
+                visibility={isButtonVisible ? "visible" : "hidden"}
+                transform={isButtonVisible ? "translateY(0)" : "translateY(8px)"}
+                pointerEvents={isButtonVisible ? "auto" : "none"}
+                transition={prefersReducedMotion ? "none" : "all 250ms ease-out"}
+              >
+                <Center>
+                  <LinkButton name="More about me" link="/about" />
+                </Center>
+              </Stack>
+            </Box>
           </Stack>
         </Flex>
         {isLargerThan1280 && (
