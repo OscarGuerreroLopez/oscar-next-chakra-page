@@ -48,8 +48,8 @@ next-env.d.ts
 *.pdf
 
 # ai tools
-.agents/
-.claude/
-skills-lock.json
-.specify/
-specs/
+# .agents/
+# .claude/
+# skills-lock.json
+# .specify/
+# specs/
