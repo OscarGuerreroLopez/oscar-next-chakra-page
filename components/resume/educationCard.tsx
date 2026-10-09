@@ -48,8 +48,8 @@ const CustomCard: React.FC<CustomCardProps> = ({
         </Flex>
       </CardHeader>
 
-      <CardBody color={"gray.500"}>
-        <Text color={useColorModeValue("gray.600", "gray.300")}>{body}</Text>
+      <CardBody color={useColorModeValue("gray.500", "gray.100")}>
+        <Text color={useColorModeValue("gray.600", "gray.100")}>{body}</Text>
       </CardBody>
     </Card>
   );
