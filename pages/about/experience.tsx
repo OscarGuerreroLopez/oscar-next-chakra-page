@@ -5,7 +5,7 @@ import StatsText from "@/components/about/statsText";
 const mainTitle = "Experience";
 const subTitle = "Software Engineering";
 const mainDesc =
-  "I bring 20+ years of software engineering experience across enterprise software, startups, and cloud-native product teams, with a current specialization in AI backend engineering.";
+  "I bring 10+ years of software engineering experience across enterprise software, startups, and cloud-native product teams, with a current specialization in AI backend engineering.";
 
 export default function StatsGridWithImage() {
   return (
@@ -32,8 +32,8 @@ const stats = [
     title: "Professional Journey",
     content: (
       <>
-        I have worked as<StatsText> a software engineer </StatsText> since 2001,
-        building more than 20 years of experience across enterprise and product
+        I have worked as<StatsText> a software engineer </StatsText> for over a
+        decade, building deep experience across enterprise and product
         organizations. This path helped me strengthen software architecture,
         delivery ownership, and collaboration with cross-functional teams.
       </>
@@ -43,7 +43,7 @@ const stats = [
     title: "Recent Roles",
     content: (
       <>
-        Recent roles include <StatsText>PropHero</StatsText> (Apr 2025–Present),{" "}
+        Recent roles include <StatsText>PropHero</StatsText> (Apr 2025–Aug 2026),{" "}
         <StatsText>CrowdFarming</StatsText> (Apr 2024–Apr 2025), and{" "}
         <StatsText>Jacquard</StatsText> (Mar 2023–Apr 2024), where I focused on
         scalable backend systems, fintech and operational services, and

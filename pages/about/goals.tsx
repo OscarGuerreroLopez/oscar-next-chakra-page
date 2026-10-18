@@ -4,7 +4,7 @@ import CustomHeader from "@/components/head/customHeader";
 const mainTitle = "CAREER GOALS";
 const subTitle = "Looking forward";
 const mainDesc =
-  "As a software engineer with 20+ years of experience, I continue to focus on growth, impact, and long-term technical leadership, especially in AI-enabled backend systems.";
+  "As a software engineer with 10+ years of experience, I continue to focus on growth, impact, and long-term technical leadership, especially in AI-enabled backend systems.";
 
 export default function StatsGridWithImage() {
   return (

@@ -79,7 +79,7 @@ const IntroHome = () => {
             )}
 
             <Description
-              desc="With more than 20 years of software engineering experience,
+              desc="With more than 10 years of software engineering experience,
               I specialize in cloud-native backend and AI backend development
               using Node.js, TypeScript, Python, and AWS. I design microservices,
               event-driven systems, and serverless workflows, and I build
