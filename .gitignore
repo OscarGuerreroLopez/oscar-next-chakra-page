@@ -46,3 +46,10 @@ next-env.d.ts
 
 
 *.pdf
+
+
+.claude
+.codestudio
+.grok
+.hermes
+.windsurf
