@@ -81,8 +81,11 @@ catch formatting.
 
 ### Routes
 
-Every route except `/` wraps its content in `@/components/layout`
-(Navbar + Footer). Home renders `@/components/landing` with no Layout.
+`/`, `/intro`, `/about`, `/services`, `/resume`, and `/blog` wrap their content
+in `@/components/layout` (Navbar + Footer). The `/about/*` subroutes
+(`experience`, `expertise`, `problem`, `interest`, `goals`) and home do not:
+home renders `@/components/landing`, the `/about/*` subroutes render their topic
+component only. Add `Layout` when creating a new route.
 
 `/`, `/intro`, `/about`, `/about/{experience,expertise,problem,interest,goals}`,
 `/services`, `/resume`, `/blog`

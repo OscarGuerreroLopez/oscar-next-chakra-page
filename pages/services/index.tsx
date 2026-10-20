@@ -1,7 +1,6 @@
 import {
   Container,
   SimpleGrid,
-  Image,
   Flex,
   Heading,
   Text,
@@ -20,6 +19,7 @@ import {
   IoSearchSharp
 } from "react-icons/io5";
 import { ReactElement } from "react";
+import Image from "@/components/custom/nextImage";
 import BlogRight from "@/components/custom/blogRight";
 import BlogLeft from "@/components/custom/blogLeft";
 import Angle from "@/components/custom/angle";
@@ -157,7 +157,10 @@ export default function SplitWithImage() {
                 rounded={"md"}
                 alt={"feature image"}
                 src={"/cool_image.jpeg"}
-                objectFit={"cover"}
+                width={1024}
+                height={1024}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
               />
             </Flex>
           </SimpleGrid>

@@ -5,12 +5,12 @@ import {
   Box,
   Heading,
   Text,
-  Image,
   Icon,
   IconProps,
   useColorModeValue,
   Center
 } from "@chakra-ui/react";
+import Image from "@/components/custom/nextImage";
 import Description from "@/components/custom/description";
 import LinkButton from "../custom/linkButton";
 
@@ -94,11 +94,10 @@ export default function Analysis() {
           >
             <Image
               alt={"Data analysis dashboard"}
-              fit={"cover"}
-              align={"center"}
-              w={"100%"}
-              h={"100%"}
               src={"/analytics.png"}
+              fill
+              sizes="(max-width: 768px) 100vw, 768px"
+              style={{ objectFit: "cover", objectPosition: "center" }}
             />
           </Box>
         </Flex>

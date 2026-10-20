@@ -17,7 +17,7 @@ const defaultHeader: React.FC<DefaultHeader> = ({
     <DefaultSeo
       title={title}
       description={description}
-      additionalLinkTags={[{ rel: "icon", href: "/performance.png" }]}
+      additionalLinkTags={[{ rel: "icon", href: "/favicon.ico" }]}
       openGraph={{
         type: "website",
         locale: "en_US",

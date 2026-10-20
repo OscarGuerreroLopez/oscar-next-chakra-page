@@ -33,7 +33,7 @@ Format only the files you touched: `npx prettier --config .prettierrc --write <f
 
 ## Page and SEO conventions
 
-- Every route except `pages/index.tsx` wraps content in `@/components/layout` (Navbar + Footer). Home renders `@/components/landing` with no Layout.
+- `/`, `/intro`, `/about`, `/services`, `/resume`, and `/blog` wrap content in `@/components/layout` (Navbar + Footer). Home renders `@/components/landing` with no Layout, and the `/about/*` subroutes (`experience`, `expertise`, `problem`, `interest`, `goals`) render their topic component only, so they have no Navbar or Footer. New routes should wrap in `Layout`.
 - Global SEO: `components/head/defaultHeader.tsx` (`DefaultSeo` plus OG image and favicon) is mounted once in `pages/_app.tsx`.
 - Per-route SEO: `components/head/customHeader.tsx` (`NextSeo` with `canonical` and `noindex={false}`, plus `SocialProfileJsonLd` and `CorporateContactJsonLd`) is rendered inside each page with route-specific `url`. New routes should include it.
 - `public/sitemap.xml` and `public/robots.txt` are static and hand-maintained. Adding a route means editing `public/sitemap.xml` by hand.
@@ -52,3 +52,13 @@ Format only the files you touched: `npx prettier --config .prettierrc --write <f
 - Branch names in history: `feature/*`, `feat/*`, `fix/*`. Never commit to `main`; feature branches are merged via PR.
 - No pre-commit hooks and no commit template.
 - `docs/NEXT_UPGRADE_PLAN.md` holds the incremental Next.js upgrade path (one major per change, validate lint, typecheck, build after each). It is the reference for version work, not a to-do list.
+
+<!-- BEGIN:nextjs-agent-rules -->
+
+# This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->

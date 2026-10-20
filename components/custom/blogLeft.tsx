@@ -1,4 +1,5 @@
-import { Box, Heading, Link, useColorModeValue, Image } from "@chakra-ui/react";
+import { Box, Heading, Link, useColorModeValue } from "@chakra-ui/react";
+import Image from "@/components/custom/nextImage";
 import BlogTags from "./blogTags";
 import MainBlock from "./mainBlock";
 import Description from "@/components/custom/description";
@@ -50,10 +51,13 @@ const BlogLeft: React.FC<BlogProps> = ({
         >
           <Link textDecoration="none" _hover={{ textDecoration: "none" }}>
             <Image
-              borderRadius="lg"
               src={pic}
-              alt="some good alt text"
-              objectFit="contain"
+              alt="Feature illustration"
+              width={0}
+              height={0}
+              sizes="(max-width: 768px) 100vw, 600px"
+              borderRadius="lg"
+              style={{ width: "100%", height: "auto" }}
             />
           </Link>
         </Box>
