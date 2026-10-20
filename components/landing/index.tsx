@@ -17,7 +17,7 @@ const MESSAGE_UNITS = [
   "Hello,",
   "Oscar Guerrero here.",
   "I am a senior software engineer",
-  "with more than 20 years of experience",
+  "with more than 10 years of experience",
   "in backend and cloud systems."
 ];
 

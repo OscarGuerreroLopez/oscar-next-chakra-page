@@ -19,6 +19,7 @@ export interface ExperienceEntry {
   location?: string;
   dateRange: string;
   responsibilities: string[];
+  stack?: string[];
 }
 
 export interface EducationEntry {
@@ -78,6 +79,20 @@ export const experience: ExperienceEntry[] = [
       "Engineered Node.js and TypeScript backend services and serverless workflows on AWS Lambda/SST, PostgreSQL, and Prisma.",
       "Enabled asynchronous, event-driven processing between backend services through EventBridge and SQS integrations.",
       "Developed AI-powered automations and RAG services for internal teams and operational workflows using Python, LangChain, LangGraph, AWS AgentCore, Bedrock Knowledge Bases, Pinecone and OpenSearch."
+    ],
+    stack: [
+      "Node.js",
+      "TypeScript",
+      "Python",
+      "AWS Lambda",
+      "SST",
+      "PostgreSQL",
+      "Prisma",
+      "LangChain",
+      "LangGraph",
+      "AWS Bedrock",
+      "OpenSearch",
+      "EventBridge"
     ]
   },
   {
@@ -89,6 +104,16 @@ export const experience: ExperienceEntry[] = [
       "Owned backend delivery for financial and operational product capabilities, including Stripe payments, subscriptions, and billing automation.",
       "Implemented AWS Lambda and Step Functions workflows to support and automate financial and operational processes using NestJS and mongoDB.",
       "Delivered reliable event-driven services to support operations"
+    ],
+    stack: [
+      "Node.js",
+      "TypeScript",
+      "NestJS",
+      "MongoDB",
+      "AWS Lambda",
+      "Step Functions",
+      "Stripe",
+      "Event-Driven Architecture"
     ]
   },
   {
@@ -99,6 +124,16 @@ export const experience: ExperienceEntry[] = [
     responsibilities: [
       "Modernized legacy backend systems into NestJS and Express microservices deployed on AWS ECS and Lambda, with MongoDB and PostgreSQL data stores.",
       "Delivered event-driven services that supported AI content-generation workflows."
+    ],
+    stack: [
+      "Node.js",
+      "TypeScript",
+      "NestJS",
+      "Express",
+      "AWS ECS",
+      "AWS Lambda",
+      "MongoDB",
+      "PostgreSQL"
     ]
   },
   {
@@ -109,6 +144,19 @@ export const experience: ExperienceEntry[] = [
     responsibilities: [
       "Led the modernization of legacy systems toward Domain-Driven Design and Node.js/TypeScript microservices.",
       "Engineered backend services and messaging infrastructure with AWS ECS/Fargate, RabbitMQ, SQS, Redis, and GraphQL."
+    ],
+    stack: [
+      "Node.js",
+      "TypeScript",
+      "AWS ECS/Fargate",
+      "Redis",
+      "RabbitMQ",
+      "SQS",
+      "GraphQL",
+      "MySQL",
+      "MongoDB",
+      "Docker",
+      "DDD"
     ]
   },
   {
@@ -119,6 +167,18 @@ export const experience: ExperienceEntry[] = [
     responsibilities: [
       "Developed TypeScript microservices exposing GraphQL and REST APIs, deployed on AWS Lambda and ECS.",
       "Improved operational visibility through centralized logging and monitoring with the ELK Stack, while contributing React frontend features."
+    ],
+    stack: [
+      "Node.js",
+      "TypeScript",
+      "React",
+      "Redux",
+      "GraphQL",
+      "REST",
+      "AWS Lambda",
+      "AWS ECS",
+      "MongoDB",
+      "ELK"
     ]
   },
   {
@@ -129,6 +189,19 @@ export const experience: ExperienceEntry[] = [
     responsibilities: [
       "Developed internal tools and REST APIs with Node.js and Express to support business operations.",
       "Managed SQL databases, application deployments, and production troubleshooting to maintain operational continuity."
+    ],
+    stack: [
+      "Node.js",
+      "Express",
+      "TypeScript",
+      "Angular",
+      "SQL",
+      "MySQL",
+      "Python",
+      "Bash",
+      "Swagger",
+      "Cloudflare",
+      "Limelight"
     ]
   }
 ];
@@ -156,12 +229,12 @@ export const earlierExperience: ExperienceEntry[] = [
 export const education: EducationEntry[] = [
   {
     credential: "Associate’s Degree, Computer and Information Systems",
-    institution: "Kalamazoo Valley Community College",
+    institution: "Kalamazoo Valley Community College, Michigan, USA",
     date: "1998–2001"
   },
   {
     credential: "Scrum Master Certification",
-    institution: "Scrum Manager #32675",
+    institution: "Scrum Manager #32675, Tanta Training Center, Madrid, Spain",
     date: "2020"
   }
 ];

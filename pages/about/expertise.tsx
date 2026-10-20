@@ -34,7 +34,7 @@ const stats = [
       <>
         I specialize in <StatsText>designing and developing</StatsText> scalable
         software solutions, focusing on microservices and modular backend
-        architecture with Node.js, TypeScript, and Python. With more than 20
+        architecture with Node.js, TypeScript, and Python. With more than 10
         years of experience, I prioritize maintainability, observability, and
         business-aligned delivery.
       </>

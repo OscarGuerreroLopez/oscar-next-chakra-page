@@ -27,7 +27,7 @@ export type LittleCardContext = {
 export const AboutMeLittleCardContext: LittleCardContext = {
   experience: {
     title: "Experience",
-    desc: "I bring 20+ years of software engineering experience, with recent focus on cloud-native backend and AI platform engineering across PropHero, CrowdFarming, and Jacquard.",
+    desc: "I bring 10+ years of software engineering experience, with recent focus on cloud-native backend and AI platform engineering across PropHero, CrowdFarming, and Jacquard.",
     icon: FcBusinessman,
     href: "experience"
   },
@@ -59,7 +59,7 @@ export const AboutMeLittleCardContext: LittleCardContext = {
 
 export const Intro = {
   title: "About Me",
-  desc: "I am a Senior Software Engineer focused on AI backend engineering. With over 20 years of experience, I build scalable backend systems for fintech, SaaS, and marketplace products using Node.js, TypeScript, Python, and AWS. I work with microservices, event-driven/serverless architecture, and RAG-based multi-agent workflows. On this page, you can explore my background, engineering approach, and long-term vision."
+  desc: "I am a Senior Software Engineer focused on AI backend engineering. With over 10 years of experience, I build scalable backend systems for fintech, SaaS, and marketplace products using Node.js, TypeScript, Python, and AWS. I work with microservices, event-driven/serverless architecture, and RAG-based multi-agent workflows. On this page, you can explore my background, engineering approach, and long-term vision."
 };
 
 export type PageTextType = "experience";
@@ -79,7 +79,7 @@ export const PageText: AboutMePageTextType = {
   experience: {
     title: "Experience",
     first:
-      "I have been working as a software engineer since 2001, building over 20 years of experience across enterprise software, SaaS platforms, and startup environments. This long trajectory gave me a strong foundation in engineering fundamentals, delivery ownership, and cross-team collaboration.",
+      "I have been building software for over a decade across enterprise software, SaaS platforms, and startup environments. This long trajectory gave me a strong foundation in engineering fundamentals, delivery ownership, and cross-team collaboration.",
     second:
       "Since 2016, I have focused heavily on product-driven teams and startups, working across companies such as Techona, Red Acre, Grupo OneTec, and consulting engagements. I have led backend modernization projects, designed resilient microservices, and delivered cloud-native systems while balancing speed, quality, and business impact.",
     third:
