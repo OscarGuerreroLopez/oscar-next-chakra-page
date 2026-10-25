@@ -93,24 +93,24 @@ export default function Landing() {
               </MotionSpan>
             ))}
           </Text>
-          {isComplete && (
-            <MotionSpan
-              initial={prefersReducedMotion ? false : "hidden"}
-              animate="visible"
-              variants={ctaVariants}
+          <MotionSpan
+            display="inline-block"
+            initial={prefersReducedMotion ? false : "hidden"}
+            animate={isComplete ? "visible" : "hidden"}
+            variants={ctaVariants}
+            style={{ visibility: isComplete ? "visible" : "hidden" }}
+          >
+            <Button
+              as={Link}
+              href="/intro"
+              bg={"blue.400"}
+              rounded={"full"}
+              color={"white"}
+              _hover={{ bg: "blue.500" }}
             >
-              <Button
-                as={Link}
-                href="/intro"
-                bg={"blue.400"}
-                rounded={"full"}
-                color={"white"}
-                _hover={{ bg: "blue.500" }}
-              >
-                Learn more about me
-              </Button>
-            </MotionSpan>
-          )}
+              Learn more about me
+            </Button>
+          </MotionSpan>
         </Stack>
       </VStack>
     </Flex>
