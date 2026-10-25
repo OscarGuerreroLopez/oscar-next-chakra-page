@@ -4,7 +4,6 @@ import {
   Heading,
   useBreakpointValue,
   Text,
-  Image,
   Container,
   useColorModeValue,
   Center,
@@ -13,6 +12,7 @@ import {
   usePrefersReducedMotion
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
+import Image from "@/components/custom/nextImage";
 import LinkButton from "../custom/linkButton";
 import Description from "@/components/custom/description";
 
@@ -71,15 +71,18 @@ const IntroHome = () => {
               <Flex flex={1}>
                 <Image
                   alt={"Senior software engineer coding"}
-                  objectFit={"cover"}
                   src={"/code4.jpeg"}
+                  width={1200}
+                  height={800}
+                  sizes="100vw"
                   rounded={"2xl"}
+                  style={{ width: "100%", height: "auto" }}
                 />
               </Flex>
             )}
 
             <Description
-              desc="With more than 20 years of software engineering experience,
+              desc="With more than 10 years of software engineering experience,
               I specialize in cloud-native backend and AI backend development
               using Node.js, TypeScript, Python, and AWS. I design microservices,
               event-driven systems, and serverless workflows, and I build
@@ -100,9 +103,13 @@ const IntroHome = () => {
                 spacing={4}
                 opacity={isButtonVisible ? 1 : 0}
                 visibility={isButtonVisible ? "visible" : "hidden"}
-                transform={isButtonVisible ? "translateY(0)" : "translateY(8px)"}
+                transform={
+                  isButtonVisible ? "translateY(0)" : "translateY(8px)"
+                }
                 pointerEvents={isButtonVisible ? "auto" : "none"}
-                transition={prefersReducedMotion ? "none" : "all 250ms ease-out"}
+                transition={
+                  prefersReducedMotion ? "none" : "all 250ms ease-out"
+                }
               >
                 <Center>
                   <LinkButton name="More about me" link="/about" />
@@ -112,13 +119,15 @@ const IntroHome = () => {
           </Stack>
         </Flex>
         {isLargerThan1280 && (
-          <Flex flex={1}>
+          <Flex flex={1} align={"center"} justify={"center"}>
             <Image
               alt={"Senior software engineer coding"}
-              objectFit={"cover"}
               src={"/code4.jpeg"}
+              width={1200}
+              height={800}
+              sizes="(max-width: 767px) 100vw, 420px"
               rounded={"2xl"}
-              mt={{ base: 4, md: "none" }}
+              style={{ width: "100%", height: "auto", maxWidth: "420px" }}
             />
           </Flex>
         )}
